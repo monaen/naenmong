@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="VoltageSource.eps">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="149.41805"
+     inkscape:cy="697.9147"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1215"
+     inkscape:window-height="1000"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       transform="matrix(1.25,0,0,-1.25,310.20423,241.5356)"
+       inkscape:label="ink_ext_XXXXXX"
+       id="g2993">
+      <g
+         transform="scale(0.1,0.1)"
+         id="g2995">
+        <path
+           id="path2997"
+           style="fill:none;stroke:#000000;stroke-width:24;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           d="m 744.73,1759.62 0,-605.74"
+           inkscape:connector-curvature="0" />
+        <path
+           id="path2999"
+           style="fill:none;stroke:#000000;stroke-width:24;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           d="m 744.73,615.711 0,-605.6993"
+           inkscape:connector-curvature="0" />
+        <g
+           transform="scale(10,10)"
+           id="g3001">
+          <text
+             id="text3003"
+             transform="matrix(0.961102,0,0,-1,69.4398,104.825)">
+            <tspan
+               id="tspan3005"
+               y="0"
+               x="0"
+               style="font-size:12.19639969px;font-variant:normal;font-weight:bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVuSans-Bold">+</tspan>
+          </text>
+          <text
+             id="text3007"
+             transform="matrix(1,0,0,-1,71.059,70.6074)">
+            <tspan
+               id="tspan3009"
+               y="0"
+               x="0"
+               style="font-size:14.8107996px;font-variant:normal;font-weight:bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVuSans-Bold">_</tspan>
+          </text>
+          <text
+             id="text3011"
+             transform="matrix(1,0,0,-1,-0.2812,86.3601)">
+            <tspan
+               id="tspan3013"
+               y="0"
+               x="0"
+               style="font-size:32px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Times New Roman;-inkscape-font-specification:TimesNewRomanPSMT">V</tspan>
+          </text>
+          <text
+             id="text3015"
+             transform="matrix(1,0,0,-1,22.8438,79.9601)">
+            <tspan
+               id="tspan3017"
+               y="0"
+               x="0"
+               style="font-size:20.8003006px;font-variant:normal;font-weight:bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Times New Roman;-inkscape-font-specification:TimesNewRomanPS-BoldMT">S</tspan>
+          </text>
+        </g>
+        <path
+           id="path3019"
+           style="fill:none;stroke:#000000;stroke-width:21.38660049;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           d="m 1014.61,892.16 c 0,-149.031 -120.86,-269.851 -269.88,-269.851 -149.07,0 -269.89,120.82 -269.89,269.851 0,149.06 120.82,269.88 269.89,269.88 149.02,0 269.88,-120.82 269.88,-269.88 z"
+           inkscape:connector-curvature="0" />
+      </g>
+    </g>
+    <g
+       transform="matrix(1.25,0,0,-1.25,43.640714,231.90878)"
+       inkscape:label="ink_ext_XXXXXX"
+       id="g3043">
+      <g
+         transform="scale(0.1,0.1)"
+         id="g3045">
+        <path
+           id="path3047"
+           style="fill:none;stroke:#000000;stroke-width:24;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           d="m 744.609,1628.37 0,-605.74"
+           inkscape:connector-curvature="0" />
+        <path
+           id="path3049"
+           style="fill:none;stroke:#000000;stroke-width:24;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           d="m 449.77,1028.37 582.85,0"
+           inkscape:connector-curvature="0" />
+        <path
+           id="path3051"
+           style="fill:none;stroke:#000000;stroke-width:24;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           d="m 558.32,902.629 360,0"
+           inkscape:connector-curvature="0" />
+        <path
+           id="path3053"
+           style="fill:none;stroke:#000000;stroke-width:24;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           d="m 455.469,747.199 582.851,0"
+           inkscape:connector-curvature="0" />
+        <path
+           id="path3055"
+           style="fill:none;stroke:#000000;stroke-width:24;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           d="m 564.059,621.488 360,0"
+           inkscape:connector-curvature="0" />
+        <path
+           id="path3057"
+           style="fill:none;stroke:#000000;stroke-width:24;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           d="m 749.18,615.789 0,-605.6992"
+           inkscape:connector-curvature="0" />
+        <g
+           transform="scale(10,10)"
+           id="g3059">
+          <text
+             id="text3061"
+             transform="matrix(1,0,0,-1,36.3242,129.235)">
+            <tspan
+               id="tspan3063"
+               y="0"
+               x="0"
+               style="font-size:32px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVuSans">+</tspan>
+            <tspan
+               id="tspan3065"
+               y="93.142601"
+               x="5.40625"
+               style="font-size:32px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:DejaVu Sans;-inkscape-font-specification:DejaVuSans">_</tspan>
+          </text>
+          <text
+             id="text3067"
+             transform="matrix(1,0,0,-1,-0.28125,73.235)">
+            <tspan
+               id="tspan3069"
+               y="0"
+               x="0"
+               style="font-size:32px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Times New Roman;-inkscape-font-specification:TimesNewRomanPSMT">V</tspan>
+          </text>
+          <text
+             id="text3071"
+             transform="matrix(1,0,0,-1,22.84375,66.835)">
+            <tspan
+               id="tspan3073"
+               y="0"
+               x="0"
+               style="font-size:20.8003006px;font-variant:normal;font-weight:bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Times New Roman;-inkscape-font-specification:TimesNewRomanPS-BoldMT">S</tspan>
+          </text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
