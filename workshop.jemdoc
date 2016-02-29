@@ -1,8 +1,9 @@
 # jemdoc: menu{MENU}{workshop.html}
 = Workshop
 
-
-
+== COMP8101: Advanced topics in data engineering
+=== Slides
+- Privacy Data Mining: \[[workshop/COMP8101/report1.pdf Presentation 1]\]
 
 
 
