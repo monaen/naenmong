@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.1.23)  27 FEB 2016 20:51
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.1.23)  2 MAR 2016 17:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -596,6 +596,30 @@ Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
 (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
 \bigstrutjot=\dimen178
 )
+(/usr/share/texlive/texmf-dist/tex/latex/paracol/paracol.sty
+Package: paracol 2013/10/10 v1.31 
+\pcol@currcol=\count147
+\pcol@nextcol=\count148
+\pcol@ncol=\count149
+\pcol@ncolleft=\count150
+\pcol@page=\count151
+\pcol@basepage=\count152
+\pcol@toppage=\count153
+\pcol@footnotebase=\count154
+\pcol@nfootnotes=\count155
+\pcol@mcid=\count156
+\pcol@prevdepth=\dimen179
+\pcol@colht=\dimen180
+\pcol@textfloatsep=\dimen181
+\pcol@lrmargin=\dimen182
+\pagerim=\dimen183
+\pcol@topskip=\skip61
+\pcol@topfnotes=\box38
+\pcol@prespan=\box39
+\pcol@rightpage=\box40
+\pcol@tempbox=\box41
+\pcol@everyvbox=\toks35
+)
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2013/12/03 3.9h The Babel package
 
@@ -604,62 +628,62 @@ Language: frenchb 2013/12/30 v2.6g French support from the babel system
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2013/12/03 3.9h Babel common definitions
-\babel@savecnt=\count147
-\U@D=\dimen179
+\babel@savecnt=\count157
+\U@D=\dimen184
 )
-\FB@interchartokenstateORI=\count148
+\FB@interchartokenstateORI=\count158
 Package babel Info: Making : an active character on input line 244.
 Package babel Info: Making ; an active character on input line 245.
 Package babel Info: Making ! an active character on input line 246.
 Package babel Info: Making ? an active character on input line 247.
-\FB@Mht=\dimen180
-\std@mcc=\count149
-\dec@mcc=\count150
-\listindentFB=\skip61
-\labelwidthFB=\skip62
-\leftmarginFB=\skip63
-\parindentFFN=\dimen181
+\FB@Mht=\dimen185
+\std@mcc=\count159
+\dec@mcc=\count160
+\listindentFB=\skip62
+\labelwidthFB=\skip63
+\leftmarginFB=\skip64
+\parindentFFN=\dimen186
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/carlisle/scalefnt.sty)
 (/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
-\heavyrulewidth=\dimen182
-\lightrulewidth=\dimen183
-\cmidrulewidth=\dimen184
-\belowrulesep=\dimen185
-\belowbottomsep=\dimen186
-\aboverulesep=\dimen187
-\abovetopsep=\dimen188
-\cmidrulesep=\dimen189
-\cmidrulekern=\dimen190
-\defaultaddspace=\dimen191
-\@cmidla=\count151
-\@cmidlb=\count152
-\@aboverulesep=\dimen192
-\@belowrulesep=\dimen193
-\@thisruleclass=\count153
-\@lastruleclass=\count154
-\@thisrulewidth=\dimen194
+\heavyrulewidth=\dimen187
+\lightrulewidth=\dimen188
+\cmidrulewidth=\dimen189
+\belowrulesep=\dimen190
+\belowbottomsep=\dimen191
+\aboverulesep=\dimen192
+\abovetopsep=\dimen193
+\cmidrulesep=\dimen194
+\cmidrulekern=\dimen195
+\defaultaddspace=\dimen196
+\@cmidla=\count161
+\@cmidlb=\count162
+\@aboverulesep=\dimen197
+\@belowrulesep=\dimen198
+\@thisruleclass=\count163
+\@lastruleclass=\count164
+\@thisrulewidth=\dimen199
 )
-\c@thm=\count155
+\c@thm=\count165
 
 (./circuit(Part 1).aux)
 \openout1 = `"circuit(Part 1).aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -697,17 +721,17 @@ LaTeX Font Info:    ... okay on input line 79.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count156
-\scratchdimen=\dimen195
-\scratchbox=\box38
-\nofMPsegments=\count157
-\nofMParguments=\count158
-\everyMPshowfont=\toks35
-\MPscratchCnt=\count159
-\MPscratchDim=\dimen196
-\MPnumerator=\count160
-\makeMPintoPDFobject=\count161
-\everyMPtoPDFconversion=\toks36
+\scratchcounter=\count166
+\scratchdimen=\dimen200
+\scratchbox=\box42
+\nofMPsegments=\count167
+\nofMParguments=\count168
+\everyMPshowfont=\toks36
+\MPscratchCnt=\count169
+\MPscratchDim=\dimen201
+\MPnumerator=\count170
+\makeMPintoPDFobject=\count171
+\everyMPtoPDFconversion=\toks37
 ) ABD: EveryShipout initializing macros
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
@@ -724,8 +748,8 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box39
-Package hyperref Info: Link coloring ON on input line 79.
+\AtBeginShipoutBox=\box43
+Package hyperref Info: Link coloring ON on input line 80.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -733,24 +757,24 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count162
+\c@section@level=\count172
 )
-LaTeX Info: Redefining \ref on input line 79.
-LaTeX Info: Redefining \pageref on input line 79.
-LaTeX Info: Redefining \nameref on input line 79.
+LaTeX Info: Redefining \ref on input line 80.
+LaTeX Info: Redefining \pageref on input line 80.
+LaTeX Info: Redefining \nameref on input line 80.
 
 (./circuit(Part 1).out) (./circuit(Part 1).out)
 \@outlinefile=\write4
 \openout4 = `"circuit(Part 1).out"'.
 
-LaTeX Info: Redefining \degres on input line 79.
-LaTeX Info: Redefining \dots on input line 79.
-LaTeX Info: Redefining \up on input line 79.
+LaTeX Info: Redefining \degres on input line 80.
+LaTeX Info: Redefining \dots on input line 80.
+LaTeX Info: Redefining \up on input line 80.
 
 
 Package frenchb.ldf Warning: OT1 encoding should not be used for French. 
 (frenchb.ldf)                Add \usepackage[T1]{fontenc} to the preamble
-(frenchb.ldf)                of your document, on input line 79.
+(frenchb.ldf)                of your document, on input line 80.
 
 Package epstopdf Info: Source file: <./images/introduction.eps>
 (epstopdf)                    date: 2016-02-22 23:27:40
@@ -761,21 +785,21 @@ Package epstopdf Info: Source file: <./images/introduction.eps>
 (epstopdf)                    size: 20063 bytes
 (epstopdf)             Command: <repstopdf --outfile=./images/introduction-eps-
 converted-to.pdf ./images/introduction.eps>
-(epstopdf)             \includegraphics on input line 93.
+(epstopdf)             \includegraphics on input line 95.
 Package epstopdf Info: Output file is already uptodate.
-<./images/introduction-eps-converted-to.pdf, id=75, 414.54875pt x 279.0425pt>
+<./images/introduction-eps-converted-to.pdf, id=88, 414.54875pt x 279.0425pt>
 File: ./images/introduction-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./images/introduction-eps-converted-to.pdf>
 Package pdftex.def Info: ./images/introduction-eps-converted-to.pdf used on inp
-ut line 93.
+ut line 95.
 (pdftex.def)             Requested size: 256.07481pt x 172.37439pt.
-LaTeX Font Info:    Try loading font information for U+msa on input line 97.
+LaTeX Font Info:    Try loading font information for U+msa on input line 99.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 97.
+LaTeX Font Info:    Try loading font information for U+msb on input line 99.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -789,20 +813,20 @@ o.pdf>
 (epstopdf)                    size: 16061 bytes
 (epstopdf)             Command: <repstopdf --outfile=./images/circuit1/current1
 -eps-converted-to.pdf ./images/circuit1/current1.eps>
-(epstopdf)             \includegraphics on input line 117.
+(epstopdf)             \includegraphics on input line 121.
 Package epstopdf Info: Output file is already uptodate.
 
-<./images/circuit1/current1-eps-converted-to.pdf, id=76, 90.3375pt x 176.66pt>
+<./images/circuit1/current1-eps-converted-to.pdf, id=90, 90.3375pt x 176.66pt>
 File: ./images/circuit1/current1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./images/circuit1/current1-eps-converted-to.pdf>
 Package pdftex.def Info: ./images/circuit1/current1-eps-converted-to.pdf used o
-n input line 117.
+n input line 121.
 (pdftex.def)             Requested size: 46.09158pt x 90.13583pt.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images/introduction-eps-
-converted-to.pdf> <./images/circuit1/current1-eps-converted-to.pdf>]
+converted-to.pdf>]
 Package epstopdf Info: Source file: <./images/circuit1/VoltageSource.eps>
 (epstopdf)                    date: 2016-02-25 11:15:29
 (epstopdf)                    size: 51419 bytes
@@ -812,16 +836,16 @@ ted-to.pdf>
 (epstopdf)                    size: 22518 bytes
 (epstopdf)             Command: <repstopdf --outfile=./images/circuit1/VoltageS
 ource-eps-converted-to.pdf ./images/circuit1/VoltageSource.eps>
-(epstopdf)             \includegraphics on input line 141.
+(epstopdf)             \includegraphics on input line 145.
 Package epstopdf Info: Output file is already uptodate.
 
-<./images/circuit1/VoltageSource-eps-converted-to.pdf, id=113, 317.185pt x 176.
+<./images/circuit1/VoltageSource-eps-converted-to.pdf, id=119, 317.185pt x 176.
 66pt>
 File: ./images/circuit1/VoltageSource-eps-converted-to.pdf Graphic file (type p
 df)
  <use ./images/circuit1/VoltageSource-eps-converted-to.pdf>
 Package pdftex.def Info: ./images/circuit1/VoltageSource-eps-converted-to.pdf u
-sed on input line 141.
+sed on input line 145.
 (pdftex.def)             Requested size: 153.64644pt x 85.57756pt.
 Package epstopdf Info: Source file: <./images/circuit1/resistor.eps>
 (epstopdf)                    date: 2016-02-22 15:41:32
@@ -832,54 +856,33 @@ o.pdf>
 (epstopdf)                    size: 5823 bytes
 (epstopdf)             Command: <repstopdf --outfile=./images/circuit1/resistor
 -eps-converted-to.pdf ./images/circuit1/resistor.eps>
-(epstopdf)             \includegraphics on input line 163.
+(epstopdf)             \includegraphics on input line 167.
 Package epstopdf Info: Output file is already uptodate.
 
-<./images/circuit1/resistor-eps-converted-to.pdf, id=114, 95.35625pt x 138.5175
+<./images/circuit1/resistor-eps-converted-to.pdf, id=120, 95.35625pt x 138.5175
 pt>
 File: ./images/circuit1/resistor-eps-converted-to.pdf Graphic file (type pdf)
  <use ./images/circuit1/resistor-eps-converted-to.pdf>
 Package pdftex.def Info: ./images/circuit1/resistor-eps-converted-to.pdf used o
-n input line 163.
+n input line 167.
 (pdftex.def)             Requested size: 51.21808pt x 74.40097pt.
 
-<./images/ColourCode1.png, id=115, 537.00626pt x 779.91376pt>
+<./images/ColourCode1.png, id=121, 537.00626pt x 779.91376pt>
 File: ./images/ColourCode1.png Graphic file (type png)
 
 <use ./images/ColourCode1.png>
-Package pdftex.def Info: ./images/ColourCode1.png used on input line 177.
+Package pdftex.def Info: ./images/ColourCode1.png used on input line 181.
 (pdftex.def)             Requested size: 256.07481pt x 371.90285pt.
 
-<./images/ColourCode2.png, id=117, 515.9275pt x 461.725pt>
+<./images/ColourCode2.png, id=123, 515.9275pt x 461.725pt>
 File: ./images/ColourCode2.png Graphic file (type png)
 
 <use ./images/ColourCode2.png>
-Package pdftex.def Info: ./images/ColourCode2.png used on input line 185.
+Package pdftex.def Info: ./images/ColourCode2.png used on input line 189.
 (pdftex.def)             Requested size: 256.07481pt x 229.17809pt.
- [2 <./images/circuit1/VoltageSource-eps-converted-to.pdf> <./images/circuit1/r
-esistor-eps-converted-to.pdf>] [3 <./images/ColourCode1.png> <./images/ColourCo
-de2.png>]
-Missing character: There is no ‚ in font cmbx12!
-Missing character: There is no Ä in font cmbx12!
-Missing character: There is no ô in font cmbx12!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
-Missing character: There is no ‚ in font cmbx12!
-Missing character: There is no Ä in font cmbx12!
-Missing character: There is no ô in font cmbx12!
-Missing character: There is no ‚ in font cmbx12!
-Missing character: There is no Ä in font cmbx12!
-Missing character: There is no ô in font cmbx12!
+ [2 <./images/circuit1/current1-eps-converted-to.pdf> <./images/circuit1/Voltag
+eSource-eps-converted-to.pdf> <./images/circuit1/resistor-eps-converted-to.pdf>
+] [3 <./images/ColourCode1.png> <./images/ColourCode2.png>]
 Package epstopdf Info: Source file: <./images/circuit1/circuit5_1.eps>
 (epstopdf)                    date: 2016-02-24 04:00:29
 (epstopdf)                    size: 82326 bytes
@@ -889,47 +892,30 @@ Package epstopdf Info: Source file: <./images/circuit1/circuit5_1.eps>
 (epstopdf)                    size: 32258 bytes
 (epstopdf)             Command: <repstopdf --outfile=./images/circuit1/circuit5
 _1-eps-converted-to.pdf ./images/circuit1/circuit5_1.eps>
-(epstopdf)             \includegraphics on input line 240.
+(epstopdf)             \includegraphics on input line 244.
 Package epstopdf Info: Output file is already uptodate.
 
-<./images/circuit1/circuit5_1-eps-converted-to.pdf, id=161, 415.5525pt x 260.97
+<./images/circuit1/circuit5_1-eps-converted-to.pdf, id=175, 415.5525pt x 260.97
 5pt>
 File: ./images/circuit1/circuit5_1-eps-converted-to.pdf Graphic file (type pdf)
 
  <use ./images/circuit1/circuit5_1-eps-converted-to.pdf>
 Package pdftex.def Info: ./images/circuit1/circuit5_1-eps-converted-to.pdf used
- on input line 240.
+ on input line 244.
 (pdftex.def)             Requested size: 256.07481pt x 160.8272pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 242--243
+Overfull \hbox (15.0pt too wide) in paragraph at lines 246--247
 [][][][] 
  []
 
 [4]
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
-
-Underfull \hbox (badness 10000) in paragraph at lines 257--259
+Underfull \hbox (badness 10000) in paragraph at lines 261--263
 
  []
 
 
-Overfull \hbox (45.00003pt too wide) in paragraph at lines 257--259
+Overfull \hbox (45.00003pt too wide) in paragraph at lines 261--263
 [] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 257--259
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 259--261
-
  []
 
 
@@ -938,27 +924,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 261--263
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 264--267
+Underfull \hbox (badness 10000) in paragraph at lines 263--265
 
  []
 
 
-Overfull \hbox (45.00003pt too wide) in paragraph at lines 264--267
+Underfull \hbox (badness 10000) in paragraph at lines 265--267
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 268--271
+
+ []
+
+
+Overfull \hbox (45.00003pt too wide) in paragraph at lines 268--271
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 264--267
+Underfull \hbox (badness 10000) in paragraph at lines 268--271
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 267--268
+Underfull \hbox (badness 10000) in paragraph at lines 271--272
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 268--270
+Underfull \hbox (badness 10000) in paragraph at lines 272--274
 
  []
 
@@ -971,16 +967,16 @@ d-to.pdf>
 (epstopdf)                    size: 28609 bytes
 (epstopdf)             Command: <repstopdf --outfile=./images/circuit1/append_e
 nd2-eps-converted-to.pdf ./images/circuit1/append_end2.eps>
-(epstopdf)             \includegraphics on input line 293.
+(epstopdf)             \includegraphics on input line 297.
 Package epstopdf Info: Output file is already uptodate.
 
-<./images/circuit1/append_end2-eps-converted-to.pdf, id=173, 104.39pt x 166.622
+<./images/circuit1/append_end2-eps-converted-to.pdf, id=187, 104.39pt x 166.622
 5pt>
 File: ./images/circuit1/append_end2-eps-converted-to.pdf Graphic file (type pdf
 )
  <use ./images/circuit1/append_end2-eps-converted-to.pdf>
 Package pdftex.def Info: ./images/circuit1/append_end2-eps-converted-to.pdf use
-d on input line 293.
+d on input line 297.
 (pdftex.def)             Requested size: 76.8193pt x 122.62242pt.
  [5 <./images/circuit1/circuit5_1-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <./images/circuit1/append_end2_2.eps>
@@ -992,16 +988,16 @@ ted-to.pdf>
 (epstopdf)                    size: 28635 bytes
 (epstopdf)             Command: <repstopdf --outfile=./images/circuit1/append_e
 nd2_2-eps-converted-to.pdf ./images/circuit1/append_end2_2.eps>
-(epstopdf)             \includegraphics on input line 316.
+(epstopdf)             \includegraphics on input line 320.
 Package epstopdf Info: Output file is already uptodate.
 
-<./images/circuit1/append_end2_2-eps-converted-to.pdf, id=206, 177.66376pt x 12
+<./images/circuit1/append_end2_2-eps-converted-to.pdf, id=220, 177.66376pt x 12
 5.46875pt>
 File: ./images/circuit1/append_end2_2-eps-converted-to.pdf Graphic file (type p
 df)
  <use ./images/circuit1/append_end2_2-eps-converted-to.pdf>
 Package pdftex.def Info: ./images/circuit1/append_end2_2-eps-converted-to.pdf u
-sed on input line 316.
+sed on input line 320.
 (pdftex.def)             Requested size: 153.64644pt x 108.50981pt.
  [6 <./images/circuit1/append_end2-eps-converted-to.pdf> <./images/circuit1/app
 end_end2_2-eps-converted-to.pdf>]
@@ -1014,15 +1010,15 @@ Package epstopdf Info: Source file: <./images/nodemethod_0.eps>
 (epstopdf)                    size: 36636 bytes
 (epstopdf)             Command: <repstopdf --outfile=./images/nodemethod_0-eps-
 converted-to.pdf ./images/nodemethod_0.eps>
-(epstopdf)             \includegraphics on input line 383.
+(epstopdf)             \includegraphics on input line 387.
 Package epstopdf Info: Output file is already uptodate.
 
-<./images/nodemethod_0-eps-converted-to.pdf, id=254, 509.905pt x 273.02pt>
+<./images/nodemethod_0-eps-converted-to.pdf, id=268, 509.905pt x 273.02pt>
 File: ./images/nodemethod_0-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./images/nodemethod_0-eps-converted-to.pdf>
 Package pdftex.def Info: ./images/nodemethod_0-eps-converted-to.pdf used on inp
-ut line 383.
+ut line 387.
 (pdftex.def)             Requested size: 230.46576pt x 123.39943pt.
 Package epstopdf Info: Source file: <./images/nodemethod_1.eps>
 (epstopdf)                    date: 2016-02-26 21:39:24
@@ -1033,15 +1029,15 @@ Package epstopdf Info: Source file: <./images/nodemethod_1.eps>
 (epstopdf)                    size: 37699 bytes
 (epstopdf)             Command: <repstopdf --outfile=./images/nodemethod_1-eps-
 converted-to.pdf ./images/nodemethod_1.eps>
-(epstopdf)             \includegraphics on input line 392.
+(epstopdf)             \includegraphics on input line 396.
 Package epstopdf Info: Output file is already uptodate.
 
-<./images/nodemethod_1-eps-converted-to.pdf, id=255, 509.905pt x 345.29pt>
+<./images/nodemethod_1-eps-converted-to.pdf, id=269, 509.905pt x 345.29pt>
 File: ./images/nodemethod_1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./images/nodemethod_1-eps-converted-to.pdf>
 Package pdftex.def Info: ./images/nodemethod_1-eps-converted-to.pdf used on inp
-ut line 392.
+ut line 396.
 (pdftex.def)             Requested size: 230.46576pt x 156.06398pt.
 Package epstopdf Info: Source file: <./images/nodemethod_3.eps>
 (epstopdf)                    date: 2016-02-26 21:36:48
@@ -1052,15 +1048,15 @@ Package epstopdf Info: Source file: <./images/nodemethod_3.eps>
 (epstopdf)                    size: 38455 bytes
 (epstopdf)             Command: <repstopdf --outfile=./images/nodemethod_3-eps-
 converted-to.pdf ./images/nodemethod_3.eps>
-(epstopdf)             \includegraphics on input line 413.
+(epstopdf)             \includegraphics on input line 417.
 Package epstopdf Info: Output file is already uptodate.
 
-<./images/nodemethod_3-eps-converted-to.pdf, id=256, 550.055pt x 384.43625pt>
+<./images/nodemethod_3-eps-converted-to.pdf, id=270, 550.055pt x 384.43625pt>
 File: ./images/nodemethod_3-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./images/nodemethod_3-eps-converted-to.pdf>
 Package pdftex.def Info: ./images/nodemethod_3-eps-converted-to.pdf used on inp
-ut line 413.
+ut line 417.
 (pdftex.def)             Requested size: 256.07481pt x 178.97804pt.
 Package epstopdf Info: Source file: <./images/nodemethod_4.eps>
 (epstopdf)                    date: 2016-02-26 22:26:03
@@ -1071,21 +1067,18 @@ Package epstopdf Info: Source file: <./images/nodemethod_4.eps>
 (epstopdf)                    size: 40580 bytes
 (epstopdf)             Command: <repstopdf --outfile=./images/nodemethod_4-eps-
 converted-to.pdf ./images/nodemethod_4.eps>
-(epstopdf)             \includegraphics on input line 421.
+(epstopdf)             \includegraphics on input line 425.
 Package epstopdf Info: Output file is already uptodate.
 
-<./images/nodemethod_4-eps-converted-to.pdf, id=257, 550.055pt x 384.43625pt>
+<./images/nodemethod_4-eps-converted-to.pdf, id=271, 550.055pt x 384.43625pt>
 File: ./images/nodemethod_4-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./images/nodemethod_4-eps-converted-to.pdf>
 Package pdftex.def Info: ./images/nodemethod_4-eps-converted-to.pdf used on inp
-ut line 421.
+ut line 425.
 (pdftex.def)             Requested size: 256.07481pt x 178.97804pt.
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 417--424
+Underfull \hbox (badness 10000) in paragraph at lines 421--428
 
  []
 
@@ -1101,15 +1094,15 @@ Package epstopdf Info: Source file: <./images/meshmethod_.eps>
 (epstopdf)                    size: 26093 bytes
 (epstopdf)             Command: <repstopdf --outfile=./images/meshmethod_-eps-c
 onverted-to.pdf ./images/meshmethod_.eps>
-(epstopdf)             \includegraphics on input line 545.
+(epstopdf)             \includegraphics on input line 549.
 Package epstopdf Info: Output file is already uptodate.
 
-<./images/meshmethod_-eps-converted-to.pdf, id=403, 530.98375pt x 346.29375pt>
+<./images/meshmethod_-eps-converted-to.pdf, id=417, 530.98375pt x 346.29375pt>
 File: ./images/meshmethod_-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./images/meshmethod_-eps-converted-to.pdf>
 Package pdftex.def Info: ./images/meshmethod_-eps-converted-to.pdf used on inpu
-t line 545.
+t line 549.
 (pdftex.def)             Requested size: 230.46576pt x 150.30367pt.
 Package epstopdf Info: Source file: <./images/meshmethod.eps>
 (epstopdf)                    date: 2016-02-27 14:36:08
@@ -1119,36 +1112,169 @@ Package epstopdf Info: Source file: <./images/meshmethod.eps>
 (epstopdf)                    size: 37281 bytes
 (epstopdf)             Command: <repstopdf --outfile=./images/meshmethod-eps-co
 nverted-to.pdf ./images/meshmethod.eps>
-(epstopdf)             \includegraphics on input line 557.
+(epstopdf)             \includegraphics on input line 561.
 Package epstopdf Info: Output file is already uptodate.
 
-<./images/meshmethod-eps-converted-to.pdf, id=404, 530.98375pt x 349.305pt>
+<./images/meshmethod-eps-converted-to.pdf, id=418, 530.98375pt x 349.305pt>
 File: ./images/meshmethod-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./images/meshmethod-eps-converted-to.pdf>
 Package pdftex.def Info: ./images/meshmethod-eps-converted-to.pdf used on input
- line 557.
+ line 561.
 (pdftex.def)             Requested size: 230.46576pt x 151.61066pt.
- [10 <./images/meshmethod_-eps-converted-to.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 664.
- [11 <./images/meshmethod-eps-converted-to.pdf>] [12]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 664.
+ [10 <./images/meshmethod_-eps-converted-to.pdf>] [11 <./images/meshmethod-eps-
+converted-to.pdf>]
 
-(./circuit(Part 1).aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 664.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 664.
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 636.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\Delta' on input line 636.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 636.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 636.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\Delta' on input line 636.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 636.
+
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Package epstopdf Info: Source file: <./images/equ_resis1.eps>
+(epstopdf)                    date: 2016-03-02 13:46:20
+(epstopdf)                    size: 45626 bytes
+(epstopdf)             Output file: <./images/equ_resis1-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-03-02 17:07:48
+(epstopdf)                    size: 19182 bytes
+(epstopdf)             Command: <repstopdf --outfile=./images/equ_resis1-eps-co
+nverted-to.pdf ./images/equ_resis1.eps>
+(epstopdf)             \includegraphics on input line 648.
+Package epstopdf Info: Output file is already uptodate.
+<./images/equ_resis1-eps-converted-to.pdf, id=487, 304.13625pt x 351.3125pt>
+File: ./images/equ_resis1-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ./images/equ_resis1-eps-converted-to.pdf>
+Package pdftex.def Info: ./images/equ_resis1-eps-converted-to.pdf used on input
+ line 648.
+(pdftex.def)             Requested size: 102.42836pt x 118.31357pt.
+Package epstopdf Info: Source file: <./images/equ_resis2.eps>
+(epstopdf)                    date: 2016-03-02 17:12:44
+(epstopdf)                    size: 45684 bytes
+(epstopdf)             Output file: <./images/equ_resis2-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-03-02 17:12:49
+(epstopdf)                    size: 19356 bytes
+(epstopdf)             Command: <repstopdf --outfile=./images/equ_resis2-eps-co
+nverted-to.pdf ./images/equ_resis2.eps>
+(epstopdf)             \includegraphics on input line 669.
+Package epstopdf Info: Output file is already uptodate.
+
+<./images/equ_resis2-eps-converted-to.pdf, id=488, 387.4475pt x 321.2pt>
+File: ./images/equ_resis2-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ./images/equ_resis2-eps-converted-to.pdf>
+Package pdftex.def Info: ./images/equ_resis2-eps-converted-to.pdf used on input
+ line 669.
+(pdftex.def)             Requested size: 128.0374pt x 106.14336pt.
+Package epstopdf Info: Source file: <./images/equ_resis3.eps>
+(epstopdf)                    date: 2016-03-02 17:32:26
+(epstopdf)                    size: 69498 bytes
+(epstopdf)             Output file: <./images/equ_resis3-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-03-02 17:41:06
+(epstopdf)                    size: 23827 bytes
+(epstopdf)             Command: <repstopdf --outfile=./images/equ_resis3-eps-co
+nverted-to.pdf ./images/equ_resis3.eps>
+(epstopdf)             \includegraphics on input line 691.
+Package epstopdf Info: Output file is already uptodate.
+
+<./images/equ_resis3-eps-converted-to.pdf, id=489, 426.59375pt x 424.58624pt>
+File: ./images/equ_resis3-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ./images/equ_resis3-eps-converted-to.pdf>
+Package pdftex.def Info: ./images/equ_resis3-eps-converted-to.pdf used on input
+ line 691.
+(pdftex.def)             Requested size: 128.03769pt x 119.47289pt.
+ [12pdfTeX warning (ext4): destination with the same identifier (name{figure.15
+}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.695 
+      pdfTeX warning (ext4): destination with the same identifier (name{equatio
+n.5.31}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.695 
+      pdfTeX warning (ext4): destination with the same identifier (name{equatio
+n.5.32}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.695 
+      pdfTeX warning (ext4): destination with the same identifier (name{equatio
+n.5.33}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.695 
+       <./images/equ_resis1-eps-converted-to.pdf> <./images/equ_resis2-eps-conv
+erted-to.pdf> <./images/equ_resis3-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <./images/equ_resis4.eps>
+(epstopdf)                    date: 2016-03-02 17:40:02
+(epstopdf)                    size: 69024 bytes
+(epstopdf)             Output file: <./images/equ_resis4-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-03-02 17:49:12
+(epstopdf)                    size: 23673 bytes
+(epstopdf)             Command: <repstopdf --outfile=./images/equ_resis4-eps-co
+nverted-to.pdf ./images/equ_resis4.eps>
+(epstopdf)             \includegraphics on input line 701.
+Package epstopdf Info: Output file is already uptodate.
+
+<./images/equ_resis4-eps-converted-to.pdf, id=537, 436.63126pt x 440.64626pt>
+File: ./images/equ_resis4-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ./images/equ_resis4-eps-converted-to.pdf>
+Package pdftex.def Info: ./images/equ_resis4-eps-converted-to.pdf used on input
+ line 701.
+(pdftex.def)             Requested size: 128.03226pt x 119.4669pt.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 723.
+ [13 <./images/equ_resis4-eps-converted-to.pdf>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 723.
+ (./circuit(Part 1).aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 723.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 723.
 Package rerunfilecheck Info: File `"circuit(Part 1)".out' has not changed.
-(rerunfilecheck)             Checksum: C117EA39BFDB97B470F1CD323F8B0065;1147.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 664.
+(rerunfilecheck)             Checksum: E95839DD2ACD9AE7A880E42B932CB91A;1398.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 723.
  ) 
 Here is how much of TeX's memory you used:
- 16882 strings out of 493304
- 294669 string characters out of 6139871
- 388311 words of memory out of 5000000
- 19884 multiletter control sequences out of 15000+600000
+ 17645 strings out of 493304
+ 308084 string characters out of 6139871
+ 403498 words of memory out of 5000000
+ 20626 multiletter control sequences out of 15000+600000
  7857 words of font info for 30 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 56i,7n,55p,540b,480s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,7n,55p,602b,537s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/tex
@@ -1162,10 +1288,10 @@ ts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 sl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on "circuit(Part 1).pdf" (12 pages, 553324 bytes).
+Output written on "circuit(Part 1).pdf" (13 pages, 633136 bytes).
 PDF statistics:
- 546 PDF objects out of 1000 (max. 8388607)
- 389 compressed objects within 4 object streams
- 105 named destinations out of 1000 (max. 500000)
- 224 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 638 PDF objects out of 1000 (max. 8388607)
+ 453 compressed objects within 5 object streams
+ 118 named destinations out of 1000 (max. 500000)
+ 268 words of extra memory for PDF output out of 10000 (max. 10000000)
 

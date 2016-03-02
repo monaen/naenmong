@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="equ_resis1.eps">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="205.84859"
+     inkscape:cy="710.30908"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="676"
+     inkscape:window-height="972"
+     inkscape:window-x="603"
+     inkscape:window-y="24"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g3848"
+       transform="translate(-52.527933,-213.14218)">
+      <path
+         inkscape:connector-curvature="0"
+         d="m 258.52526,415.18416 -36.61484,-37.26896 4.30305,-16.55335 -31.86827,8.86726 9.33078,-31.39459 -32.72325,9.10398 9.90662,-33.33256 -33.92276,9.43548 4.77794,-18.1336 -44.09211,-44.87978"
+         style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         id="path2997" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 409.89304,261.13079 -36.53055,37.35158 -16.63596,-3.97171 9.50172,31.68488 -31.5746,-8.70215 9.75544,32.53498 -33.52368,-9.23919 10.11083,33.72764 -18.22537,-4.41498 -43.99057,44.97931"
+         style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         id="path2997-1" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 258.64808,413.96543 -0.0855,52.24571 -14.6848,8.76847 28.92097,16.05587 -28.68384,15.80888 29.69607,16.48749 -30.45439,16.78483 30.78305,17.09345 -16.13234,9.56052 -0.10296,62.91502"
+         style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         id="path2997-1-1" />
+    </g>
+    <path
+       sodipodi:type="arc"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-linecap:square;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="path3853"
+       sodipodi:cx="39.39595"
+       sodipodi:cy="230.09801"
+       sodipodi:rx="4.0406103"
+       sodipodi:ry="4.0406103"
+       d="m 43.436561,230.09801 a 4.0406103,4.0406103 0 1 1 -8.081221,0 4.0406103,4.0406103 0 1 1 8.081221,0 z"
+       transform="translate(16.881983,-180.81731)" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-linecap:square;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="path3853-5"
+       sodipodi:cx="39.39595"
+       sodipodi:cy="230.09801"
+       sodipodi:rx="4.0406103"
+       sodipodi:ry="4.0406103"
+       d="m 43.436561,230.09801 a 4.0406103,4.0406103 0 1 1 -8.081221,0 4.0406103,4.0406103 0 1 1 8.081221,0 z"
+       transform="translate(317.94551,-182.01686)" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-linecap:square;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="path3853-0"
+       sodipodi:cx="39.39595"
+       sodipodi:cy="230.09801"
+       sodipodi:rx="4.0406103"
+       sodipodi:ry="4.0406103"
+       d="m 43.436561,230.09801 a 4.0406103,4.0406103 0 1 1 -8.081221,0 4.0406103,4.0406103 0 1 1 8.081221,0 z"
+       transform="translate(165.94912,186.43628)" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="86.873108"
+       y="168.4787"
+       id="text3880"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3882"
+         x="86.873108"
+         y="168.4787"
+         style="font-family:Times New Roman;-inkscape-font-specification:Times New Roman">R<tspan
+   style="font-weight:bold;font-size:65%;baseline-shift:sub"
+   id="tspan3884">A</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="294.24442"
+       y="169.63968"
+       id="text3880-7"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3882-1"
+         x="294.24442"
+         y="169.63968"
+         style="font-family:Times New Roman;-inkscape-font-specification:Times New Roman">R<tspan
+   style="font-size:65.00091553%;font-weight:bold;baseline-shift:sub"
+   id="tspan3884-2">C</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="227.57434"
+       y="314.09149"
+       id="text3880-4"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3882-7"
+         x="227.57434"
+         y="314.09149"
+         style="font-family:Times New Roman;-inkscape-font-specification:Times New Roman">R<tspan
+   style="font-size:65.00091553%;font-weight:bold;baseline-shift:sub"
+   id="tspan3884-9">B</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="17.172594"
+       y="48.270554"
+       id="text3921"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3923"
+         x="17.172594"
+         y="48.270554"
+         style="font-weight:normal;font-family:Times New Roman;-inkscape-font-specification:Times New Roman">A</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="370.49313"
+       y="48.683491"
+       id="text3921-9"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3923-1"
+         x="370.49313"
+         y="48.683491"
+         style="font-weight:normal;font-family:Times New Roman;-inkscape-font-specification:Times New Roman">C</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="191.69612"
+       y="456.78513"
+       id="text3921-0"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3923-6"
+         x="191.69612"
+         y="456.78513"
+         style="font-weight:normal;font-family:Times New Roman;-inkscape-font-specification:Times New Roman">B</tspan></text>
+  </g>
+</svg>

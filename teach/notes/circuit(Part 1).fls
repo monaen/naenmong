@@ -176,6 +176,8 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/rotating/rotating.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/rotating/rotating.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/paracol/paracol.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/paracol/paracol.sty
 INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
 INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
 INPUT /usr/share/texlive/texmf-dist/tex/generic/babel-french/frenchb.ldf
@@ -353,6 +355,42 @@ INPUT ./images/meshmethod.eps
 INPUT ./images/meshmethod-eps-converted-to.pdf
 INPUT ./images/meshmethod-eps-converted-to.pdf
 INPUT ./images/meshmethod-eps-converted-to.pdf
+INPUT ./images/equ_resis1.eps
+INPUT ./images/equ_resis1.eps
+INPUT ./images/equ_resis1.eps
+INPUT ./images/equ_resis1-eps-converted-to.pdf
+INPUT ./images/equ_resis1-eps-converted-to.pdf
+INPUT ./images/equ_resis1.eps
+INPUT ./images/equ_resis1-eps-converted-to.pdf
+INPUT ./images/equ_resis1-eps-converted-to.pdf
+INPUT ./images/equ_resis1-eps-converted-to.pdf
+INPUT ./images/equ_resis2.eps
+INPUT ./images/equ_resis2.eps
+INPUT ./images/equ_resis2.eps
+INPUT ./images/equ_resis2-eps-converted-to.pdf
+INPUT ./images/equ_resis2-eps-converted-to.pdf
+INPUT ./images/equ_resis2.eps
+INPUT ./images/equ_resis2-eps-converted-to.pdf
+INPUT ./images/equ_resis2-eps-converted-to.pdf
+INPUT ./images/equ_resis2-eps-converted-to.pdf
+INPUT ./images/equ_resis3.eps
+INPUT ./images/equ_resis3.eps
+INPUT ./images/equ_resis3.eps
+INPUT ./images/equ_resis3-eps-converted-to.pdf
+INPUT ./images/equ_resis3-eps-converted-to.pdf
+INPUT ./images/equ_resis3.eps
+INPUT ./images/equ_resis3-eps-converted-to.pdf
+INPUT ./images/equ_resis3-eps-converted-to.pdf
+INPUT ./images/equ_resis3-eps-converted-to.pdf
+INPUT ./images/equ_resis4.eps
+INPUT ./images/equ_resis4.eps
+INPUT ./images/equ_resis4.eps
+INPUT ./images/equ_resis4-eps-converted-to.pdf
+INPUT ./images/equ_resis4-eps-converted-to.pdf
+INPUT ./images/equ_resis4.eps
+INPUT ./images/equ_resis4-eps-converted-to.pdf
+INPUT ./images/equ_resis4-eps-converted-to.pdf
+INPUT ./images/equ_resis4-eps-converted-to.pdf
 INPUT circuit(Part 1).aux
 INPUT ./circuit(Part 1).out
 INPUT ./circuit(Part 1).out

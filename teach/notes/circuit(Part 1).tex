@@ -15,6 +15,7 @@
 \usepackage{rotating}
 \usepackage{multirow}
 \usepackage{graphicx}
+\usepackage{paracol}
 \usepackage{color}
 \newcommand{\blue}[1]{\textcolor{blue}{#1}}
 \newcommand{\red}[1]{\textcolor{red}{#1}}
@@ -85,16 +86,18 @@ pdfproducer={PDFLaTeX},%
 
 \section{Basics}
 
-We use a simple model as a starting point to discuss electronic circuits, which is shown on Figure 1.
+We use a simple model as a starting point to discuss electronic circuits, which is shown on Figure \ref{fundamental}.
 
 \begin{figure}[!ht]
   \caption{Fundamental circuit model}
+  \label{fundamental}
   \centering
   \includegraphics[width=0.5\textwidth]{./images/introduction}
 \end{figure}
 
 \vskip 1em
-A basic circuit is made up of a \underline{source} which provides voltage across its terminals, denoted by $V$. 
+A basic circuit is made up of a \underline{source} which provides voltage across its terminals, denoted by $V_s$. and a \underline{load} connected to the source which presents a resistance $R_L$ to the current $i$ flowing as indicated around a closed loop.
+
 
 
 % --------------------------------------------------------
@@ -106,13 +109,14 @@ The current $i$ results from the stream of electric charge around the closed loo
 \begin{equation}
 i = \frac{dQ}{dt} 
 \end{equation}
-The unit of charge is the Coulomb. One Coulomb is equivalent to $6.24 \times 10^{18}$ electrons.
-The unit for current is the ampere, A. One ampere = 1 Coulomb/sec.
+The unit of charge is Coulomb. One Coulomb is equivalent to $6.24 \times 10^{18}$ electrons.
+The unit of current is ampere, {\bf A}. 1 Ampere = 1 Coulomb/sec.
  
 \subsubsection{Ideal DC Current Source}
-The current source is a device that can provide a certain amount of current to a circuit. The symbol for a DC current source and the i / v characteristic curve of an ideal current source are shown on Figure 2.
+The current source is a device that can provide a certain amount of current to a circuit. The symbol for a DC current source and the i / v characteristic curve of an ideal current source are shown on Figure \ref{currentsource}.
 \begin{figure}[!ht]
   \caption{Ideal DC Current Source}
+  \label{currentsource}
   \centering
   \includegraphics[width=0.09\textwidth]{./images/circuit1/current1}
 \end{figure}
@@ -131,12 +135,12 @@ v = \frac{dW}{dQ}
 where work(W) is measured in Joules and charge(Q) in Coulombs.
 Basically, the voltage is measured in volts(V) and $1 volt = 1 \frac{Joule}{Coulomb} = 1 \frac{Newton \ meter}{Ampere \ second}$
 
-\subsubsection{Ideal DC Voltage Sources}
+\subsubsection{Ideal DC Voltage Source}
 The voltage provided by a voltage source(usually battery) is constant in time and thus it is called DC voltage. In its ideal implementation the battery provides a specific voltage at all times and for all loads.
 The symbols of an ideal DC voltage source are shown as follows:
 
 \begin{figure}[!ht]
-  \caption{Ideal DC voltage source}
+  \caption{Ideal DC Voltage Source}
   \centering
   \includegraphics[width=0.3\textwidth]{./images/circuit1/VoltageSource}
 \end{figure}
@@ -165,14 +169,14 @@ the symbol for a resistor is,
 
 
 
-\subsection{Resistor Colour Code}
-The coloured painted bands produce a system of identification generally known as a {\bf Resistors Colour Code}.
-The resistor colour code markings are always read one band at a time starting from the left to the right, with the larger width tolerance band oriented to the right side indicating its tolerance. By matching the colour of the first band with its associated number in the digit column of the colour chart below the first digit is identified and this represents the first digit of the resistance value.
+\subsection{Resistor Color Code}
+The colored painted bands produce a system of identification generally known as a {\bf Resistors Color Code}.
+The resistor color code markings are always read one band at a time starting from the left to the right, with the larger width tolerance band oriented to the right side indicating its tolerance. By matching the color of the first band with its associated number in the digit column of the color chart below, the first digit is identified and this represents the first digit of the resistance value.
 
-Again, by matching the colour of the second band with its associated number in the digit column of the colour chart we get the second digit of the resistance value and so on. Then the resistor colour code is read from left to right as illustrated below
+Again, by matching the color of the second band with its associated number in the digit column of the color chart, we get the second digit of the resistance value and so on. Then the resistor color code is read from left to right as illustrated below
 
 \begin{figure}[!ht]
-  \caption{Resistor Colour Code}
+  \caption{Resistor Color Code}
   \centering
   \includegraphics[width=0.5\textwidth]{./images/ColourCode1}
 \end{figure}
@@ -180,7 +184,7 @@ Again, by matching the colour of the second band with its associated number in t
 \vspace{8 mm}
 
 \begin{figure}[!ht]
-  \caption{Colour Code Table}
+  \caption{Color Code Table}
   \centering
   \includegraphics[width=0.5\textwidth]{./images/ColourCode2}
 \end{figure}
@@ -189,23 +193,23 @@ For example, a resistor has the following colored markings: \newline
 }
 
 \subsection{Power}
-When current flows through a resistor, energy is irreversibly lost(or we say dissipated) in overcoming the resistance. THe dissipated power shows up as heat most of the time. The mathematical definition of power is the rate as which energy is delivered that can be expressed as
+When current flows through a resistor, energy is irreversibly lost(or we say dissipated) in overcoming the resistance. The dissipated power shows up as heat most of the time. The mathematical definition of power is the rate at which energy is delivered. It can be expressed as
 \begin{equation}
 P = \frac{dW}{dt},
 \end{equation}
-The units for power are $Joules/sec$ or Watts, $W$. ($1 Joules/sec = 1 W$) 
+The units for power are $Joules/sec$ or Watts, $W$. ($1 Joules/sec = 1 W$)
 Power can be related to voltage and current by rewriting Eq.(1.5) as, 
 
 \begin{equation}
 P = \frac{dW}{dt} = \frac{dW}{dQ}\frac{dQ}{dt}=vi,
 \end{equation}
 
-Then substitute Ohm`s law in Eq.(1.6), we will get the power dissipated in a resistor of resistance R is a non-linear function of either $i$ or $v$.
+Then substitute Ohm's law in Eq.(1.6), we will get the power dissipated in a resistor of resistance R is a quadratic function of either $i$ or $v$ and they can be expressed by
 
 \begin{equation}
 P = i^2R \quad or \quad P = \frac{v^2}{R}
 \end{equation}
-Power rating is a fundamental constraint of resistors and electronic devices in general. The power rating is referred to the maximum power that the device can dissipate without adversely affecting its operation. When the power rating is exceeded the resistor overheats and it is destroyed by burning up. 
+Power rating is a fundamental constraint of resistors and electronic devices in general. The power rating is referred to the maximum power that the device can dissipate without adversely affecting its operation. When the power rating is exceeded, the resistor overheats and it is destroyed by burning up. 
 
 
 
@@ -213,9 +217,9 @@ Power rating is a fundamental constraint of resistors and electronic devices in 
 % --------------------------------------------------------------
 % --------------------------------------------------------------
 
-\section{Kirchhoff’s Laws}
-Kirchhoff’s laws also known as Kirchhoff’s Current Law (KCL) and Kirchhoff’s Voltage Law (KVL) are based respectively on the conservation of charge and the conservation of energy and are derived from Maxwell’s equations. They along with Ohm's law present the fundamental tools for circuit analysis.
-\subsection{Kirchhoff’s Current Law}
+\section{Kirchhoff's Laws}
+Kirchhoff's laws also known as Kirchhoff's Current Law (KCL) and Kirchhoff's Voltage Law (KVL) are based respectively on the conservation of charge and the conservation of energy and are derived from Maxwell's equations. They along with Ohm's law present the fundamental tools for circuit analysis.
+\subsection{Kirchhoff's Current Law}
 The current flowing out of any node in a circuit
 must be equal to the current flowing into the node. It is expressed mathematically as
 \begin{equation}
@@ -223,7 +227,7 @@ must be equal to the current flowing into the node. It is expressed mathematical
 \end{equation}
 
 where N is the number of branches that are connected to the node. 
-\subsection{Kirchhoff’s Voltage Law}
+\subsection{Kirchhoff's Voltage Law}
 The algebraic sum of voltages around a closed loop is zero. It is expressed mathematically as
 \begin{equation}
 \sum_{n=1}^{N}v_n=0
@@ -242,15 +246,15 @@ Next we will solve for the circuit shown on Figure 7
 \blue{\centerline{\bf $R_1 = 80\Omega$, $R_2 = 10\Omega$, $R_3 = 20\Omega$, $R_4 = 90\Omega$, $R_5 = 100\Omega$, $V_1 = 12V$, $V_2 = 24V$, $V_3 = 36V$}}
 
 \vspace{8 mm}
-Apply Kirchhoff’s laws.
+Apply Kirchhoff's laws.
 
 \begin{itemize} \itemsep2pt \parskip0pt \parsep0pt
   \item[$\bullet$] Start with the nodes.
   \begin{enumerate} \itemsep2pt \parskip0pt \parsep0pt
-  \item The middle node P is already accounted for since we assigned the current above and below it the same value, I$_1$.  This is just Kirchhoff’s current law which says that the current going into a node is equal to that going out. 
+  \item The middle node P is already accounted for since we assigned the current above and below it the same value, I$_1$.  This is just Kirchhoff's current law which says that the current going into a node is equal to that going out. 
   \item The bottom and top nodes B and M are exactly the same and KCL for them is:
   \item[] \hspace{6 cm}{$I - I_1 + I_2 = 0$}\newline
-  since at node B current $I$ and $I_2$ flow in the node B and $I_1$ flow out the node B.
+  since at node B, current $I$ and $I_2$ flow in the node B and $I_1$ flows out the node B.
   \end{enumerate}
   \item[$\bullet$] Next let's apply KVL to the three loops
   \begin{enumerate} \itemsep1pt \parskip0pt \parsep0pt
@@ -341,11 +345,11 @@ where $G_n = \frac{1}{R_n}$. The current flowing through resistor $R_n$ is
 i_n = i\frac{G_n}{G_{eq}}
 \end{equation}
 
-\section{Appendix}
+\section{Advanced methods for circuit analysis}
 \subsection{Node Method \& Mesh Method}
 With the help of Kirchhoff`s laws and Ohm`s law, we can analyze any circuit to determine the currents and voltages. For formal circuit analysis, the challenge is to derive the smallest set of simultaneous equations that completely define the operating characteristics of a circuit.
 
-The following part, we will develop two very powerful methods for analyzing any circuit: The {\bf node method} and the {\bf mesh method}. We will explain the steps to solve the circuit problem shown on Figure 2.
+The following part, we will develop two very powerful methods for analyzing any circuit: The {\bf node method} and the {\bf mesh method}. We will explain the steps to solve the circuit problem shown in Figure 2.
 
 
 
@@ -360,19 +364,19 @@ The following part, we will develop two very powerful methods for analyzing any 
 \subsubsection{The Node Method}
 
 
-Voltage is defined as the potential difference between two points. When we talk about the voltage at a certain point, we imply that the measurement is performed between that point and some other point in the circuit. Usually, this reference point is defined as \red{ground}.
+Voltage is defined as the potential difference between two points. When we talk about the voltage at a certain point, we imply that the measurement is performed between that point and some other points in the circuit. Usually, this reference point is defined as \red{ground}.
 
-Node method(or node voltage method) is an efficient circuit analysis method based on KCL, KVL, and Ohm`s laws. Steps for using node method to analysis circuit are as follows:
+Node method(or node voltage method) is an efficient circuit analysis method based on KCL, KVL, and Ohm's laws. Steps for using node method to analyze circuit are as follows:
 
 \begin{enumerate} \itemsep1pt \parskip0pt \parsep0pt
-  \item Label all the circuit parameters and distinguish the unknown parameters from the known ones.
-  \item Identify all nodes of the circuit
-  \item Choose a reference node(Ground) and assign to it a potential of $0V$. All other voltages in the circuit are measured with respect to the reference node.
-  \item Label the voltage at all other nodes.
-  \item Assign and label polarities.
-  \item Apply KCL at each node and express the branch currents in terms of the node voltages
-  \item Solve the resulting simultaneous equations for the node voltages.
-  \item Obtain the branch currents by Ohm`s law.
+  \item \blue{Label all the circuit parameters and distinguish the unknown parameters from the known ones.}
+  \item \blue{Identify all nodes of the circuit.}
+  \item \blue{Choose a reference node(Ground) and assign to it a potential of $0V$. All other voltages in the circuit are measured with respect to the reference node.}
+  \item \blue{Label the voltage at all other nodes.}
+  \item \blue{Assign and label polarities.}
+  \item \blue{Apply KCL at each node and express the branch currents in terms of the node voltages.}
+  \item \blue{Solve the resulting simultaneous equations for the node voltages.}
+  \item \blue{Obtain the branch currents by Ohm`s law.}
 \end{enumerate}
 
 We will use the circuit of Figure 9 for a step by step demonstration of the node method. 
@@ -398,11 +402,11 @@ the reference node. However, some nodes are more useful than others. Useful node
 
 
 \begin{enumerate} \itemsep1pt \parskip0pt \parsep0pt
-  \item[$\ast$] A useful reference node is one which should have the largest number of elements connected to it. 
-  \item[$\ast$] A useful reference node is one which should be connected to the maximum number of voltage sources. 
+  \item[$\ast$] \red{A useful reference node is one which should have the largest number of elements connected to it.}
+  \item[$\ast$] \red{A useful reference node is one which should be connected to the maximum number of voltage sources.}
 \end{enumerate}
 
-In this example the selection of node \blue{{\bf 0}} as the reference node is the best choice. (you could have selected node \blue{{\bf 1}} as our reference node.) 
+In this example the selection of node \blue{{\bf 0}} as the reference node is the best choice. (you could also select node \blue{{\bf 1}} as our reference node.) 
 
 Next, we should label the voltages at the selected nodes. Figure 11 shows the circuit with the labeled nodal voltages. The reference node is assigned voltage 0 Volts indicated by the ground symbol. The remaining node voltages are labeled $V_{S1}$, $V_{S2}$, $V_{S3}$.
 
@@ -420,10 +424,10 @@ For the next step we assign current flow and polarities, see Figure 12.
   \centering
   \includegraphics[width=0.5\textwidth]{./images/nodemethod_4}
 \end{figure}
-The circuit shown on Figure 4 is completely defined now. Once we determine the values for the node voltages $V_{S1}$, $V_{S2}$, $V_{S3}$. we will be ble to completely characterize this circuit. So let’s go on to calculate the node voltages by applying KCL at the designated nodes. \newline
+The circuit shown on Figure 4 is completely defined now. Once we determine the values for the node voltages $V_{S1}$, $V_{S2}$, $V_{S3}$. we will be able to completely characterize this circuit. So let's go on to calculate the node voltages by applying KCL at the designated nodes. \newline
 
 
-According to the ohm`s law, the currents $i_1$ to $i_6$ are expressed in terms of the voltages $v_{s1}$, $v_{s2}$, $v_{s3}$ as follows. 
+According to the Ohm's law, the currents $i_1$ to $i_6$ are expressed in terms of the voltages $v_{s1}$, $v_{s2}$, $v_{s3}$ as follows. 
 \begin{itemize} \itemsep1pt \parskip0pt \parsep0pt 
   \item[] \hspace{6.6 cm}\begin{equation}i_1 = \frac{v_1-v_s}{R_1}\end{equation}
   \item[] \hspace{6.6 cm}\begin{equation}i_2 = i_s\end{equation}
@@ -557,7 +561,7 @@ The direction of the mesh currents $i_{m1}$,$i_{m2}$,$i_{m3}$ is defined in the 
   \includegraphics[width=0.45\textwidth]{./images/meshmethod}
 \end{figure}
 
-We first assume that the voltage drop of each branch is $u_1$ to $u_6$, and according to the Ohm`s law:
+We first assume that the voltages drop of each branch are $u_1$ to $u_6$, and according to the Ohm`s law:
 
 \begin{itemize} \itemsep1pt \parskip0pt \parsep0pt 
   \item[] \hspace{6.6 cm}\begin{equation}v_1 = R_1i_1 + V_{s1} = R_1i_{m1} + V_{s1}\end{equation}
@@ -625,36 +629,91 @@ The current of each branch($i_1$ to $i_6$):
 \end{itemize}
 
 
+\subsection{Equivalent Resistance}
+\subsubsection{Thevenin's Theorem}
+Any combination of batteries and resistances with two terminals can be replaced by a single voltage source \blue{\bf e} and a single series resistor \blue{\bf r}. The value of \blue{\bf e} is the \red{open circuit} voltage at the terminals, and the value of \blue{\bf r} is \blue{\bf e} divided by the current with the terminals short circuited.
+
+\subsubsection{$\Delta-Y$ and $Y-\Delta$ Conversions}
+In many circuit applications, we encounter components connected together in one of two ways to form a three-terminal network: the ``Delta'', or $\Delta$ (also known as the ``pi'', or $\Pi$) configuration, and the “Y” (also known as the “T”) configuration.
+
+It's possible to calculate the proper values of resistors necessary to form one kind of network($\Delta or Y$) that behaves identically to the other kind. That is, if we had two separate resistor networks, one is $\Delta$-shape and the other is Y-shape, each with its resistors hidden from view, with nothing but the three terminals (A, B, and C) exposed for testing, the resistors could be sized for the two networks so that there would be no way to electrically determine one network apart from the other. In other words, equivalent $\Delta$ and Y networks behave identically.
+The equations used to convert one network to the other are
+
+\begin{paracol}{2}
+\begin{leftcolumn*}
+
+\begin{figure}[!ht]
+  \caption{Wye(Y) network}
+  \centering
+  \includegraphics[width=0.2\textwidth]{./images/equ_resis1}
+\end{figure}
+
+\hspace{1.5 cm}{To convert a Delta($\Delta$) to a Wye(Y)}
+\begin{equation}
+R_A = \frac{R_{AB}R_{AC}}{R_{AB} + R_{AC} + R_{BC}}
+\end{equation}
+\begin{equation}
+R_B = \frac{R_{AB}R_{BC}}{R_{AB} + R_{AC} + R_{BC}}
+\end{equation}
+\begin{equation}
+R_C = \frac{R_{AC}R_{BC}}{R_{AB} + R_{AC} + R_{BC}}
+\end{equation}
+
+\end{leftcolumn*}
+
+\begin{rightcolumn}
+
+\begin{figure}[!ht]
+  \caption{Delta($\Delta$) network}
+  \centering
+  \includegraphics[width=0.25\textwidth]{./images/equ_resis2}
+\end{figure}
+\vspace{0.5 cm}
+\hspace{1.5 cm}To convert a Wye(Y) to a Delta($\Delta$)
+\begin{equation}
+R_{AB} = \frac{R_AR_B + R_AR_C + R_BR_C}{R_C}
+\end{equation}
+\begin{equation}
+R_{BC} = \frac{R_AR_B + R_AR_C + R_BR_C}{R_A}
+\end{equation}
+\begin{equation}
+R_{AC} = \frac{R_AR_B + R_AR_C + R_BR_C}{R_B}
+\end{equation}
+\end{rightcolumn}
+\end{paracol}
+
+
+A prime application for $\Delta$-Y conversion is in the solution of unbalanced bridge circuits, such as the one below:
+
+\begin{figure}[!ht]
+  \caption{$\Delta$-Y conversion example}
+  \centering
+  \includegraphics[width=0.25\textwidth,height=0.17\textheight]{./images/equ_resis3}
+\end{figure}
+
+Solution of this circuit with branch current or mesh current analysis is fairly involved, however methods like those are labor-consuming. If we were to treat resistors $R_{AB}$, $R_{AC}$, $R_{BC}$ as being connected in a $\Delta$ configuration and generate an equivalent Y network to replace them, we could turn this bridge circuit into a (simpler) series/parallel combination circuit:
 
 
 
+\begin{figure}[!ht]
+  \caption{After the $\Delta$-Y conversion}
+  \centering
+  \includegraphics[width=0.25\textwidth,height=0.17\textheight]{./images/equ_resis4}
+\end{figure}
+
+If we perform our calculation correctly, the voltages between points $A$, $B$ and $C$ will be the same in the converted circuit as in the original circuit, and we can transfer those values back to the original bridge configuration.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+\begin{equation}
+R_{A} = \frac{(12\Omega)(18\Omega)}{(12\Omega)+(18\Omega)+(6\Omega)} = \frac{216}{36} = 6\Omega
+\end{equation}
+\begin{equation}
+R_{B} = \frac{(12\Omega)(6\Omega)}{(12\Omega)+(18\Omega)+(6\Omega)} = \frac{72}{36} = 2\Omega
+\end{equation}
+\begin{equation}
+R_{C} = \frac{(18\Omega)(6\Omega)}{(12\Omega)+(18\Omega)+(6\Omega)} = \frac{108}{36} = 3\Omega
+\end{equation}
+Resistors $R_4$ and $R_5$, of course, remain the same at $18\Omega$ and $12\Omega$, respectively. 
 
 
 
