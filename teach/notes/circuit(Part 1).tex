@@ -716,6 +716,102 @@ R_{C} = \frac{(18\Omega)(6\Omega)}{(12\Omega)+(18\Omega)+(6\Omega)} = \frac{108}
 Resistors $R_4$ and $R_5$, of course, remain the same at $18\Omega$ and $12\Omega$, respectively. 
 
 
+\subsubsection{Infinite Resistor Network}
+Calculate the equivalent resistance of the following circuit combined with infinite resistors.
+
+\begin{figure}[!ht]
+  \caption{1-direction infinite ladder-shape resistor combination}
+  \centering
+  \includegraphics[width=0.5\textwidth]{./images/equ_resisinf1}
+\end{figure}
+
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt 
+  \item[\blue{\bf Analysis:}] The ladder-shape circuit above can be seen as composed with several {\bf``Part''} shown in Figure \ref{equ_resisinf1part}
+\end{itemize}
+
+
+\begin{figure}[!ht]
+  \caption{Part}
+  \label{equ_resisinf1part}
+  \centering
+  \includegraphics[width=0.2\textwidth]{./images/equ_resisinf1part}
+\end{figure}
+
+Since there are infinitely many resistors, there will still be infinitely many if we add(detach) another ``Part'' to the front section as shown in Figure \ref{equ_resisinf1comb}, and the resistance seen looking to the right between {\bf e} and {\bf f} will be the same as the resistance seen between {\bf a} and {\bf b}. That is $R_{ef} = R_{ab}$.
+
+\begin{figure}[!ht]
+  \caption{Add another ``part'' to the front}
+  \label{equ_resisinf1comb}
+  \centering
+  \includegraphics[width=0.5\textwidth]{./images/equ_resisinf1comb}
+\end{figure}
+
+From the Figure \ref{equ_resisinf1comb}, the equivalent resistance across {\bf e} and {\bf f} is:
+
+\begin{itemize} \itemsep6pt \parskip0pt \parsep0pt
+  \item[] \hspace{6 cm} $R_{ef} = R_1 + R_3 + R_{cd}(R_{ab})$
+  \item[] \hspace{6 cm} $R_{ef} = R_1 + R_3 + (\frac{R_2R_{ab}}{R_2 + R_{ab}})$
+\end{itemize}
+
+Recall that \red{$R_{ef} = R_{ab}$}, so $R_{ab}$ can be expressed as:
+
+\begin{equation}
+R_{ab} = R_1 + R_3 + (\frac{R_2R_{ab}}{R_2 + R_{ab}})
+\end{equation}
+
+\begin{equation}
+R_{ab} = \frac{R_1 + R_3 + \sqrt{(R_1 + R_3)(R_1 + R_3 + 4R_2)}}{2}
+\end{equation}
+
+Likewise, the following circuits have their equivalent resistances are shown as follow:
+
+\begin{figure}[!ht]
+  \caption{1-direction infinite ladder-shape2}
+  \label{equ_resisinf1_1}
+  \centering
+  \includegraphics[width=0.5\textwidth]{./images/equ_resisinf1_1}
+\end{figure}
+
+\begin{equation}
+R_{ab} = \frac{R_1 + R_3 + \sqrt{(R_1 + R_3)(R_1 + R_3 + 4R_2)}}{2}
+\end{equation}
+
+\begin{figure}[!ht]
+  \caption{2-direction infinite ladder-shape1}
+  \label{equ_resisinf2}
+  \centering
+  \includegraphics[width=0.5\textwidth]{./images/equ_resisinf2}
+\end{figure}
+
+\begin{equation}
+R_{ab} = R_2\sqrt{\frac{(R_1 + R_3)}{(R_1 + R_3 + 4R_2)}}
+\end{equation}
+\vspace{3 cm}
+
+
+\begin{figure}[!ht]
+  \caption{2-direction infinite ladder-shape2}
+  \label{equ_resisinf3}
+  \centering
+  \includegraphics[width=0.5\textwidth]{./images/equ_resisinf3}
+\end{figure}
+
+\begin{equation}
+R_{ab} = \frac{R_1 + R_3 + \sqrt{(R_1 + R_3)(R_1 + R_3 + 4R_2)}}{4}
+\end{equation}
+
+
+\begin{figure}[ht]
+  \caption{2-direction infinite ladder-shape3}
+  \label{equ_resisinf4}
+  \centering
+  \includegraphics[width=0.5\textwidth]{./images/equ_resisinf4}
+\end{figure}
+
+\begin{equation}
+R_{ab} = \sqrt{(R_1 + R_3)(R_1 + R_3 + 4R_2)}-R_3
+\end{equation}
+
 
 
 %

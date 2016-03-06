@@ -15,6 +15,7 @@
 \usepackage{rotating}
 \usepackage{multirow}
 \usepackage{graphicx}
+\usepackage{paracol}
 \usepackage{color}
 \newcommand{\blue}[1]{\textcolor{blue}{#1}}
 \newcommand{\red}[1]{\textcolor{red}{#1}}
@@ -156,7 +157,6 @@ When an op-amp is arranged with a negative feedback the ideal rules are:
 
 \begin{figure}[!ht]
   \centering
-  \label{op-amp_curve}
   \includegraphics[width=0.3\textwidth]{./images/circuit2/circuit_append2}
   \caption{{\bf Op-amp voltage transfer characteristics}}
 \end{figure}
@@ -169,14 +169,139 @@ So far we have explored the use of op amps to multiply a signal by a constant. F
 A basic summing amplifier circuit with three input signals is shown in Figure 5.
 
 
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[width=0.5\textwidth]{./images/summingamp}
+  \caption{{\bf Summing Amplifier}}
+\end{figure}
+
+Apply KCL at Node {\bf N1}:
+
+\begin{equation}
+I_1 + I_2 + I_3 = I_F
+\end{equation}
+
+By relating the currents $I_1$, $I_2$ and $I_3$ to their corresponding voltage and resistance by Ohm's law:
+
+\begin{equation}
+\frac{V_{in1}}{R_1} + \frac{V_{in2}}{R_2} + \frac{V_{in3}}{R_3} = -\frac{V_{out}}{RF}
+\end{equation}
+
+So $V_{out}$ is:
+
+\begin{equation}
+V_{out} = -(\frac{RF}{R_1}V_{in1}+\frac{RF}{R_2}V_{in2}+\frac{RF}{R_3}V_{in3})
+\end{equation}
+From the expression (1.4), $V_{out}$ is a sum of the input voltages with weighting factors given by the values of the resistors. If $R_1 = R_2 = R_3 = R$, then we will get:
+
+\begin{equation}
+V_{out} = -\frac{RF}{R}(V_{in1} + V_{in2} + V_{in3})
+\end{equation}
+
+The output voltage is the sum of the input voltages with a multiplication constant \blue{$\frac{RF}{R}$}. For a special case when $RF = R$, the output voltage is the sum of the inputs:
+
+\begin{equation}
+V_{out} = -(V_{in1} + V_{in2} + V_{in3})
+\end{equation}
+
+
+The input resistance seen by each source connected to the summing amplifier is the corresponding series resistance connected to the source. Therefore, the sources do not interact with each other.
+
+
+\subsubsection{Difference Amplifier}
+This fundamental op amp circuit, shown on Figure 2, amplifies the difference between the input signals. The subtracting feature is evident from the circuit configuration which shows that one input signal is applied to the inverting terminal and the other to the non-inverting terminal.
+
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[width=0.5\textwidth]{./images/differenceamp}
+  \caption{{\bf Difference Amplifier}}
+\end{figure}
+
+\begin{equation}
+V_- = \frac{V_{out}-V_{in1}}{R_1+R_2}R_1 + V_{in1} = \frac{R_1}{R_1 + R_2}V_{out} + \frac{R_2}{R_1 + R_2}V_{in1}
+\end{equation}
+\begin{equation}
+V_+ = \frac{R_4}{R_3 + R_4}V_{in2}
+\end{equation}
+
+From the input voltage constraint($V_+ = V_-$), the output voltage is:
+\begin{equation}
+V_{out} = V_{in2}(\frac{R_4}{R_3+R_4})(1+\frac{R_2}{R_1})-V_{in1}\frac{R_2}{R_1}
+\end{equation}
+
+Note that in order to have a subtracting circuit which gives V out =0 for equal inputs, the weight of each signal must be the same. Therefore
+
+\begin{equation}
+(\frac{R_4}{R_3 + R_4})(1 + \frac{R_2}{R_1}) = \frac{R_2}{R_1}
+\end{equation}
+which holds only if
+\begin{equation}
+\frac{R_4}{R_3} = \frac{R_2}{R_1}
+\end{equation}
+The output voltage is now
+\begin{equation}
+V_{out} = \frac{R_2}{R_1}(V_{in2} - V_{in1})
+\end{equation}
+
+which is a difference amplifier with a differential gain of $R_2/R_1$ and with zero gain for the common mode signal. It is often practical to select resistors such as $R_4=R_2$ and $R_3=R_1$.
+
+
+\subsubsection{Buffer Amplifier}
+A {\bf buffer amplifier} (sometimes simply called a buffer) is one that provides electrical impedance transformation from one circuit to another. A buffer is something that isolates or separates one circuit from another. 
+
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[width=0.3\textwidth]{./images/buffer}
+  \caption{{\bf Buffer Amplifier}}
+\end{figure}
+
+\begin{equation}
+i = 0
+\end{equation}
+\begin{equation}
+v_o = v_i(=v_-=v_+)
+\end{equation}
+
+A {\bf buffer} is a {\bf unity-gain} amplifier that has an extremely high input resistance and an extremely low output resistance. This means that the buffer can be modeled as a voltage controlled voltage source that has a gain of one.
+
+
+\subsubsection{Non-inverting\&inverting Amplifier}
 
 
 
+\begin{paracol}{2}
+\begin{leftcolumn*}
+
+\begin{figure}[!ht]
+  % \caption{Non-inverting Amplifier}
+  \label{Non-inverting Amplifier}
+  \centering
+  \includegraphics[width=0.3\textwidth]{./images/non-inverting}
+\end{figure}
+
+Amplify difference with reference voltage
+\begin{equation}
+v_o-v_r = (1+\frac{R_2}{R_1})(v_i-v_r)
+\end{equation}
 
 
+\end{leftcolumn*}
 
+\begin{rightcolumn}
 
+\begin{figure}[ht]
+  % \caption{Inverting Amplifier}
+  \label{Inverting Amplifier}
+  \centering
+  \includegraphics[width=0.3\textwidth]{./images/inverting}
+\end{figure}
+{Amplify and invert difference with reference voltage}
+\begin{equation}
+v_o-v_r = -\frac{R_2}{R_1}(v_i-v_r)
+\end{equation}
 
+\end{rightcolumn}
+\end{paracol}
 
 
 

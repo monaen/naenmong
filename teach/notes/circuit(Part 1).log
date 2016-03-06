@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.1.23)  2 MAR 2016 17:54
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.1.23)  5 MAR 2016 18:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -787,7 +787,7 @@ Package epstopdf Info: Source file: <./images/introduction.eps>
 converted-to.pdf ./images/introduction.eps>
 (epstopdf)             \includegraphics on input line 95.
 Package epstopdf Info: Output file is already uptodate.
-<./images/introduction-eps-converted-to.pdf, id=88, 414.54875pt x 279.0425pt>
+<./images/introduction-eps-converted-to.pdf, id=92, 414.54875pt x 279.0425pt>
 File: ./images/introduction-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./images/introduction-eps-converted-to.pdf>
@@ -816,7 +816,7 @@ o.pdf>
 (epstopdf)             \includegraphics on input line 121.
 Package epstopdf Info: Output file is already uptodate.
 
-<./images/circuit1/current1-eps-converted-to.pdf, id=90, 90.3375pt x 176.66pt>
+<./images/circuit1/current1-eps-converted-to.pdf, id=94, 90.3375pt x 176.66pt>
 File: ./images/circuit1/current1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./images/circuit1/current1-eps-converted-to.pdf>
@@ -839,7 +839,7 @@ ource-eps-converted-to.pdf ./images/circuit1/VoltageSource.eps>
 (epstopdf)             \includegraphics on input line 145.
 Package epstopdf Info: Output file is already uptodate.
 
-<./images/circuit1/VoltageSource-eps-converted-to.pdf, id=119, 317.185pt x 176.
+<./images/circuit1/VoltageSource-eps-converted-to.pdf, id=123, 317.185pt x 176.
 66pt>
 File: ./images/circuit1/VoltageSource-eps-converted-to.pdf Graphic file (type p
 df)
@@ -859,7 +859,7 @@ o.pdf>
 (epstopdf)             \includegraphics on input line 167.
 Package epstopdf Info: Output file is already uptodate.
 
-<./images/circuit1/resistor-eps-converted-to.pdf, id=120, 95.35625pt x 138.5175
+<./images/circuit1/resistor-eps-converted-to.pdf, id=124, 95.35625pt x 138.5175
 pt>
 File: ./images/circuit1/resistor-eps-converted-to.pdf Graphic file (type pdf)
  <use ./images/circuit1/resistor-eps-converted-to.pdf>
@@ -867,14 +867,14 @@ Package pdftex.def Info: ./images/circuit1/resistor-eps-converted-to.pdf used o
 n input line 167.
 (pdftex.def)             Requested size: 51.21808pt x 74.40097pt.
 
-<./images/ColourCode1.png, id=121, 537.00626pt x 779.91376pt>
+<./images/ColourCode1.png, id=125, 537.00626pt x 779.91376pt>
 File: ./images/ColourCode1.png Graphic file (type png)
 
 <use ./images/ColourCode1.png>
 Package pdftex.def Info: ./images/ColourCode1.png used on input line 181.
 (pdftex.def)             Requested size: 256.07481pt x 371.90285pt.
 
-<./images/ColourCode2.png, id=123, 515.9275pt x 461.725pt>
+<./images/ColourCode2.png, id=127, 515.9275pt x 461.725pt>
 File: ./images/ColourCode2.png Graphic file (type png)
 
 <use ./images/ColourCode2.png>
@@ -895,7 +895,7 @@ _1-eps-converted-to.pdf ./images/circuit1/circuit5_1.eps>
 (epstopdf)             \includegraphics on input line 244.
 Package epstopdf Info: Output file is already uptodate.
 
-<./images/circuit1/circuit5_1-eps-converted-to.pdf, id=175, 415.5525pt x 260.97
+<./images/circuit1/circuit5_1-eps-converted-to.pdf, id=179, 415.5525pt x 260.97
 5pt>
 File: ./images/circuit1/circuit5_1-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -970,7 +970,7 @@ nd2-eps-converted-to.pdf ./images/circuit1/append_end2.eps>
 (epstopdf)             \includegraphics on input line 297.
 Package epstopdf Info: Output file is already uptodate.
 
-<./images/circuit1/append_end2-eps-converted-to.pdf, id=187, 104.39pt x 166.622
+<./images/circuit1/append_end2-eps-converted-to.pdf, id=191, 104.39pt x 166.622
 5pt>
 File: ./images/circuit1/append_end2-eps-converted-to.pdf Graphic file (type pdf
 )
@@ -991,7 +991,7 @@ nd2_2-eps-converted-to.pdf ./images/circuit1/append_end2_2.eps>
 (epstopdf)             \includegraphics on input line 320.
 Package epstopdf Info: Output file is already uptodate.
 
-<./images/circuit1/append_end2_2-eps-converted-to.pdf, id=220, 177.66376pt x 12
+<./images/circuit1/append_end2_2-eps-converted-to.pdf, id=224, 177.66376pt x 12
 5.46875pt>
 File: ./images/circuit1/append_end2_2-eps-converted-to.pdf Graphic file (type p
 df)
@@ -1013,7 +1013,7 @@ converted-to.pdf ./images/nodemethod_0.eps>
 (epstopdf)             \includegraphics on input line 387.
 Package epstopdf Info: Output file is already uptodate.
 
-<./images/nodemethod_0-eps-converted-to.pdf, id=268, 509.905pt x 273.02pt>
+<./images/nodemethod_0-eps-converted-to.pdf, id=272, 509.905pt x 273.02pt>
 File: ./images/nodemethod_0-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./images/nodemethod_0-eps-converted-to.pdf>
@@ -1032,7 +1032,7 @@ converted-to.pdf ./images/nodemethod_1.eps>
 (epstopdf)             \includegraphics on input line 396.
 Package epstopdf Info: Output file is already uptodate.
 
-<./images/nodemethod_1-eps-converted-to.pdf, id=269, 509.905pt x 345.29pt>
+<./images/nodemethod_1-eps-converted-to.pdf, id=273, 509.905pt x 345.29pt>
 File: ./images/nodemethod_1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./images/nodemethod_1-eps-converted-to.pdf>
@@ -1040,18 +1040,18 @@ Package pdftex.def Info: ./images/nodemethod_1-eps-converted-to.pdf used on inp
 ut line 396.
 (pdftex.def)             Requested size: 230.46576pt x 156.06398pt.
 Package epstopdf Info: Source file: <./images/nodemethod_3.eps>
-(epstopdf)                    date: 2016-02-26 21:36:48
-(epstopdf)                    size: 93165 bytes
+(epstopdf)                    date: 2016-03-05 17:06:01
+(epstopdf)                    size: 86970 bytes
 (epstopdf)             Output file: <./images/nodemethod_3-eps-converted-to.pdf
 >
-(epstopdf)                    date: 2016-02-26 21:53:51
-(epstopdf)                    size: 38455 bytes
+(epstopdf)                    date: 2016-03-05 17:06:07
+(epstopdf)                    size: 35477 bytes
 (epstopdf)             Command: <repstopdf --outfile=./images/nodemethod_3-eps-
 converted-to.pdf ./images/nodemethod_3.eps>
 (epstopdf)             \includegraphics on input line 417.
 Package epstopdf Info: Output file is already uptodate.
 
-<./images/nodemethod_3-eps-converted-to.pdf, id=270, 550.055pt x 384.43625pt>
+<./images/nodemethod_3-eps-converted-to.pdf, id=274, 550.055pt x 384.43625pt>
 File: ./images/nodemethod_3-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./images/nodemethod_3-eps-converted-to.pdf>
@@ -1070,7 +1070,7 @@ converted-to.pdf ./images/nodemethod_4.eps>
 (epstopdf)             \includegraphics on input line 425.
 Package epstopdf Info: Output file is already uptodate.
 
-<./images/nodemethod_4-eps-converted-to.pdf, id=271, 550.055pt x 384.43625pt>
+<./images/nodemethod_4-eps-converted-to.pdf, id=275, 550.055pt x 384.43625pt>
 File: ./images/nodemethod_4-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./images/nodemethod_4-eps-converted-to.pdf>
@@ -1257,21 +1257,160 @@ File: ./images/equ_resis4-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./images/equ_resis4-eps-converted-to.pdf used on input
  line 701.
 (pdftex.def)             Requested size: 128.03226pt x 119.4669pt.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 723.
- [13 <./images/equ_resis4-eps-converted-to.pdf>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 723.
- (./circuit(Part 1).aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 723.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 723.
+Package epstopdf Info: Source file: <./images/equ_resisinf1.eps>
+(epstopdf)                    date: 2016-03-05 17:14:37
+(epstopdf)                    size: 52496 bytes
+(epstopdf)             Output file: <./images/equ_resisinf1-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2016-03-05 17:18:19
+(epstopdf)                    size: 21830 bytes
+(epstopdf)             Command: <repstopdf --outfile=./images/equ_resisinf1-eps
+-converted-to.pdf ./images/equ_resisinf1.eps>
+(epstopdf)             \includegraphics on input line 725.
+Package epstopdf Info: Output file is already uptodate.
+
+<./images/equ_resisinf1-eps-converted-to.pdf, id=538, 514.92375pt x 215.80624pt
+>
+File: ./images/equ_resisinf1-eps-converted-to.pdf Graphic file (type pdf)
+ <use ./images/equ_resisinf1-eps-converted-to.pdf>
+Package pdftex.def Info: ./images/equ_resisinf1-eps-converted-to.pdf used on in
+put line 725.
+(pdftex.def)             Requested size: 256.07481pt x 107.32329pt.
+Package epstopdf Info: Source file: <./images/equ_resisinf1part.eps>
+(epstopdf)                    date: 2016-03-05 17:31:17
+(epstopdf)                    size: 43507 bytes
+(epstopdf)             Output file: <./images/equ_resisinf1part-eps-converted-t
+o.pdf>
+(epstopdf)                    date: 2016-03-05 17:31:21
+(epstopdf)                    size: 18250 bytes
+(epstopdf)             Command: <repstopdf --outfile=./images/equ_resisinf1part
+-eps-converted-to.pdf ./images/equ_resisinf1part.eps>
+(epstopdf)             \includegraphics on input line 737.
+Package epstopdf Info: Output file is already uptodate.
+
+<./images/equ_resisinf1part-eps-converted-to.pdf, id=540, 189.70876pt x 215.806
+24pt>
+File: ./images/equ_resisinf1part-eps-converted-to.pdf Graphic file (type pdf)
+ <use ./images/equ_resisinf1part-eps-converted-to.pdf>
+Package pdftex.def Info: ./images/equ_resisinf1part-eps-converted-to.pdf used o
+n input line 737.
+(pdftex.def)             Requested size: 102.42836pt x 116.52046pt.
+ [13 <./images/equ_resis4-eps-converted-to.pdf> <./images/equ_resisinf1-eps-con
+verted-to.pdf> <./images/equ_resisinf1part-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <./images/equ_resisinf1comb.eps>
+(epstopdf)                    date: 2016-03-05 17:40:25
+(epstopdf)                    size: 57045 bytes
+(epstopdf)             Output file: <./images/equ_resisinf1comb-eps-converted-t
+o.pdf>
+(epstopdf)                    date: 2016-03-05 17:41:04
+(epstopdf)                    size: 23563 bytes
+(epstopdf)             Command: <repstopdf --outfile=./images/equ_resisinf1comb
+-eps-converted-to.pdf ./images/equ_resisinf1comb.eps>
+(epstopdf)             \includegraphics on input line 746.
+Package epstopdf Info: Output file is already uptodate.
+
+<./images/equ_resisinf1comb-eps-converted-to.pdf, id=595, 514.92375pt x 215.806
+24pt>
+File: ./images/equ_resisinf1comb-eps-converted-to.pdf Graphic file (type pdf)
+ <use ./images/equ_resisinf1comb-eps-converted-to.pdf>
+Package pdftex.def Info: ./images/equ_resisinf1comb-eps-converted-to.pdf used o
+n input line 746.
+(pdftex.def)             Requested size: 256.07481pt x 107.32329pt.
+Package epstopdf Info: Source file: <./images/equ_resisinf1_1.eps>
+(epstopdf)                    date: 2016-03-05 18:17:20
+(epstopdf)                    size: 52827 bytes
+(epstopdf)             Output file: <./images/equ_resisinf1_1-eps-converted-to.
+pdf>
+(epstopdf)                    date: 2016-03-05 18:18:23
+(epstopdf)                    size: 21932 bytes
+(epstopdf)             Command: <repstopdf --outfile=./images/equ_resisinf1_1-e
+ps-converted-to.pdf ./images/equ_resisinf1_1.eps>
+(epstopdf)             \includegraphics on input line 772.
+Package epstopdf Info: Output file is already uptodate.
+
+<./images/equ_resisinf1_1-eps-converted-to.pdf, id=597, 514.92375pt x 215.80624
+pt>
+File: ./images/equ_resisinf1_1-eps-converted-to.pdf Graphic file (type pdf)
+ <use ./images/equ_resisinf1_1-eps-converted-to.pdf>
+Package pdftex.def Info: ./images/equ_resisinf1_1-eps-converted-to.pdf used on 
+input line 772.
+(pdftex.def)             Requested size: 256.07481pt x 107.32329pt.
+Package epstopdf Info: Source file: <./images/equ_resisinf2.eps>
+(epstopdf)                    date: 2016-03-05 18:01:12
+(epstopdf)                    size: 53615 bytes
+(epstopdf)             Output file: <./images/equ_resisinf2-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2016-03-05 18:01:14
+(epstopdf)                    size: 22210 bytes
+(epstopdf)             Command: <repstopdf --outfile=./images/equ_resisinf2-eps
+-converted-to.pdf ./images/equ_resisinf2.eps>
+(epstopdf)             \includegraphics on input line 783.
+Package epstopdf Info: Output file is already uptodate.
+
+<./images/equ_resisinf2-eps-converted-to.pdf, id=598, 427.5975pt x 132.495pt>
+File: ./images/equ_resisinf2-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ./images/equ_resisinf2-eps-converted-to.pdf>
+Package pdftex.def Info: ./images/equ_resisinf2-eps-converted-to.pdf used on in
+put line 783.
+(pdftex.def)             Requested size: 256.07481pt x 79.34596pt.
+Package epstopdf Info: Source file: <./images/equ_resisinf3.eps>
+(epstopdf)                    date: 2016-03-05 18:05:22
+(epstopdf)                    size: 53397 bytes
+(epstopdf)             Output file: <./images/equ_resisinf3-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2016-03-05 18:05:47
+(epstopdf)                    size: 22173 bytes
+(epstopdf)             Command: <repstopdf --outfile=./images/equ_resisinf3-eps
+-converted-to.pdf ./images/equ_resisinf3.eps>
+(epstopdf)             \includegraphics on input line 796.
+Package epstopdf Info: Output file is already uptodate.
+
+<./images/equ_resisinf3-eps-converted-to.pdf, id=599, 427.5975pt x 132.495pt>
+File: ./images/equ_resisinf3-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ./images/equ_resisinf3-eps-converted-to.pdf>
+Package pdftex.def Info: ./images/equ_resisinf3-eps-converted-to.pdf used on in
+put line 796.
+(pdftex.def)             Requested size: 256.07481pt x 79.34596pt.
+ [14 <./images/equ_resisinf1comb-eps-converted-to.pdf> <./images/equ_resisinf1_
+1-eps-converted-to.pdf> <./images/equ_resisinf2-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <./images/equ_resisinf4.eps>
+(epstopdf)                    date: 2016-03-05 18:13:04
+(epstopdf)                    size: 52280 bytes
+(epstopdf)             Output file: <./images/equ_resisinf4-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2016-03-05 18:13:26
+(epstopdf)                    size: 21864 bytes
+(epstopdf)             Command: <repstopdf --outfile=./images/equ_resisinf4-eps
+-converted-to.pdf ./images/equ_resisinf4.eps>
+(epstopdf)             \includegraphics on input line 808.
+Package epstopdf Info: Output file is already uptodate.
+
+<./images/equ_resisinf4-eps-converted-to.pdf, id=654, 373.395pt x 144.54pt>
+File: ./images/equ_resisinf4-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ./images/equ_resisinf4-eps-converted-to.pdf>
+Package pdftex.def Info: ./images/equ_resisinf4-eps-converted-to.pdf used on in
+put line 808.
+(pdftex.def)             Requested size: 256.07481pt x 99.13058pt.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 819.
+ [15 <./images/equ_resisinf3-eps-converted-to.pdf> <./images/equ_resisinf4-eps-
+converted-to.pdf>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 819.
+
+(./circuit(Part 1).aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 819.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 819.
 Package rerunfilecheck Info: File `"circuit(Part 1)".out' has not changed.
-(rerunfilecheck)             Checksum: E95839DD2ACD9AE7A880E42B932CB91A;1398.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 723.
+(rerunfilecheck)             Checksum: 3E46FBBCA4EBB6577F0ED2F4800FFBC1;1483.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 819.
  ) 
 Here is how much of TeX's memory you used:
- 17645 strings out of 493304
- 308084 string characters out of 6139871
- 403498 words of memory out of 5000000
- 20626 multiletter control sequences out of 15000+600000
+ 17703 strings out of 493304
+ 309885 string characters out of 6139871
+ 403821 words of memory out of 5000000
+ 20661 multiletter control sequences out of 15000+600000
  7857 words of font info for 30 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  56i,7n,55p,602b,537s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1288,10 +1427,10 @@ ts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 sl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on "circuit(Part 1).pdf" (13 pages, 633136 bytes).
+Output written on "circuit(Part 1).pdf" (15 pages, 766664 bytes).
 PDF statistics:
- 638 PDF objects out of 1000 (max. 8388607)
- 453 compressed objects within 5 object streams
- 118 named destinations out of 1000 (max. 500000)
- 268 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 767 PDF objects out of 1000 (max. 8388607)
+ 534 compressed objects within 6 object streams
+ 134 named destinations out of 1000 (max. 500000)
+ 311 words of extra memory for PDF output out of 10000 (max. 10000000)
 

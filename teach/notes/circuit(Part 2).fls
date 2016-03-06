@@ -176,6 +176,8 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/rotating/rotating.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/rotating/rotating.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/paracol/paracol.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/paracol/paracol.sty
 INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
 INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
 INPUT /usr/share/texlive/texmf-dist/tex/generic/babel-french/frenchb.ldf
@@ -266,6 +268,51 @@ INPUT ./images/circuit2/circuit_append2-eps-converted-to.pdf
 INPUT ./images/circuit2/circuit_append2-eps-converted-to.pdf
 INPUT ./images/circuit2/circuit_append2-eps-converted-to.pdf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsl10.tfm
+INPUT ./images/summingamp.eps
+INPUT ./images/summingamp.eps
+INPUT ./images/summingamp.eps
+INPUT ./images/summingamp-eps-converted-to.pdf
+INPUT ./images/summingamp-eps-converted-to.pdf
+INPUT ./images/summingamp.eps
+INPUT ./images/summingamp-eps-converted-to.pdf
+INPUT ./images/summingamp-eps-converted-to.pdf
+INPUT ./images/summingamp-eps-converted-to.pdf
+INPUT ./images/differenceamp.eps
+INPUT ./images/differenceamp.eps
+INPUT ./images/differenceamp.eps
+INPUT ./images/differenceamp-eps-converted-to.pdf
+INPUT ./images/differenceamp-eps-converted-to.pdf
+INPUT ./images/differenceamp.eps
+INPUT ./images/differenceamp-eps-converted-to.pdf
+INPUT ./images/differenceamp-eps-converted-to.pdf
+INPUT ./images/differenceamp-eps-converted-to.pdf
+INPUT ./images/buffer.eps
+INPUT ./images/buffer.eps
+INPUT ./images/buffer.eps
+INPUT ./images/buffer-eps-converted-to.pdf
+INPUT ./images/buffer-eps-converted-to.pdf
+INPUT ./images/buffer.eps
+INPUT ./images/buffer-eps-converted-to.pdf
+INPUT ./images/buffer-eps-converted-to.pdf
+INPUT ./images/buffer-eps-converted-to.pdf
+INPUT ./images/non-inverting.eps
+INPUT ./images/non-inverting.eps
+INPUT ./images/non-inverting.eps
+INPUT ./images/non-inverting-eps-converted-to.pdf
+INPUT ./images/non-inverting-eps-converted-to.pdf
+INPUT ./images/non-inverting.eps
+INPUT ./images/non-inverting-eps-converted-to.pdf
+INPUT ./images/non-inverting-eps-converted-to.pdf
+INPUT ./images/non-inverting-eps-converted-to.pdf
+INPUT ./images/inverting.eps
+INPUT ./images/inverting.eps
+INPUT ./images/inverting.eps
+INPUT ./images/inverting-eps-converted-to.pdf
+INPUT ./images/inverting-eps-converted-to.pdf
+INPUT ./images/inverting.eps
+INPUT ./images/inverting-eps-converted-to.pdf
+INPUT ./images/inverting-eps-converted-to.pdf
+INPUT ./images/inverting-eps-converted-to.pdf
 INPUT circuit(Part 2).aux
 INPUT ./circuit(Part 2).out
 INPUT ./circuit(Part 2).out
@@ -279,4 +326,5 @@ INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
