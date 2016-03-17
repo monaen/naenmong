@@ -467,7 +467,7 @@ The three building blocks of an LTI system: \orange{\bf multiplication}, \orange
   \item[] \hspace{5 mm}$5 \rightarrow $\hspace{5 mm}$(5) + 2(5) $\hspace{8.3 mm}$= 15$
   \item[] \hspace{5 mm}$2 \rightarrow $\hspace{5 mm}$(2) + 2(15) $\hspace{6.5 mm}$= 32$
   \item[] \hspace{5 mm}$0 \rightarrow $\hspace{5 mm}$(0) + 2(32) $\hspace{6.5 mm}$= 64$
-  \item[] Hence, output is $[0,3,-4,4,-3,-2]$
+  \item[] Hence, output is $[0,3,5,15,32,64]$
 \end{itemize}
 \end{column}
 
@@ -697,7 +697,6 @@ Hence, output is $[1,1,2,4,8,16]$
 \begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
   \item[$\ast$] Determine the difference equation that relates X and Y?  ~~\blue{\bf R: delay(1)}
 \end{itemize}
-\vspace{10 mm}
 
 
 \begin{figure}[H]
@@ -707,6 +706,10 @@ Hence, output is $[1,1,2,4,8,16]$
 
 
 \begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[$\ast$] Express relations among signals algebraically
+  \item[$\ast$] $E = X + W$; $Y = RE$; $W = RY$
+  \item[$\ast$] Solve: $Y = RE = R(X + W) = R(X + RY)$
+  \item[] $\rightarrow RX = Y-R^2Y$
   \item[$\ast$] \red{Difference equation:$y[n] = x[n-1] + y[n-2]$}
 \end{itemize}
 
@@ -750,6 +753,7 @@ Hence, output is $[1,1,2,4,8,16]$
 \end{figure}
 
 \begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[$\ast$] $Y = X - 2RY -kR^2Y$
   \item[$\ast$] \red{Difference equation:$y[n] = x[n] - 2y[n-1] - ky[n-2]$}
 \end{itemize}
 
@@ -794,7 +798,8 @@ Hence, output is $[1,1,2,4,8,16]$
 \vspace{10 mm}
 
 \begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
-  \item[$\ast$] \red{Difference equation:$y[n] = y[n-1] - kx[n-1] - ky[n-1]$}
+  \item[$\ast$] $Y = RY + kRX - kRY$
+  \item[$\ast$] \red{Difference equation:$y[n] = y[n-1] + kx[n-1] - ky[n-1]$}
 \end{itemize}
 
 \end{frame}
@@ -837,6 +842,7 @@ Hence, output is $[1,1,2,4,8,16]$
 \end{figure}
 
 \begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[$\ast$] $Y = X+ 2RY - RY$
   \item[$\ast$] \red{Difference equation:$y[n] = x[n] + 2x[n-1] - y[n-1]$}
 \end{itemize}
 
@@ -875,14 +881,15 @@ Hence, output is $[1,1,2,4,8,16]$
 \begin{figure}[H]
   \label{signal4_5}
   \centering
-  \includegraphics[width=0.6\textwidth]{./image/signal/signal4_51}
+  \includegraphics[width=0.5\textwidth]{./image/signal/signal4_51}
 \end{figure}
 
 \begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
   \item[$\ast$] \red{Difference equation:}
   \begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
-    \item[] $v[n] = x[n] - av[n-M]; $~~$y[n] = b_0v[n] + v[n-M]$
-    \item[] $\therefore y[n] = b_0 \{ x[n]-av[n-M]\} + x[n-M]-av[n-2M]$
+    \item[] $v[n] = x[n] - av[n-M]; $~~$y[n] = $ \red{$b_0v[n]$}$ + $\blue{$v[n-M]$}
+    \item[] $\therefore y[n] = $ \red{$b_0 \{ x[n]-av[n-M]\}$}$ + $\blue{$v[n-M]$}
+    \item[] \hspace{10 mm}$= $ \red{$b_0 \{ x[n]-av[n-M]\}$}$ + $\blue{$x[n-M]-av[n-2M]$}
     \item[] \hspace{10 mm}$= b_0x[n] + x[n-M]-a \{ b_0v[n-M] + v[n-2M]\}$
     \item[] \hspace{10 mm}$= b_0x[n] + x[n-M] - ay[n-M]$
   \end{itemize}
