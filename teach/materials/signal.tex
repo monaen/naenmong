@@ -1,0 +1,1457 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Beamer Presentation
+% LaTeX Template
+% Version 1.0 (10/11/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+% PACKAGES AND THEMES
+%----------------------------------------------------------------------------------------
+
+\documentclass{beamer}
+
+\mode<presentation> {
+
+% The Beamer class comes with a number of default slide themes
+% which change the colors and layouts of slides. Below this is a list
+% of all the themes, uncomment each in turn to see what they look like.
+
+%\usetheme{default}
+%\usetheme{AnnArbor}
+%\usetheme{Antibes}
+%\usetheme{Bergen}
+%\usetheme{Berkeley}
+%\usetheme{Berlin}
+%\usetheme{Boadilla}
+\usetheme{CambridgeUS}
+%\usetheme{Copenhagen}
+%\usetheme{Darmstadt}
+%\usetheme{Dresden}
+%\usetheme{Frankfurt}
+%\usetheme{Goettingen}
+%\usetheme{Hannover}
+%\usetheme{Ilmenau}
+%\usetheme{JuanLesPins}
+%\usetheme{Luebeck}
+%\usetheme{Madrid}
+%\usetheme{Malmoe}
+%\usetheme{Marburg}
+%\usetheme{Montpellier}
+%\usetheme{PaloAlto}
+%\usetheme{Pittsburgh}
+%\usetheme{Rochester}
+%\usetheme{Singapore}
+%\usetheme{Szeged}
+%\usetheme{Warsaw}
+
+% As well as themes, the Beamer class has a number of color themes
+% for any slide theme. Uncomment each of these in turn to see how it
+% changes the colors of your current slide theme.
+
+%\usecolortheme{albatross}
+%\usecolortheme{beaver}
+%\usecolortheme{beetle}
+%\usecolortheme{crane}
+%\usecolortheme{dolphin}
+%\usecolortheme{dove}
+%\usecolortheme{fly}
+%\usecolortheme{lily}
+%\usecolortheme{orchid}
+%\usecolortheme{rose}
+%\usecolortheme{seagull}
+%\usecolortheme{seahorse}
+%\usecolortheme{whale}
+%\usecolortheme{wolverine}
+
+%\setbeamertemplate{footline} % To remove the footer line in all slides uncomment this line
+%\setbeamertemplate{footline}[page number] % To replace the footer line in all slides with a simple slide count uncomment this line
+
+%\setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
+}
+
+\usepackage{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+\usepackage{multirow}
+\usepackage{color}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\green}[1]{\textcolor{green}{#1}}
+\newcommand{\yellow}[1]{\textcolor{yellow}{#1}}
+\newcommand{\orange}[1]{\textcolor{orange}{#1}}
+%----------------------------------------------------------------------------------------
+% TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title[Circuit(ENGG 1203)]{Tutorial on Signal \newline Introduction to Electrical and Electronic Engineering} % The short title appears at the bottom of every slide, the full title is only on the title page
+
+\author{Nan Meng} % Your name
+\institute[Imaging Systems Laboratory] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
+{
+  University of Hong Kong \\ % Your institution for the title page
+  \medskip
+  \textit{u3003637@connect.hku.hk} % Your email address
+}
+\date{\today} % Date, can be changed to a custom date
+
+\begin{document}
+
+\begin{frame}
+  \titlepage % Print the title page as the first slide
+\end{frame}
+
+\begin{frame}
+\frametitle{Overview} % Table of contents slide, comment this block out to remove it
+
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[$\ast$] {\bf Learning Objectives:}
+  \begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+    \item[$\bullet$] Signal Flow Graph
+    \item[$\bullet$] Difference Equations
+  \end{itemize}
+  \item[$\ast$] {\bf Basics}
+  \begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+    \item[$\bullet$] Building blocks of an LTI system
+    \begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+      \item[$\bullet$] Three Building Blocks
+      \item[$\bullet$] Flow Graph Transformations
+    \end{itemize}
+    \item[$\bullet$] Difference Equations
+    \begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+      \item[$\bullet$] Conventions
+      \item[$\bullet$] Two Special Discrete-time signals
+      \item[$\bullet$] Flow Graphs
+    \end{itemize}
+  \end{itemize}
+  \item[$\ast$] {\bf Questions \& Summary}
+\end{itemize}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+% PRESENTATION SLIDES
+%----------------------------------------------------------------------------------------
+
+%------------------------------------------------
+
+%------------------------------------------------
+
+\begin{frame}
+
+
+\frametitle{Building blocks(Three Building Blocks)}
+The three building blocks of an LTI system: \orange{\bf multiplication}, \orange{\bf addition}, and \orange{\bf delay}
+
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[$\bullet$] \blue{\bf Multiplication(gain)}
+  \item[]
+  \begin{figure}[H]
+  \centering
+  \includegraphics[width=0.5\textwidth]{./image/signal/signal_basic1}
+  \caption{\bf Output equals to the input with a gain $k$}
+  \end{figure}
+  \item[$\bullet$] \blue{\bf Split/add(adder)}
+  \item[]
+  \begin{figure}[H]
+  \centering
+  \includegraphics[width=0.5\textwidth]{./image/signal/signal_basic2}
+  \caption{\bf  On the left, a signal is split into two paths. On the right, two signals are added together}
+  \end{figure}
+\end{itemize}
+
+
+\end{frame}
+
+
+%------------------------------------------------
+%------------------------------------------------
+
+\begin{frame}
+
+
+\frametitle{Building blocks(Three Building Blocks)}
+The three building blocks of an LTI system: \orange{\bf multiplication}, \orange{\bf addition}, and \orange{\bf delay}
+
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[$\bullet$] \blue{\bf Delay}\newline
+  \item[]
+  \begin{figure}[H]
+  \centering
+  \includegraphics[width=0.9\textwidth]{./image/signal/signal_basic3}
+  \caption{\bf Output equals to input with a delay of $d$ time units}
+  \end{figure}
+\end{itemize}
+
+
+\end{frame}
+
+
+%------------------------------------------------
+%------------------------------------------------
+
+\begin{frame}
+
+
+\frametitle{Building blocks(Flow Graph Transformations)}
+Intuitively, some changes to the flow graphs are permitted:
+\begin{columns}
+\begin{column}{5 cm}
+  \begin{figure}[H]
+  \centering
+  \includegraphics[width=0.9\textwidth]{./image/signal/signal_basic4}
+  \end{figure}
+  \begin{figure}[H]
+  \centering
+  \includegraphics[width=0.9\textwidth]{./image/signal/signal_basic5}
+  \end{figure}
+\end{column}
+\begin{column}{2 cm}
+\centerline{\huge $\Leftrightarrow$}\newline
+\vspace{1.5 cm}
+\centerline{\huge $\Leftrightarrow$}
+\end{column}
+\begin{column}{5 cm}
+  \vspace{0.8 cm}
+  \begin{figure}[H]
+  \centering
+  \includegraphics[width=0.92\textwidth]{./image/signal/signal_basic4_1}
+  \end{figure}
+  \begin{figure}[H]
+  \centering
+  \includegraphics[width=0.88\textwidth]{./image/signal/signal_basic5_1}
+  \end{figure}
+\end{column}
+\end{columns}
+\centerline{\blue{Figure :} {\bf Some examples of flow graph transformations}}
+
+
+\end{frame}
+
+
+%------------------------------------------------
+%------------------------------------------------
+
+\begin{frame}
+
+
+\frametitle{Difference Equations(Expression \& Conventions)}
+\begin{itemize} \itemsep6pt \parskip0pt \parsep0pt
+  \item[] \blue{\bf Expression:}
+  \item[$\bullet$] \red{$y[n] = a_1y[n-1] + a_2y[n-2] + ... + b_0x[n] + b_1x[n-1] + ...$}
+\end{itemize}
+
+\begin{itemize} \itemsep6pt \parskip0pt \parsep0pt
+  \item[] \blue{\large \bf Conventions:}
+  \item[$\bullet$] Signal: $x[n]$(square bracket)
+  \item[$\bullet$] Use $x[n]$ for an input signal, $y[n]$ for an output signal
+  \item[$\bullet$] Often $n = 0,1,...,N-1$(integer) for a length-N signal. We may also have an ``infinite'' length signal where $n$ can be any nonnegative integers.
+  \item[$\bullet$] \red{Assume $x[n] = 0$ outside this range.}
+  \item[] \red{$\Rightarrow$ No input, no output. System is ``at rest''}
+\end{itemize}
+
+
+\end{frame}
+
+
+%------------------------------------------------
+%------------------------------------------------
+
+\begin{frame}
+
+
+\frametitle{Difference Equations(Two Special Discrete-time signals)}
+
+
+\begin{itemize} \itemsep6pt \parskip0pt \parsep0pt
+  \item[] \blue{\bf Impulse Signal(delta functions):} $\delta[n]$
+  \item[$\bullet$] $\delta[n]$ $=\begin{cases}
+              1,&n=0\\
+              0,&otherwise(n \neq 0)\\
+            \end{cases}$ \newline
+            This is called an impulse because it is “active” only at the first time instance, and then it returns to zero and stays there forever
+  \item[] \blue{\bf Unit Step Functions:} $u[n]$
+  \item[$\bullet$] $u[n]$ $=\begin{cases}
+              1,&n \geq 0\\
+              0,&otherwise(n < 0)\\
+            \end{cases}$ \newline
+             Notice that because we have assumed that all signals with negative indices are zero, the unit step appears to be equal to 1 all the time
+\end{itemize}
+
+
+\end{frame}
+
+
+%------------------------------------------------
+%------------------------------------------------
+
+\begin{frame}
+
+
+\frametitle{Difference Equations(Two Special Discrete-time signals)}
+
+
+\begin{itemize} \itemsep6pt \parskip0pt \parsep0pt
+  \item[] \blue{\bf Relation of these two signals:} $\delta[n]$ and $u[n]$
+\end{itemize}
+
+
+\begin{columns}
+\begin{column}{6 cm}
+  \begin{figure}[H]
+  \centering
+  \includegraphics[width=0.9\textwidth]{./image/signal/signal_basic9}
+  \end{figure}
+\end{column}
+\begin{column}{6 cm}
+  \begin{figure}[H]
+  \centering
+  \includegraphics[width=0.9\textwidth]{./image/signal/signal_basic10}
+  \end{figure}
+\end{column}
+\end{columns}
+
+
+
+\begin{itemize} \itemsep6pt \parskip0pt \parsep0pt
+  \item[$\bullet$] $\delta[n] = u[n] - u[n-1]$
+  \item[$\bullet$] $u[n] = \sum^{n}_{m=-\infty}\delta[m] = \sum^{\infty}_{k=0}\delta[n-k]$
+\end{itemize}
+
+\end{frame}
+
+
+%------------------------------------------------
+%------------------------------------------------
+
+\begin{frame}
+
+
+\frametitle{Difference Equations(Flow Graphs)}
+The three building blocks of an LTI system: \orange{\bf multiplication}, \orange{\bf addition}, and \orange{\bf delay}
+
+\begin{columns}
+\begin{column}{6 cm}
+\begin{itemize} \itemsep2pt \parskip0pt \parsep0pt
+  \item[$\bullet$] \blue{\bf Multiplication(gain)}
+  \item[] (k can be integer, fraction, negative number...)
+  \item[$\bullet$] \blue{\bf Split/add(adder)}
+  \item[] (A signal becomes two {\bf identical} copies)\newline
+          (Two signals added together)
+  \item[$\bullet$] \blue{\bf Delay}
+  \item[] (A signal is delayed by $d$ {\bf integer} units)
+\end{itemize}
+\end{column}
+
+\begin{column}{6 cm}
+\begin{itemize} \itemsep10pt \parskip0pt \parsep0pt
+  \item[]
+  \begin{figure}[H]
+  \centering
+  \includegraphics[width=0.9\textwidth]{./image/signal/signal_basic6}
+  \end{figure}
+
+  \item[]
+  \begin{figure}[H]
+  \centering
+  \includegraphics[width=0.9\textwidth]{./image/signal/signal_basic7}
+  \end{figure}
+
+  \item[]
+  \begin{figure}[H]
+  \centering
+  \includegraphics[width=0.9\textwidth]{./image/signal/signal_basic8}
+  \end{figure}
+\end{itemize}
+\end{column}
+
+\end{columns}
+
+
+
+\end{frame}
+
+
+%------------------------------------------------
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Question 1(a)}
+
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[$\ast$] Find the output of the system?
+\end{itemize}
+\vspace{10 mm}
+
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\textwidth]{./image/signal/signal1}
+\end{figure}
+\vspace{10 mm}
+
+\end{frame}
+
+%------------------------------------------------
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Solution(Q1(a))}
+
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[$\ast$] Find the output of the system?
+\end{itemize}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.5\textwidth,height = 0.25\textheight]{./image/signal/signal1}
+\end{figure}
+
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[] \blue{Assume:} The system has no signal before the input.
+  \item[] \hspace{9 mm}$0 \rightarrow $\hspace{5 mm}$(0) $\hspace{20 mm}$= 0$
+  \item[] \hspace{9 mm}$3 \rightarrow $\hspace{5 mm}$(3) - 1(0) $\hspace{8.5 mm}$= 3$
+  \item[] \hspace{6 mm}$-1 \rightarrow $\hspace{2 mm}$(-1) - 1(3) $\hspace{8.5 mm}$= -4$
+  \item[] \hspace{9 mm}$5 \rightarrow $\hspace{5 mm}$(5) - 1(-1) $\hspace{5.5 mm}$= 6$
+  \item[] \hspace{9 mm}$2 \rightarrow $\hspace{5 mm}$(2) - 1(5) $\hspace{8.5 mm}$= -3$
+  \item[] \hspace{9 mm}$0 \rightarrow $\hspace{5 mm}$(0) - 1(2) $\hspace{8.5 mm}$= -2$
+  \item[] Hence, output is $[0,3,-4,4,-3,-2]$
+\end{itemize}
+
+
+\end{frame}
+
+%------------------------------------------------
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Question 1(b)}
+
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[$\ast$] Find the output of the system?
+\end{itemize}
+\vspace{10 mm}
+
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\textwidth]{./image/signal/signal2}
+\end{figure}
+\vspace{10 mm}
+
+\end{frame}
+
+%------------------------------------------------
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Solution(Q1(b))}
+
+
+\begin{columns}
+\begin{column}{6.8 cm}
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[$\ast$] Find the output of the system?
+\end{itemize}
+
+\vspace{6 mm}
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[] \blue{Assume:} The system has no signal before the input.
+  \item[] \hspace{5 mm}$0 \rightarrow $\hspace{5 mm}$(0) $\hspace{20 mm}$= 0$
+  \item[] \hspace{5 mm}$3 \rightarrow $\hspace{5 mm}$(3) + 2(0) $\hspace{8.5 mm}$= 3$
+  \item[] \hspace{2 mm}$-1 \rightarrow $\hspace{2 mm}$(-1) + 2(3) $\hspace{8.5 mm}$= 5$
+  \item[] \hspace{5 mm}$5 \rightarrow $\hspace{5 mm}$(5) + 2(5) $\hspace{8.3 mm}$= 15$
+  \item[] \hspace{5 mm}$2 \rightarrow $\hspace{5 mm}$(2) + 2(15) $\hspace{6.5 mm}$= 32$
+  \item[] \hspace{5 mm}$0 \rightarrow $\hspace{5 mm}$(0) + 2(32) $\hspace{6.5 mm}$= 64$
+  \item[] Hence, output is $[0,3,-4,4,-3,-2]$
+\end{itemize}
+\end{column}
+
+
+
+\begin{column}{6 cm}
+\begin{figure}[H]
+  \includegraphics[width=0.8\textwidth,height=0.2\textheight]{./image/signal/signal2}
+\end{figure}
+
+
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[] \hspace{5 mm}$1 $\hspace{2 mm}$\rightarrow $\hspace{2 mm}$(1) $\hspace{20 mm}$= 1$
+  \item[] \hspace{5 mm}$0 $\hspace{2 mm}$\rightarrow $\hspace{2 mm}$(0) + 2(1) $\hspace{8.5 mm}$= 2$
+  \item[] \hspace{5 mm}$0 $\hspace{2 mm}$\rightarrow $\hspace{2 mm}$(0) + 2(2) $\hspace{8.5 mm}$= 4$
+  \item[] \hspace{5 mm}$0 $\hspace{2 mm}$\rightarrow $\hspace{2 mm}$(0) + 2(4) $\hspace{8.5 mm}$= 8$
+  \item[] \hspace{5 mm}$0 $\hspace{2 mm}$\rightarrow $\hspace{2 mm}$(0) + 2(8) $\hspace{8.5 mm}$= 16$
+  \item[] \hspace{5 mm}$0 $\hspace{2 mm}$\rightarrow $\hspace{2 mm}$(0) + 2(16) $\hspace{6.5 mm}$= 32$
+  \item[] Output is $[1,2,4,8,16,32]$
+\end{itemize}
+\vspace{2 mm}
+
+\end{column}
+\end{columns}
+\end{frame}
+
+%------------------------------------------------
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Question 1(c)}
+
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[$\ast$] Find the output of the system?
+\end{itemize}
+\vspace{10 mm}
+
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1\textwidth]{./image/signal/signal3_0}
+\end{figure}
+\vspace{10 mm}
+
+\end{frame}
+
+%------------------------------------------------
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Solution(Q1(c))}
+
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[$\ast$] Find the output of the system?
+\end{itemize}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.6\textwidth]{./image/signal/signal3}
+\end{figure}
+\blue{Assume:} The system has no signal before the input.
+\begin{columns}
+\begin{column}{6 cm}
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[] \hspace{5 mm}$1 $\hspace{2 mm}$\rightarrow $\hspace{2 mm}$(1) $\hspace{17 mm}$= 1$
+  \item[] \hspace{5 mm}$0 $\hspace{2 mm}$\rightarrow $\hspace{2 mm}$(0) - 1(1) $\hspace{5.5 mm}$= -1$
+  \item[] \hspace{5 mm}$0 $\hspace{2 mm}$\rightarrow $\hspace{2 mm}$(0) - 1(0) $\hspace{5.5 mm}$= 0$
+  \item[] \hspace{5 mm}$0 $\hspace{2 mm}$\rightarrow $\hspace{2 mm}$(0) - 1(0) $\hspace{5.3 mm}$= 0$
+  \item[] \hspace{5 mm}$0 $\hspace{2 mm}$\rightarrow $\hspace{2 mm}$(0) - 1(0) $\hspace{5 mm}$= 0$
+  \item[] \hspace{5 mm}$0 $\hspace{2 mm}$\rightarrow $\hspace{2 mm}$(0) - 1(0) $\hspace{5 mm}$= 0$
+\end{itemize}
+\vspace{2.5 cm}
+\end{column}
+
+\begin{column}{6 cm}
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[] \hspace{5 mm}$1 \rightarrow $\hspace{5 mm}$(1) $\hspace{17 mm}$= 1$
+  \item[] \hspace{2 mm}$-1 \rightarrow $\hspace{2 mm}$(-1) + 2(1) $\hspace{5.5 mm}$= 1$
+  \item[] \hspace{5 mm}$0 \rightarrow $\hspace{5 mm}$(0) + 2(1) $\hspace{5.5 mm}$= 2$
+  \item[] \hspace{5 mm}$0 \rightarrow $\hspace{5 mm}$(0) + 2(2) $\hspace{5.3 mm}$= 4$
+  \item[] \hspace{5 mm}$0 \rightarrow $\hspace{5 mm}$(0) + 2(4) $\hspace{5 mm}$= 8$
+  \item[] \hspace{5 mm}$0 \rightarrow $\hspace{5 mm}$(0) + 2(8) $\hspace{5 mm}$= 16$
+\end{itemize}
+Hence, output is $[1,1,2,4,8,16]$
+\vspace{2 cm}
+
+\end{column}
+\end{columns}
+\end{frame}
+
+%------------------------------------------------
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Question 2(a)}
+
+\begin{itemize} \itemsep6pt \parskip0pt \parsep0pt
+  \item[\blue{(a)}] Sketch each of the following input signals
+  \begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+    \item[$i.$] $x[n] = \delta[n] + \delta[n-3]$
+    \item[$ii.$] $x[n] = u[n] - u[n-5]$
+    \item[$iii.$] $x[n] = \delta[n] + \frac{1}{2}\delta[n-1] + \frac{1}{2} \cdot 2\delta[n-2] + \frac{1}{2}\cdot 3\delta[n-3]$
+  \end{itemize}
+  where $\delta$ is unit impulse function and u is the unit step function.
+\end{itemize}
+
+
+\end{frame}
+
+%------------------------------------------------
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Solution(Q2(a))}
+
+\begin{itemize} \itemsep6pt \parskip0pt \parsep0pt
+  \item[\blue{(a)}] Sketch each of the following input signals
+  \begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+    \item[$i.$] $x[n] = \delta[n] + \delta[n-3]$
+    \item[$ii.$] $x[n] = u[n] - u[n-5]$
+    \item[$iii.$] $x[n] = \delta[n] + \frac{1}{2}\delta[n-1] + \frac{1}{2} \cdot 2\delta[n-2] + \frac{1}{2}\cdot 3\delta[n-3]$
+  \end{itemize}
+  where $\delta$ is unit impulse function and u is the unit step function.
+\end{itemize}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.9\textwidth]{./image/signal/signal2a}
+\end{figure}
+
+\end{frame}
+
+%------------------------------------------------
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Question 2(b)}
+
+\begin{itemize} \itemsep6pt \parskip0pt \parsep0pt
+  \item[\blue{(b)}] Express the following as sums of weighted delayed impulses, \newline i.e. in the form $x[n] = \sum_{k = -\infty}^{\infty}a_k\delta[n-k]$
+\end{itemize}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\textwidth]{./image/signal/signal2b}
+\end{figure}
+\end{frame}
+
+%------------------------------------------------
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Solution(Q2(b))}
+
+\begin{itemize} \itemsep6pt \parskip0pt \parsep0pt
+  \item[\blue{(b)}] Express the following as sums of weighted delayed impulses, \newline i.e. in the form $x[n] = \sum_{k = -\infty}^{\infty}a_k\delta[n-k]$
+\end{itemize}
+
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\textwidth]{./image/signal/signal2b}
+\end{figure}
+
+\centerline{Ans: $x[n] = \delta[n-1] - 2\delta[n-2] + 3\delta[n-3] - 2\delta[n-4] + \delta[n-5]$}
+\end{frame}
+
+%------------------------------------------------
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Question 2(c)}
+
+\begin{itemize} \itemsep6pt \parskip0pt \parsep0pt
+  \item[\blue{(c)}] Express the following sequence as sum of unit step function, \newline i.e. in the form $s[n] = \sum_{k = -\infty}^{\infty}a_ku[n-k]$
+\end{itemize}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\textwidth]{./image/signal/signal2c}
+\end{figure}
+
+\end{frame}
+
+%------------------------------------------------
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Solution(Q2(c))}
+
+\begin{itemize} \itemsep6pt \parskip0pt \parsep0pt
+  \item[\blue{(c)}] Express the following sequence as sum of unit step function, \newline i.e. in the form $s[n] = \sum_{k = -\infty}^{\infty}a_ku[n-k]$
+\end{itemize}
+
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\textwidth]{./image/signal/signal2c}
+\end{figure}
+
+\centerline{Ans: $s[n] = -u[n+3] + 4u[n+1] - 4u[n-2] + u[n-4]$}
+\end{frame}
+
+%------------------------------------------------
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Question 3(a)}
+
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[$\ast$] Determine the difference equation that relates X and Y?  ~~\blue{\bf R: delay(1)}
+\end{itemize}
+\vspace{20 mm}
+
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.6\textwidth]{./image/signal/signal4}
+\end{figure}
+\vspace{10 mm}
+
+\end{frame}
+
+%------------------------------------------------
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Solution(Q3(a))}
+
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[$\ast$] Determine the difference equation that relates X and Y?  ~~\blue{\bf R: delay(1)}
+\end{itemize}
+\vspace{10 mm}
+
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.6\textwidth]{./image/signal/signal4}
+\end{figure}
+
+
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[$\ast$] \red{Difference equation:$y[n] = x[n-1] + y[n-2]$}
+\end{itemize}
+
+\end{frame}
+
+%------------------------------------------------
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Question 3(b)}
+
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[$\ast$] Determine the difference equation that relates X and Y?  ~~\blue{\bf R: delay(1)}
+\end{itemize}
+\vspace{10 mm}
+
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.6\textwidth]{./image/signal/signal4_2}
+\end{figure}
+
+
+\end{frame}
+
+%------------------------------------------------
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Solution(Q3(b))}
+
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[$\ast$] Determine the difference equation that relates X and Y?  ~~\blue{\bf R: delay(1)}
+\end{itemize}
+
+
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.6\textwidth]{./image/signal/signal4_2}
+\end{figure}
+
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[$\ast$] \red{Difference equation:$y[n] = x[n] - 2y[n-1] - ky[n-2]$}
+\end{itemize}
+
+\end{frame}
+
+%------------------------------------------------
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Question 3(c)}
+
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[$\ast$] Determine the difference equation that relates X and Y?  ~~\blue{\bf R: delay(1)}
+\end{itemize}
+\vspace{20 mm}
+
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.6\textwidth]{./image/signal/signal4_3}
+\end{figure}
+\vspace{10 mm}
+
+\end{frame}
+
+%------------------------------------------------
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Solution(Q3(c))}
+
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[$\ast$] Determine the difference equation that relates X and Y?  ~~\blue{\bf R: delay(1)}
+\end{itemize}
+\vspace{10 mm}
+
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.6\textwidth]{./image/signal/signal4_3}
+\end{figure}
+\vspace{10 mm}
+
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[$\ast$] \red{Difference equation:$y[n] = y[n-1] - kx[n-1] - ky[n-1]$}
+\end{itemize}
+
+\end{frame}
+
+%------------------------------------------------
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Question 3(d)}
+
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[$\ast$] Determine the difference equation that relates X and Y?  ~~\blue{\bf R: delay(1)}
+\end{itemize}
+\vspace{10 mm}
+
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\textwidth]{./image/signal/signal4_4}
+\end{figure}
+
+
+\end{frame}
+
+%------------------------------------------------
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Solution(Q3(d))}
+
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[$\ast$] Determine the difference equation that relates X and Y?  ~~\blue{\bf R: delay(1)}
+\end{itemize}
+
+
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\textwidth]{./image/signal/signal4_4}
+\end{figure}
+
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[$\ast$] \red{Difference equation:$y[n] = x[n] + 2x[n-1] - y[n-1]$}
+\end{itemize}
+
+\end{frame}
+
+%------------------------------------------------
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Question 3(e)}
+
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[$\ast$] Determine the difference equation that relates X and Y?  ~~\blue{\bf R: delay(1)}
+\end{itemize}
+\vspace{10 mm}
+
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.6\textwidth]{./image/signal/signal4_50}
+\end{figure}
+
+
+\end{frame}
+
+%------------------------------------------------
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Solution(Q3(e))}
+
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[$\ast$] Determine the difference equation that relates X and Y?  ~~\blue{\bf R: delay(1)}
+\end{itemize}
+
+\begin{figure}[H]
+  \label{signal4_5}
+  \centering
+  \includegraphics[width=0.6\textwidth]{./image/signal/signal4_51}
+\end{figure}
+
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[$\ast$] \red{Difference equation:}
+  \begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+    \item[] $v[n] = x[n] - av[n-M]; $~~$y[n] = b_0v[n] + v[n-M]$
+    \item[] $\therefore y[n] = b_0 \{ x[n]-av[n-M]\} + x[n-M]-av[n-2M]$
+    \item[] \hspace{10 mm}$= b_0x[n] + x[n-M]-a \{ b_0v[n-M] + v[n-2M]\}$
+    \item[] \hspace{10 mm}$= b_0x[n] + x[n-M] - ay[n-M]$
+  \end{itemize}
+\end{itemize}
+
+\end{frame}
+
+%------------------------------------------------
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Question 4}
+
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[] \blue{[SP13 Final Exam]} Consider the difference equation $y[n] = y[n-1] + k \cdot y[n-2] + x[n]$, where $x[n]$ is an impulse input. For what value(s) of $k$ indicated below would the output converge to zero as $n$ increases?
+  \begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+    \item[i] $k = 0$
+    \item[ii] $k = -\frac{1}{2}$
+    \item[iii] $k = -1$
+    \item[iv] $k = -\frac{1}{2}$ and $k = 0$
+    \item[v] $k = -1$, $k = -\frac{1}{2}$, and $k = 0$
+  \end{itemize}
+\end{itemize}
+
+\vspace{6 cm}
+
+
+\end{frame}
+
+%------------------------------------------------
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Solution(Q4)}
+
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[] Difference equation: $y[n] = y[n-1] + k \cdot y [n-2] + x[n]$
+  \item[] Impulse input $x[n]:x[n]=\delta[n] =  \begin{cases}
+                                                  1,& if ~n=0\\
+                                                  0,& otherwise\\
+                                                \end{cases}$
+  \item[] For $k = 0$ ($y[n]=y[n-1]+x[n]$)
+\end{itemize}
+
+\begin{table}
+\def\arraystretch{1.5}
+\begin{tabular}{ccccccc}
+\hline
+$n$ & $x[n]$ & $y[n-1]$ & $+$ & $x[n]$ & $=$ & $y[n]$ \\
+
+0 & 1 & 0 & $+$ & 1 & $=$ & 1 \\ 
+
+1 & 0 & 1 & $+$ & 0 & $=$ & 1 \\ 
+
+2 & 0 & 1 & $+$ & 0 & $=$ & 1 \\ 
+
+3 & 0 & 1 & $+$ & 0 & $=$ & 1 \\ 
+
+4 & 0 & 1 & $+$ & 0 & $=$ & 1 \\ 
+
+5 & 0 & 1 & $+$ & 0 & $=$ & 1 \\ 
+\hline
+\end{tabular}
+\end{table}
+
+
+\end{frame}
+
+%------------------------------------------------
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Solution(Q4)}
+
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[] For $k = -\frac{1}{2}$ ($y[n]=y[n-1]-\frac{1}{2}y[n-2]+x[n]$)
+\end{itemize}
+
+\begin{table}
+\def\arraystretch{1.5}
+\begin{tabular}{ccccccccc}
+\hline
+$n$ & $x[n]$ & $y[n-1]$ & $-$ & $\frac{1}{2}y[n-2]$ & $+$ & $x[n]$ & $=$ & $y[n]$ \\
+
+0 & 1 & 0 & $-$ & $\frac{1}{2}(0)$ & $+$ & 1 & $=$ & 1 \\ 
+
+1 & 0 & 1 & $-$ & $\frac{1}{2}(0)$ & $+$ & 0 & $=$ & 1 \\ 
+
+2 & 0 & 1 & $-$ & $\frac{1}{2}(1)$ & $+$ & 0 & $=$ & $\frac{1}{2}$ \\ 
+
+3 & 0 & $\frac{1}{2}$ & $-$ & $\frac{1}{2}(1)$ & $+$ & 0 & $=$ & 0 \\ 
+
+4 & 0 & 0 & $-$ & $\frac{1}{2}(\frac{1}{2})$ & $+$ & 0 & $=$ & $\frac{-1}{4}$ \\ 
+5 & 0 & $-\frac{1}{4}$ & $-$ & $\frac{1}{2}(0)$ & $+$ & 0 & $=$ & $\frac{-1}{4}$ \\ 
+
+6 & 0 & $-\frac{1}{4}$ & $-$ & $\frac{1}{2}(\frac{-1}{4})$ & $+$ & 0 & $=$ & $\frac{-1}{8}$ \\ 
+\hline
+\end{tabular}
+\end{table}
+
+
+\end{frame}
+
+%------------------------------------------------
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Solution(Q4)}
+
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[] For $k = -\frac{1}{2}$ ($y[n]=y[n-1]-\frac{1}{2}y[n-2]+x[n]$)
+\end{itemize}
+
+\begin{table}
+\def\arraystretch{1.5}
+\begin{tabular}{ccccccccc}
+\hline
+$n$ & $x[n]$ & $y[n-1]$ & $-$ & $\frac{1}{2}y[n-2]$ & $+$ & $x[n]$ & $=$ & $y[n]$ \\
+
+7 & 0 & $\frac{-1}{8}$ & $-$ & $\frac{1}{2}(\frac{-1}{4})$ & $+$ & 0 & $=$ & 0 \\ 
+
+8 & 0 & 0 & $-$ & $\frac{1}{2}(\frac{-1}{8})$ & $+$ & 0 & $=$ & $\frac{1}{16}$ \\ 
+
+9 & 0 & $\frac{1}{16}$ & $-$ & $\frac{1}{2}(0)$ & $+$ & 0 & $=$ & $\frac{1}{16}$ \\ 
+
+10 & 0 & $\frac{1}{16}$ & $-$ & $\frac{1}{2}(\frac{1}{16})$ & $+$ & 0 & $=$ & $\frac{1}{32}$ \\ 
+
+11 & 0 & $\frac{1}{32}$ & $-$ & $\frac{1}{2}(\frac{1}{16})$ & $+$ & 0 & $=$ & 0 \\ 
+12 & 0 & 0 & $-$ & $\frac{1}{2}(\frac{1}{36})$ & $+$ & 0 & $=$ & $\frac{-1}{72}$ \\ 
+
+13 & 0 & $\frac{-1}{72}$ & $-$ & $\frac{1}{2}(0)$ & $+$ & 0 & $=$ & $\frac{-1}{72}$ \\ 
+\hline
+\end{tabular}
+\end{table}
+
+
+\end{frame}
+
+%------------------------------------------------
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Solution(Q4)}
+
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[] For $k = -1$ ($y[n]=y[n-1]-y[n-2]+x[n]$)
+\end{itemize}
+
+\begin{table}
+\def\arraystretch{1.5}
+\begin{tabular}{ccccccccc}
+\hline
+$n$ & $x[n]$ & $y[n-1]$ & $-$ & $\frac{1}{2}y[n-2]$ & $+$ & $x[n]$ & $=$ & $y[n]$ \\
+
+0 & 1 & 0 & $-$ & $(0)$ & $+$ & 1 & $=$ & 1 \\ 
+
+1 & 0 & 1 & $-$ & $(0)$ & $+$ & 0 & $=$ & 1 \\ 
+
+2 & 0 & 1 & $-$ & $(1)$ & $+$ & 0 & $=$ & 0 \\ 
+
+3 & 0 & 0 & $-$ & $(1)$ & $+$ & 0 & $=$ & -1 \\ 
+
+4 & 0 & -1 & $-$ & $(0)$ & $+$ & 0 & $=$ & -1 \\ 
+5 & 0 & -1 & $-$ & $(-1)$ & $+$ & 0 & $=$ & 0 \\ 
+
+6 & 0 & 0 & $-$ & $(-1)$ & $+$ & 0 & $=$ & 1 \\ 
+\hline
+\end{tabular}
+\end{table}
+
+
+\end{frame}
+
+%------------------------------------------------
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Solution(Q4)}
+
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[] For $k = -1$ ($y[n]=y[n-1]-y[n-2]+x[n]$)
+\end{itemize}
+
+\begin{table}
+\def\arraystretch{1.5}
+\begin{tabular}{ccccccccc}
+\hline
+$n$ & $x[n]$ & $y[n-1]$ & $-$ & $\frac{1}{2}y[n-2]$ & $+$ & $x[n]$ & $=$ & $y[n]$ \\
+
+7 & 0 & 1 & $-$ & $(0)$ & $+$ & 0 & $=$ & 1 \\ 
+
+8 & 0 & 1 & $-$ & $(1)$ & $+$ & 0 & $=$ & 0 \\ 
+
+9 & 0 & 0 & $-$ & $(1)$ & $+$ & 0 & $=$ & -1 \\ 
+
+10 & 0 & -1 & $-$ & $(0)$ & $+$ & 0 & $=$ & -1 \\ 
+
+11 & 0 & -1 & $-$ & $(-1)$ & $+$ & 0 & $=$ & 0 \\
+
+12 & 0 & 0 & $-$ & $(-1)$ & $+$ & 0 & $=$ & 1 \\ 
+
+13 & 0 & 1 & $-$ & $(0)$ & $+$ & 0 & $=$ & 1 \\ 
+\hline
+\end{tabular}
+\end{table}
+
+
+\end{frame}
+
+%------------------------------------------------
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Question 5(a)}
+
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[] \blue{[FA12 Final Exam]} Consider the difference equation $y[n] = k \cdot y[n-1] + k \cdot y[n-2] + x[n]$. \newline Assume $x[n]$ is an impulse input, i.e. $x[0] = 1$ and $x[n] = 0$ for other values of $n$, and that $y[n] = 0$ for $n < 0$ .
+\end{itemize}
+
+\vspace{8 mm}
+
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[] \blue{(a)} Let $k = 1$. What is the value of $y[10]$?
+  \begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+    \item[] \blue{(i)} \hspace{3 mm}2
+    \item[] \blue{(ii)} ~~1
+    \item[] \blue{(iii)} ~0
+    \item[] \blue{(iv)} \hspace{0.5 mm}-1
+    \item[] \blue{(v)} ~-2
+  \end{itemize}
+\end{itemize}
+\vspace{6 cm}
+
+\end{frame}
+
+%------------------------------------------------
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Solution(Q5(a))}
+
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[] $k=1$, $y[10]=?$
+\end{itemize}
+
+\begin{table}
+\def\arraystretch{1.5}
+\begin{tabular}{ccccccccc}
+\hline
+$n$ & $x[n]$ & $y[n]$ & $=$ & $y[n-1]$ & $-$ & $y[n-2]$ & $+$ & $x[n]$ \\
+
+0 & 1 & 1 & $=$ & 0 & $-$ & 0 & $+$ & 1 \\ 
+
+1 & 0 & 1 & $=$ & 1 & $-$ & 0 & $+$ & 0 \\ 
+
+2 & 0 & 0 & $=$ & 1 & $-$ & 1 & $+$ & 0 \\ 
+
+3 & 0 & -1 & $=$ & 0 & $-$ & 1 & $+$ & 0 \\ 
+
+4 & 0 & -1 & $=$ & -1 & $-$ & 0 & $+$ & 0 \\
+
+5 & 0 & 0 & $=$ & -1 & $-$ & -1 & $+$ & 0 \\ 
+
+\hline
+\end{tabular}
+\end{table}
+
+\end{frame}
+
+%------------------------------------------------
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Solution(Q5(a))}
+
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[] $k=1$, $y[10]=?$
+\end{itemize}
+
+\begin{table}
+\def\arraystretch{1.5}
+\begin{tabular}{ccccccccc}
+\hline
+$n$ & $x[n]$ & $y[n]$ & $=$ & $y[n-1]$ & $-$ & $y[n-2]$ & $+$ & $x[n]$ \\
+
+6 & 0 & 1 & $=$ & 0 & $-$ & -1 & $+$ & 0 \\ 
+
+7 & 0 & 1 & $=$ & 1 & $-$ & 0 & $+$ & 0 \\ 
+
+8 & 0 & 0 & $=$ & 1 & $-$ & 1 & $+$ & 0 \\ 
+
+9 & 0 & -1 & $=$ & 0 & $-$ & 1 & $+$ & 0 \\ 
+
+10 & 0 & -1 & $=$ & -1 & $-$ & 0 & $+$ & 0 \\
+
+\hline
+\end{tabular}
+\end{table}
+
+\end{frame}
+
+%------------------------------------------------
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Question 5(b)}
+
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[] \blue{[FA12 Final Exam]} Consider the difference equation $y[n] = k \cdot y[n-1] + k \cdot y[n-2] + x[n]$. \newline Assume $x[n]$ is an impulse input, i.e. $x[0] = 1$ and $x[n] = 0$ for other values of $n$, and that $y[n] = 0$ for $n < 0$ .
+\end{itemize}
+
+\vspace{8 mm}
+
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[] \blue{(b)} Let $k = -1$. What is the value of $y[10]$?
+  \begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  	\item[] \blue{(i)} \hspace{4 mm}34
+  	\item[] \blue{(ii)} ~~-34
+  	\item[] \blue{(iii)} ~~55
+  	\item[] \blue{(iv)} \hspace{1.5 mm}-55
+  	\item[] \blue{(v)} \hspace{2 mm} 89
+  \end{itemize}
+\end{itemize}
+\vspace{6 cm}
+
+\end{frame}
+
+%------------------------------------------------
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Solution(Q5(b))}
+
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[] $k=-1$, $y[10]=?$
+\end{itemize}
+
+\begin{table}
+\def\arraystretch{1.5}
+\begin{tabular}{ccccccccc}
+\hline
+$n$ & $x[n]$ & $y[n]$ & $=$ & $-y[n-1]$ & $+$ & $y[n-2]$ & $+$ & $x[n]$ \\
+
+0 & 1 & 1 & $=$ & $-(0)$ & $+$ & 0 & $+$ & 1 \\ 
+
+1 & 0 & -1 & $=$ & $-(1)$ & $+$ & 0 & $+$ & 0 \\ 
+
+2 & 0 & 2 & $=$ & $-(-1)$ & $+$ & 1 & $+$ & 0 \\ 
+
+3 & 0 & -3 & $=$ & $-(2)$ & $+$ & -1 & $+$ & 0 \\ 
+
+4 & 0 & 5 & $=$ & $-(-3)$ & $+$ & 2 & $+$ & 0 \\
+
+5 & 0 & -8 & $=$ & $-(5)$ & $+$ & -3 & $+$ & 0 \\ 
+
+\hline
+\end{tabular}
+\end{table}
+
+\end{frame}
+
+%------------------------------------------------
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Solution(Q5(b))}
+
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[] $k=-1$, $y[10]=?$
+\end{itemize}
+
+\begin{table}
+\def\arraystretch{1.5}
+\begin{tabular}{ccccccccc}
+\hline
+$n$ & $x[n]$ & $y[n]$ & $=$ & $-y[n-1]$ & $+$ & $y[n-2]$ & $+$ & $x[n]$ \\
+
+6 & 0 & 13 & $=$ & $-(-8)$ & $+$ & 5 & $+$ & 0 \\ 
+
+7 & 0 & -21 & $=$ & $-(13)$ & $+$ & -8 & $+$ & 0 \\ 
+
+8 & 0 & 34 & $=$ & $-(-21)$ & $+$ & 13 & $+$ & 0 \\ 
+
+9 & 0 & -55 & $=$ & $-(34)$ & $+$ & -21 & $+$ & 0 \\ 
+
+10 & 0 & 89 & $=$ & $-(-55)$ & $+$ & 34 & $+$ & 0 \\
+
+\hline
+\end{tabular}
+\end{table}
+
+\end{frame}
+
+%------------------------------------------------
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Question 6}
+
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[$\ast$] Consider the block diagram relating the two signal $x[n]$ and $y[n]$ given in figure. \blue{\bf R: delay(1)}
+\end{itemize}
+
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.5\textwidth]{./image/signal/signal6}
+\end{figure}
+
+
+
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[\blue{(a)}] Determine the difference equation relating $y[n]$ and $x[n]$.
+  \item[\blue{(b)}] Assume that a solution to the difference equation in part (a) is given by $y[n] = k\alpha^nu[n]$, where $u[n]$ is unit step function and $x[n] = \delta[n]$. Find the appropriate value of $k$ and $\alpha$, and verify that $y[n]$ satisfies the difference equation.
+  \item[\blue{(c)}] Verify your answer to part (b) by directly calculating $y[0]$, $y[1]$, and $y[2]$.
+\end{itemize}
+
+\end{frame}
+% -----------------------------------------------
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Solution(Q6(a))}
+
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[\blue{(a)}] Determine the difference equation relating $y[n]$ and $x[n]$.
+\end{itemize}
+
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.5\textwidth]{./image/signal/signal6}
+\end{figure}
+
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[$\ast$] Thus, $y[n]=x[n]-\frac{1}{2}y[n-1]$
+  \item[$\ast$] or $y[n]+\frac{1}{2}y[n-1]=x[n]$
+\end{itemize}
+
+
+\end{frame}
+% --------------------------------------------
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Solution(Q6(b))}
+
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[\blue{(b)}] Assume that a solution to the difference equation in part (a) is given by $y[n] = k\alpha^nu[n]$, where $u[n]$ is unit step function and $x[n] = \delta[n]$. Find the appropriate value of $k$ and $\alpha$, and verify that $y[n]$ satisfies the difference equation.
+\end{itemize}
+
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.5\textwidth]{./image/signal/signal6}
+\end{figure}
+
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[$\ast$] For $n < 0$, $x[n]=\delta[n]=0$ $\therefore y[n] = 0$
+  \item[$\ast$] For $n = 0$, $y[0] + \frac{1}{2}y[-1] = x[0]$
+  \item[$\ast$] Substituting $y[n]=k\alpha^nu[n]$
+  \item[$\ast$] $k\alpha^0u[0]+\frac{1}{2}k\alpha^{-1}u[-1]=1$
+  \item[$\ast$] $k(1)(1) + \frac{1}{2}k\alpha^{-1}(0) = 1 \Rightarrow k=1$
+\end{itemize}
+
+
+\end{frame}
+% --------------------------------------------
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Solution(Q6(b))}
+
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[\blue{(b)}] Assume that a solution to the difference equation in part (a) is given by $y[n] = k\alpha^nu[n]$, where $u[n]$ is unit step function and $x[n] = \delta[n]$. Find the appropriate value of $k$ and $\alpha$, and verify that $y[n]$ satisfies the difference equation.
+\end{itemize}
+
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.5\textwidth]{./image/signal/signal6}
+\end{figure}
+
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[$\ast$] For $n > 0$, $y[n] + \frac{1}{2}y[n-1] = x[n]$
+  \item[$\ast$] $k\alpha^nu[n]+\frac{1}{2}k\alpha^{n-1}u[n-1]=0$
+  \item[$\ast$] (1)$(\alpha^n)(1) + \frac{1}{2}(1)\alpha^{n-1}(1) = 0$
+  \item[$\ast$] $\alpha^n + \frac{1}{2}\alpha^{n-1} = 0 \Rightarrow \alpha = -\frac{1}{2}$
+\end{itemize}
+
+\end{frame}
+% --------------------------------------------
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Solution(Q6(b))}
+
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[\blue{(b)}] The difference equation: $y[n]+\frac{1}{2}y[n-1]=x[n]$
+  \item[] For $k = 1$, $\alpha = -\frac{1}{2}$, $y[n]=(-\frac{1}{2})^nu[n]$
+  \item[] Substituting into the left side of the difference equation,
+  \item[] We have
+\end{itemize}
+
+
+\begin{itemize} \itemsep10pt \parskip0pt \parsep0pt
+  \item[] $y[n] + \frac{1}{2}y[n-1] = (-\frac{1}{2})^nu[n] + \frac{1}{2}(-\frac{1}{2})^{n-1}u[n-1]$
+  \item[$=$] $(-\frac{1}{2})^nu[n] - (-\frac{1}{2})^nu[n-1]$
+  \item[$=$] $\begin{cases}
+              1,&n=0\\
+              0,&otherwise\\
+            \end{cases}=\delta[n] = x[n]$ \hspace{8 mm}Verified.
+\end{itemize}
+
+
+\end{frame}
+% --------------------------------------------
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Solution(Q6)}
+
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[\blue{(c)}]We can successively calculate $y[n]$ by noting that $y[-1]=0$ and that
+  \item[] $y[n] = -\frac{1}{2}y[n-1] + x[n]$
+  \item[] so
+  \vspace{8 mm}
+  \item[] $n = 0$, $y[0] = -\frac{1}{2} \cdot 0 + 1 = 1$
+  \item[] $n = 1$, $y[1] = -\frac{1}{2} \cdot 1 + 0 = -\frac{1}{2}$
+  \item[] $n = 2$, $y[2] = -\frac{1}{2} \cdot (-\frac{1}{2}) + 0 = \frac{1}{4}$
+\end{itemize}
+
+
+\end{frame}
+% --------------------------------------------
+%------------------------------------------------
+\begin{frame}
+\frametitle{Summary}
+
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+    \item[$\bullet$] Building blocks
+    \begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+      \item[$\bullet$] Three Building Blocks({\bf analyze signals one by one})
+      \item[$\bullet$] Flow Graph Transformations
+    \end{itemize}
+    \item[$\bullet$] Difference Equations
+    \begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+      \item[$\bullet$] Conventions({\bf signals out of range is NULL or 0})
+      \item[$\bullet$] Two Special Discrete-time signals($\delta[n]$ and $u[n]$)
+      \item[$\bullet$] Flow Graphs
+    \end{itemize}
+  \end{itemize}
+
+\end{frame}
+
+%------------------------------------------------
+% %------------------------------------------------
+
+\begin{frame}
+\Huge{\centerline{The End}}
+\end{frame}
+
+%------------
+
+
+
+
+
+
+% ----------------------
+
+\end{document}

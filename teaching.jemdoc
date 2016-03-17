@@ -2,12 +2,14 @@
 = Teaching
 
 == ENGG1203: Introduction to Electrical and Electronic Engineering
+=== Course Information
+- \[[http://www.eee.hku.hk/~engg1203/sp16/index.html Spring 2016]\]
+
 === Tutorial
 - Questions: \[[teach/tutorial/Qcircuit1.pdf Qcircuit1]\] \[[teach/tutorial/Qcircuit2.pdf Qcircuit2]\] \[[teach/tutorial/Qsignals.pdf Qsignals]\]
 - Circuit (1st part) \[[teach/tutorial/circuit1.pdf Slides]\]
 - Circuit (2nd part) \[[teach/tutorial/circuit2.pdf Slides]\]
 - Signals, Systems, Control \[[teach/tutorial/signals.pdf Slides]\]
-
 
 
 === Class Notes
@@ -17,7 +19,8 @@
 
 
 
-
+== Others
+- Data Visualization \[[http://monaen.github.io/Slides/DataVisualization Online Slides]\]
 
 
 
