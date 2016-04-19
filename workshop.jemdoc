@@ -9,7 +9,7 @@
 
 ~~~
 {}{img_left}{images/workshop_img/logo.png}{alt text}{200px}{120px}{http://monaen.github.io/marvelchinese}
-=== Marvel China \n
+=== [http://monaen.github.io/marvelchinese Marvel China] \n
 *Marvel China* is a data visualization project to show the powerful influence of chinese culture. Multiple techniques \n
 like [https://d3js.org D3js], [https://www.chromeexperiments.com/globe webgl-globe], [http://nvd3.org NVD3], and [https://www.r-project.org/ R] have been
 used in the project, and we also provide some useful APIs for people \n
