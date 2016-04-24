@@ -1,8 +1,13 @@
 # jemdoc: menu{MENU}{projects.html}
 = Projects
 
-
-
-
-
+== Two-party Privacy Decision Tree Algorithm
+~~~
+{}{img_left}{images/projects_img/privacydecisiontree.png}{alt text}{200px}{160px}{http://monaen.github.io/PrivacyDecisionTree}
+=== [http://monaen.github.io/PrivacyDecisionTree Two-party Privacy Decision Tree Algorithm] \n
+*Two-party Privacy Decision Tree Algorithm* is an extended algorithm based on traditional ID3 algorithm. It fits better on the situation that taking personal privacy into consideration. In this project, we proposed a jointly decision tree construction algorithm(on two-party case) to resolve the conflict that two parties want to build a decision tree based on their data, meanwhile keep their own data private.
+=== Slides
+- Privacy Data Mining: \[[workshop/COMP8101/report1.pdf Presentation]\]\[[workshop/COMP8101/report1.pdf Presentation final]\]
+- Algorithm illustration: \[[http://monaen.github.io/PrivacyDecisionTree Algorithm]\]
+~~~
 
