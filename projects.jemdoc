@@ -1,6 +1,19 @@
 # jemdoc: menu{MENU}{projects.html}
 = Projects
 
+
+
+
+
+
+
+
+
+
+
+
+
+= Course Projects
 == Two-party Privacy Decision Tree Algorithm
 ~~~
 {}{img_left}{images/projects_img/privacydecisiontree.png}{alt text}{200px}{160px}{http://monaen.github.io/PrivacyDecisionTree}

@@ -1,0 +1,1220 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Beamer Presentation
+% LaTeX Template
+% Version 1.0 (10/11/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND THEMES
+%----------------------------------------------------------------------------------------
+
+\documentclass[xcolor=table]{beamer}
+
+\mode<presentation> {
+
+
+%\usetheme{Berlin}
+%\usetheme{Boadilla}
+\usetheme{CambridgeUS}
+%\usetheme{Copenhagen}
+%\usetheme{Darmstadt}
+%\usetheme{Dresden}
+
+%\usecolortheme{wolverine}
+
+%\setbeamertemplate{footline} % To remove the footer line in all slides uncomment this line
+%\setbeamertemplate{footline}[page number] % To replace the footer line in all slides with a simple slide count uncomment this line
+
+%\setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
+}
+
+\usefonttheme{professionalfonts}
+\usepackage{times}
+\usepackage{tikz}
+\usepackage{amsmath}
+\usepackage{verbatim}
+\usetikzlibrary{arrows,shapes}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage[outdir=./]{epstopdf}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+\usepackage{hyperref}
+\usepackage{fmtcount} % equivalent to \usepackage[super]{nth}
+\usepackage{listings}
+\usepackage{color}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\green}[1]{\textcolor{green}{#1}}
+\newcommand{\yellow}[1]{\textcolor{yellow}{#1}}
+\newcommand{\orange}[1]{\textcolor{orange}{#1}}
+\newcommand{\cyan}[1]{\textcolor{cyan}{#1}}
+\newcommand{\magenta}[1]{\textcolor{magenta}{#1}}
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title[Two-party Jointly Decision Tree]{Privacy Preserving Distributed ID3 Algorithm} % The short title appears at the bottom of every slide, the full title is only on the title page
+
+\author{Chen Yuechen \\ Fung Divine \\ Nan Meng} % Your name
+
+\date{\today} % Date, can be changed to a custom date
+
+\begin{document}
+
+\begin{frame}
+	\titlepage % Print the title page as the first slide
+\end{frame}
+
+\begin{frame}
+\frametitle{Overview} % Table of contents slide, comment this block out to remove it
+
+\begin{itemize} \itemsep16pt \parskip0pt \parsep0pt
+  \item[$\ast$] Introduction
+  \item[$\ast$] Problem Definition
+  \item[$\ast$] Solution
+  \item[$\ast$] Result
+  \item[$\ast$] Conclusion
+\end{itemize}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+%	PRESENTATION SLIDES
+%----------------------------------------------------------------------------------------
+%------------------------------------------------
+\begin{frame}
+\frametitle{Privacy Preserving Data Mining}
+
+\begin{itemize} \itemsep16pt \parskip0pt \parsep0pt
+  \item[$\bullet$] Mining while protecting the privacy of data.
+\end{itemize}
+
+\begin{columns}
+\begin{column}{6cm}
+\begin{figure}[H]
+  \caption{Lindell’s definition}
+  \centering
+  \includegraphics[width=0.8\textwidth]{presentation1}
+  \label{Angelinatree}
+\end{figure}
+\end{column}
+
+
+\begin{column}{6cm}
+\begin{figure}[H]
+  \caption{Agrawal’s definition}
+  \centering
+  \includegraphics[width=0.55\textwidth]{presentation2}
+  \label{Angelinatree}
+\end{figure}
+\end{column}
+\end{columns}
+\end{frame}
+
+%------------------------------------------------
+%------------------------------------------------
+\begin{frame}
+\frametitle{ID3 Algorithm}
+\begin{itemize} \itemsep16pt \parskip0pt \parsep0pt
+  \item[$\bullet$] ID3 is an algorithm used to generate a decision tree from a dataset, and is typically used in the data mining.
+  \begin{itemize} \itemsep10pt \parskip0pt \parsep0pt
+    \item[$1.$] Calculate the {\bf entropy} of every attribute using the data set S.
+    \item[$2.$] Split the set S into subsets using the attribute for which entropy is minimum 
+    \item[$3.$] Make a decision tree node containing that attribute
+    \item[$4.$] Recurse on subsets using remaining attributes.
+  \end{itemize}
+\end{itemize}
+
+\end{frame}
+
+%------------------------------------------------
+%------------------------------------------------
+\begin{frame}
+\frametitle{Distributed ID3 Algorithm}
+\begin{columns}
+
+\begin{column}{8cm}
+\begin{table}[]
+\centering
+\caption{Play Golf Dataset}
+\begin{tabular}{lllll}
+\rowcolor[HTML]{9B9B9B} 
+Outlook  & Temp & Humidity & Windy & Play Golf \\
+\rowcolor[HTML]{FFCB2F} 
+Rainy    & Hot  & High     & FALSE & No        \\
+\rowcolor[HTML]{FFCB2F} 
+Rainy    & Hot  & High     & TRUE  & No        \\
+\rowcolor[HTML]{FFCB2F} 
+Overcast & Hot  & High     & FALSE & Yes       \\
+\rowcolor[HTML]{FFCB2F} 
+Sunny    & Mild & High     & FALSE & Yes       \\
+\rowcolor[HTML]{FFCB2F} 
+Rainy    & Mild & Normal   & TRUE  & Yes       \\
+\rowcolor[HTML]{34CDF9} 
+Overcast & Cool & Normal   & TRUE  & Yes       \\
+\rowcolor[HTML]{34CDF9} 
+Rainy    & Mild & High     & FALSE & No        \\
+\rowcolor[HTML]{34CDF9} 
+Rainy    & Cool & Normal   & FALSE & Yes       \\
+\rowcolor[HTML]{34CDF9} 
+Sunny    & Mild & Normal   & FALSE & Yes      
+\end{tabular}
+\end{table}
+\end{column}
+
+
+
+\begin{column}{2cm}
+\vspace{2cm} \newline
+{\large $\Rightarrow$} \hspace{4mm} \red{\bf Alice} \newline
+\vspace{1cm} \newline
+{\large $\Rightarrow$} \hspace{4mm} \cyan{\bf Bob}
+\end{column}
+
+\end{columns}
+
+\end{frame}
+
+%------------------------------------------------
+%------------------------------------------------
+\begin{frame}
+\frametitle{Distributed ID3 Algorithm}
+\begin{itemize} \itemsep16pt \parskip0pt \parsep0pt
+  \item[$\bullet$] Data is distributed in two or more parties
+\end{itemize}
+
+\begin{columns}
+
+\begin{column}{6cm}
+\begin{table}[]
+\centering
+\caption{Alice}
+\scalebox{0.6}{
+\begin{tabular}{lllll}
+\rowcolor[HTML]{9B9B9B} 
+Outlook  & Temp & Humidity & Windy & Play Golf \\
+\rowcolor[HTML]{FFCB2F} 
+Rainy    & Hot  & High     & FALSE & No        \\
+\rowcolor[HTML]{FFCB2F} 
+Rainy    & Hot  & High     & TRUE  & No        \\
+\rowcolor[HTML]{FFCB2F} 
+Overcast & Hot  & High     & FALSE & Yes       \\
+\rowcolor[HTML]{FFCB2F} 
+Sunny    & Mild & High     & FALSE & Yes       \\
+\rowcolor[HTML]{FFCB2F} 
+Rainy    & Mild & Normal   & TRUE  & Yes      
+\end{tabular}}
+\end{table}
+
+\end{column}
+
+\begin{column}{6cm}
+
+\begin{table}[]
+\centering
+\caption{Bob}
+\scalebox{0.6}{
+\begin{tabular}{lllll}
+\rowcolor[HTML]{9B9B9B} 
+Outlook  & Temp & Humidity & Windy & Play Golf \\
+\rowcolor[HTML]{34CDF9} 
+Overcast & Cool & Normal   & TRUE  & Yes       \\
+\rowcolor[HTML]{34CDF9} 
+Rainy    & Mild & High     & FALSE & No        \\
+\rowcolor[HTML]{34CDF9} 
+Rainy    & Cool & Normal   & FALSE & Yes       \\
+\rowcolor[HTML]{34CDF9} 
+Sunny    & Mild & Normal   & FALSE & Yes      
+\end{tabular}}
+\end{table}
+\vspace{4 mm}
+\end{column}
+\end{columns}
+
+\begin{itemize} \itemsep16pt \parskip0pt \parsep0pt
+  \item[$\bullet$] Combine data together and get a decision tree
+\end{itemize}
+
+\end{frame}
+
+%------------------------------------------------
+%------------------------------------------------
+\begin{frame}
+\frametitle{Problem Definition}
+
+\begin{itemize} \itemsep16pt \parskip0pt \parsep0pt
+  \item[$\bullet$]However, data is \red{\bf privacy}.
+\end{itemize}
+
+\begin{columns}
+
+\begin{column}{6cm}
+\begin{table}[]
+\centering
+\caption{Alice}
+\scalebox{0.6}{
+\begin{tabular}{lllll}
+\rowcolor[HTML]{9B9B9B} 
+Outlook  & Temp & Humidity & Windy & Play Golf \\
+\rowcolor[HTML]{FFCB2F} 
+Rainy    & Hot  & High     & FALSE & No        \\
+\rowcolor[HTML]{FFCB2F} 
+Rainy    & Hot  & High     & TRUE  & No        \\
+\rowcolor[HTML]{FFCB2F} 
+Overcast & Hot  & High     & FALSE & Yes       \\
+\rowcolor[HTML]{FFCB2F} 
+Sunny    & Mild & High     & FALSE & Yes       \\
+\rowcolor[HTML]{FFCB2F} 
+Rainy    & Mild & Normal   & TRUE  & Yes      
+\end{tabular}}
+\end{table}
+
+\end{column}
+
+\begin{column}{6cm}
+
+\begin{table}[]
+\centering
+\caption{Bob}
+\scalebox{0.6}{
+\begin{tabular}{lllll}
+\rowcolor[HTML]{9B9B9B} 
+Outlook  & Temp & Humidity & Windy & Play Golf \\
+\rowcolor[HTML]{34CDF9} 
+Overcast & Cool & Normal   & TRUE  & Yes       \\
+\rowcolor[HTML]{34CDF9} 
+Rainy    & Mild & High     & FALSE & No        \\
+\rowcolor[HTML]{34CDF9} 
+Rainy    & Cool & Normal   & FALSE & Yes       \\
+\rowcolor[HTML]{34CDF9} 
+Sunny    & Mild & Normal   & FALSE & Yes      
+\end{tabular}}
+\end{table}
+\vspace{4 mm}
+\end{column}
+\end{columns}
+
+\begin{itemize} \itemsep16pt \parskip0pt \parsep0pt
+  \item[$\bullet$] How to share data in a safe way in distributed ID3 algorithm?
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+%------------------------------------------------
+\begin{frame}
+\frametitle{An Example of Distributed ID3 Algorithm}
+\begin{itemize} \itemsep16pt \parskip0pt \parsep0pt
+  \item[$\bullet$] Here we use a example of Distributed ID3 algorithm to clearly define the problem. For example, Compute the entropy of \red{\bf Rainy}.
+\end{itemize}
+\begin{columns}
+\begin{column}{6cm}
+\begin{table}[]
+\centering
+\caption{Alice}
+\scalebox{0.6}{
+\begin{tabular}{lllll}
+\rowcolor[HTML]{9B9B9B} 
+Outlook  & Temp & Humidity & Windy & Play Golf \\
+\rowcolor[HTML]{FFCB2F} 
+\red{Rainy}    & Hot  & High     & FALSE & \red{No}        \\
+\rowcolor[HTML]{FFCB2F} 
+\red{Rainy}    & Hot  & High     & TRUE  & \red{No}        \\
+\rowcolor[HTML]{FFCB2F} 
+Overcast & Hot  & High     & FALSE & Yes       \\
+\rowcolor[HTML]{FFCB2F} 
+Sunny    & Mild & High     & FALSE & Yes       \\
+\rowcolor[HTML]{FFCB2F} 
+\red{Rainy}    & Mild & Normal   & TRUE  & \red{Yes}      
+\end{tabular}}
+\end{table}
+\centerline{\red{3} records, \red{2} No, \red{1} Yes}
+\end{column}
+
+\begin{column}{6cm}
+
+\begin{table}[]
+\centering
+\caption{My caption}
+\scalebox{0.6}{
+\begin{tabular}{lllll}
+\rowcolor[HTML]{9B9B9B} 
+Outlook  & Temp & Humidity & Windy & Play Golf \\
+\rowcolor[HTML]{34CDF9} 
+Overcast & Cool & Normal   & TRUE  & Yes       \\
+\rowcolor[HTML]{34CDF9} 
+\red{Rainy}    & Mild & High     & FALSE & \red{No}        \\
+\rowcolor[HTML]{34CDF9} 
+\red{Rainy}    & Cool & Normal   & FALSE & \red{Yes}       \\
+\rowcolor[HTML]{34CDF9} 
+Sunny    & Mild & Normal   & FALSE & Yes      
+\end{tabular}}
+\end{table}
+\vspace{3 mm}
+\centerline{\cyan{2} records, \cyan{1} No, \cyan{1} Yes}
+\vspace{1 mm}
+\end{column}
+\end{columns}
+
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[] {\scriptsize \begin{equation*}Entropy(Rainy) = -\underset{Play Golf = No}{\underbrace{\frac{\color{red}{2}\color{black}{+}\color{cyan}{1}}{\color{red}{3}\color{black}{+}\color{cyan}{2}}log_2{(\frac{\color{red}{2}\color{black}{+}\color{cyan}{1}}{\color{red}{3}\color{black}{+}\color{cyan}{2}}})}} - \underset{PlayGolf = Yes}{\underbrace{\frac{\color{red}{1}\color{black}{+}\color{cyan}{1}}{\color{red}{3}\color{black}{+}\color{cyan}{2}}log_2{(\frac{\color{red}{1}\color{black}{+}\color{cyan}{1}}{\color{red}{3}\color{black}{+}\color{cyan}{2}}})}}\end{equation*}}
+  \item[] \hspace{43mm}{\scriptsize $ = -\frac{3}{5}log_2{(\frac{3}{5})} - \frac{2}{5}log_2{(\frac{2}{5})}$}
+\end{itemize}
+
+\end{frame}
+
+%------------------------------------------------
+%------------------------------------------------
+\begin{frame}
+\frametitle{An Example of Distributed ID3 Algorithm}
+\begin{itemize} \itemsep16pt \parskip0pt \parsep0pt
+  \item[$\bullet$] For example, Compute the entropy of \red{\bf Rainy}.
+\end{itemize}
+
+\begin{columns}
+
+\begin{column}{6cm}
+\begin{table}[]
+\centering
+\caption{Alice}
+\scalebox{0.6}{
+\begin{tabular}{lllll}
+\rowcolor[HTML]{9B9B9B} 
+Outlook  & Temp & Humidity & Windy & Play Golf \\
+\rowcolor[HTML]{FFCB2F} 
+\red{Rainy}    & Hot  & High     & FALSE & \red{No}        \\
+\rowcolor[HTML]{FFCB2F} 
+\red{Rainy}    & Hot  & High     & TRUE  & \red{No}        \\
+\rowcolor[HTML]{FFCB2F} 
+Overcast & Hot  & High     & FALSE & Yes       \\
+\rowcolor[HTML]{FFCB2F} 
+Sunny    & Mild & High     & FALSE & Yes       \\
+\rowcolor[HTML]{FFCB2F} 
+\red{Rainy}    & Mild & Normal   & TRUE  & \red{Yes}      
+\end{tabular}}
+\end{table}
+\centerline{\red{3} records, \red{2} No, 1 Yes}
+\end{column}
+
+\begin{column}{6cm}
+
+\begin{table}[]
+\centering
+\caption{My caption}
+\scalebox{0.6}{
+\begin{tabular}{lllll}
+\rowcolor[HTML]{9B9B9B} 
+Outlook  & Temp & Humidity & Windy & Play Golf \\
+\rowcolor[HTML]{34CDF9} 
+Overcast & Cool & Normal   & TRUE  & Yes       \\
+\rowcolor[HTML]{34CDF9} 
+\red{Rainy}    & Mild & High     & FALSE & \red{No}        \\
+\rowcolor[HTML]{34CDF9} 
+\red{Rainy}    & Cool & Normal   & FALSE & \red{Yes}       \\
+\rowcolor[HTML]{34CDF9} 
+Sunny    & Mild & Normal   & FALSE & Yes      
+\end{tabular}}
+\end{table}
+\vspace{3 mm}
+\centerline{\cyan{2} records, \cyan{1} No, 1 Yes}
+\vspace{1 mm}
+\end{column}
+\end{columns}
+
+
+
+
+
+% Below we mix an ordinary equation with TikZ nodes. Note that we have to
+% adjust the baseline of the nodes to get proper alignment with the rest of
+% the equation.
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[] {\scriptsize \begin{equation*}
+Entropy(Rainy) = 
+        \tikz[baseline]{
+            \node[fill=cyan!20,anchor=base]
+            {$ -\frac{\color{red}{2}\color{black}{+}\color{cyan}{1}}{\color{red}{3}\color{black}{+}\color{cyan}{2}}log_2{(\frac{\color{red}{2}\color{black}{+}\color{cyan}{1}}{\color{red}{3}\color{black}{+}\color{cyan}{2}}})$};
+        } -
+        \tikz[baseline]{
+            \node[anchor=base]
+            {$\frac{\color{red}{1}\color{black}{+}\color{cyan}{1}}{\color{red}{3}\color{black}{+}\color{cyan}{2}}log_2{(\frac{\color{red}{1}\color{black}{+}\color{cyan}{1}}{\color{red}{3}\color{black}{+}\color{cyan}{2}}})$};
+        }
+\end{equation*}}
+  \item[] \hspace{42mm} {\scriptsize$ = -\frac{3}{5}log_2{(\frac{3}{5})} - \frac{2}{5}log_2{(\frac{2}{5})}$}
+\end{itemize}
+
+\end{frame}
+
+%------------------------------------------------
+%------------------------------------------------
+\begin{frame}
+\frametitle{An Example of Distributed ID3 Algorithm}
+\begin{itemize} \itemsep16pt \parskip0pt \parsep0pt
+  \item[$\bullet$] For example, Compute the entropy of \red{\bf Rainy}.
+\end{itemize}
+
+\begin{columns}
+
+\begin{column}{6cm}
+\begin{table}[]
+\centering
+\caption{Alice}
+\scalebox{0.6}{
+\begin{tabular}{lllll}
+\rowcolor[HTML]{9B9B9B} 
+Outlook  & Temp & Humidity & Windy & Play Golf \\
+\rowcolor[HTML]{FFCB2F} 
+\red{Rainy}    & Hot  & High     & FALSE & \red{No}        \\
+\rowcolor[HTML]{FFCB2F} 
+\red{Rainy}    & Hot  & High     & TRUE  & \red{No}        \\
+\rowcolor[HTML]{FFCB2F} 
+Overcast & Hot  & High     & FALSE & Yes       \\
+\rowcolor[HTML]{FFCB2F} 
+Sunny    & Mild & High     & FALSE & Yes       \\
+\rowcolor[HTML]{FFCB2F} 
+\red{Rainy}    & Mild & Normal   & TRUE  & \red{Yes}      
+\end{tabular}}
+\end{table}
+\centerline{\red{3} records, \red{2} No, 1 Yes}
+\end{column}
+
+\begin{column}{6cm}
+
+\begin{table}[]
+\centering
+\caption{My caption}
+\scalebox{0.6}{
+\begin{tabular}{lllll}
+\rowcolor[HTML]{9B9B9B} 
+Outlook  & Temp & Humidity & Windy & Play Golf \\
+\rowcolor[HTML]{34CDF9} 
+Overcast & Cool & Normal   & TRUE  & Yes       \\
+\rowcolor[HTML]{34CDF9} 
+\red{Rainy}    & Mild & High     & FALSE & \red{No}        \\
+\rowcolor[HTML]{34CDF9} 
+\red{Rainy}    & Cool & Normal   & FALSE & \red{Yes}       \\
+\rowcolor[HTML]{34CDF9} 
+Sunny    & Mild & Normal   & FALSE & Yes      
+\end{tabular}}
+\end{table}
+\vspace{3 mm}
+\centerline{\cyan{2} records, \cyan{1} No, 1 Yes}
+\vspace{1 mm}
+\end{column}
+\end{columns}
+
+
+
+
+
+% Below we mix an ordinary equation with TikZ nodes. Note that we have to
+% adjust the baseline of the nodes to get proper alignment with the rest of
+% the equation.
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[] {\scriptsize \begin{equation*}
+        \tikz[baseline]{
+            \node[fill=cyan!20,anchor=base]
+            {$ -\frac{\color{red}{2}\color{black}{+}\color{cyan}{1}}{\color{red}{3}\color{black}{+}\color{cyan}{2}}log_2{(\frac{\color{red}{2}\color{black}{+}\color{cyan}{1}}{\color{red}{3}\color{black}{+}\color{cyan}{2}}})$};
+        }
+\end{equation*}}
+  
+\end{itemize}
+
+\end{frame}
+
+%------------------------------------------------
+%------------------------------------------------
+\begin{frame}
+\frametitle{An Example of Distributed ID3 Algorithm}
+\begin{itemize} \itemsep16pt \parskip0pt \parsep0pt
+  \item[$\bullet$] For example, Compute the entropy of \red{\bf Rainy}.
+\end{itemize}
+
+\begin{columns}
+
+\begin{column}{6cm}
+\begin{table}[]
+\centering
+\caption{Alice}
+\scalebox{0.6}{
+\begin{tabular}{lllll}
+\rowcolor[HTML]{9B9B9B} 
+Outlook  & Temp & Humidity & Windy & Play Golf \\
+\rowcolor[HTML]{FFCB2F} 
+\red{Rainy}    & Hot  & High     & FALSE & \red{No}        \\
+\rowcolor[HTML]{FFCB2F} 
+\red{Rainy}    & Hot  & High     & TRUE  & \red{No}        \\
+\rowcolor[HTML]{FFCB2F} 
+Overcast & Hot  & High     & FALSE & Yes       \\
+\rowcolor[HTML]{FFCB2F} 
+Sunny    & Mild & High     & FALSE & Yes       \\
+\rowcolor[HTML]{FFCB2F} 
+\red{Rainy}    & Mild & Normal   & TRUE  & \red{Yes}      
+\end{tabular}}
+\end{table}
+\centerline{\red{3} records, \red{2} No, 1 Yes}
+\end{column}
+
+\begin{column}{6cm}
+
+\begin{table}[]
+\centering
+\caption{My caption}
+\scalebox{0.6}{
+\begin{tabular}{lllll}
+\rowcolor[HTML]{9B9B9B} 
+Outlook  & Temp & Humidity & Windy & Play Golf \\
+\rowcolor[HTML]{34CDF9} 
+Overcast & Cool & Normal   & TRUE  & Yes       \\
+\rowcolor[HTML]{34CDF9} 
+\red{Rainy}    & Mild & High     & FALSE & \red{No}        \\
+\rowcolor[HTML]{34CDF9} 
+\red{Rainy}    & Cool & Normal   & FALSE & \red{Yes}       \\
+\rowcolor[HTML]{34CDF9} 
+Sunny    & Mild & Normal   & FALSE & Yes      
+\end{tabular}}
+\end{table}
+\vspace{3 mm}
+\centerline{\cyan{2} records, \cyan{1} No, 1 Yes}
+\vspace{1 mm}
+\end{column}
+\end{columns}
+
+
+
+
+
+% Below we mix an ordinary equation with TikZ nodes. Note that we have to
+% adjust the baseline of the nodes to get proper alignment with the rest of
+% the equation.
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[]  \begin{equation*}
+  -\frac{\color{red}{2}\color{black}{+}\color{cyan}{1}}{\color{red}{3}\color{black}{+}\color{cyan}{2}}log_2
+        \tikz[baseline]{
+            \node[fill=cyan!20,anchor=base]
+            {$ (\frac{\color{red}{2}\color{black}{+}\color{cyan}{1}}{\color{red}{3}\color{black}{+}\color{cyan}{2}})$};
+        }
+\end{equation*}
+  
+\end{itemize}
+
+\end{frame}
+
+%------------------------------------------------
+%------------------------------------------------
+\begin{frame}
+\frametitle{An Example of Distributed ID3 Algorithm}
+\begin{itemize} \itemsep16pt \parskip0pt \parsep0pt
+  \item[$\bullet$] For example, Compute the entropy of \red{\bf Rainy}.
+\end{itemize}
+
+\begin{columns}
+
+\begin{column}{6cm}
+\begin{table}[]
+\centering
+\caption{Alice}
+\scalebox{0.6}{
+\begin{tabular}{lllll}
+\rowcolor[HTML]{9B9B9B} 
+Outlook  & Temp & Humidity & Windy & Play Golf \\
+\rowcolor[HTML]{FFCB2F} 
+\red{Rainy}    & Hot  & High     & FALSE & \red{No}        \\
+\rowcolor[HTML]{FFCB2F} 
+\red{Rainy}    & Hot  & High     & TRUE  & \red{No}        \\
+\rowcolor[HTML]{FFCB2F} 
+Overcast & Hot  & High     & FALSE & Yes       \\
+\rowcolor[HTML]{FFCB2F} 
+Sunny    & Mild & High     & FALSE & Yes       \\
+\rowcolor[HTML]{FFCB2F} 
+\red{Rainy}    & Mild & Normal   & TRUE  & \red{Yes}      
+\end{tabular}}
+\end{table}
+\centerline{\red{3} records, \red{2} No, 1 Yes}
+\end{column}
+
+\begin{column}{6cm}
+
+\begin{table}[]
+\centering
+\caption{My caption}
+\scalebox{0.6}{
+\begin{tabular}{lllll}
+\rowcolor[HTML]{9B9B9B} 
+Outlook  & Temp & Humidity & Windy & Play Golf \\
+\rowcolor[HTML]{34CDF9} 
+Overcast & Cool & Normal   & TRUE  & Yes       \\
+\rowcolor[HTML]{34CDF9} 
+\red{Rainy}    & Mild & High     & FALSE & \red{No}        \\
+\rowcolor[HTML]{34CDF9} 
+\red{Rainy}    & Cool & Normal   & FALSE & \red{Yes}       \\
+\rowcolor[HTML]{34CDF9} 
+Sunny    & Mild & Normal   & FALSE & Yes      
+\end{tabular}}
+\end{table}
+\vspace{3 mm}
+\centerline{\cyan{2} records, \cyan{1} No, 1 Yes}
+\vspace{1 mm}
+\end{column}
+\end{columns}
+% Below we mix an ordinary equation with TikZ nodes. Note that we have to
+% adjust the baseline of the nodes to get proper alignment with the rest of
+% the equation.
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[] {\normalsize \begin{equation*}
+        \tikz[baseline]{
+            \node[anchor=base]
+            {$ \frac{\color{red}{2}\color{black}{+}\color{cyan}{1}}{\color{red}{3}\color{black}{+}\color{cyan}{2}}$};
+        }
+\end{equation*}}
+  
+\end{itemize}
+
+\end{frame}
+
+%------------------------------------------------
+%------------------------------------------------
+\begin{frame}
+\frametitle{An Example of Distributed ID3 Algorithm}
+\begin{itemize} \itemsep16pt \parskip0pt \parsep0pt
+  \item[$\bullet$] For example, Compute the entropy of \red{\bf Rainy}.
+\end{itemize}
+
+\begin{columns}
+
+\begin{column}{6cm}
+\begin{table}[]
+\centering
+\caption{Alice}
+\scalebox{0.6}{
+\begin{tabular}{lllll}
+\rowcolor[HTML]{9B9B9B} 
+Outlook  & Temp & Humidity & Windy & Play Golf \\
+\rowcolor[HTML]{FFCB2F} 
+\red{Rainy}    & Hot  & High     & FALSE & \red{No}        \\
+\rowcolor[HTML]{FFCB2F} 
+\red{Rainy}    & Hot  & High     & TRUE  & \red{No}        \\
+\rowcolor[HTML]{FFCB2F} 
+Overcast & Hot  & High     & FALSE & Yes       \\
+\rowcolor[HTML]{FFCB2F} 
+Sunny    & Mild & High     & FALSE & Yes       \\
+\rowcolor[HTML]{FFCB2F} 
+\red{Rainy}    & Mild & Normal   & TRUE  & \red{Yes}      
+\end{tabular}}
+\end{table}
+\centerline{\red{a} records, \red{x} No, 1 Yes}
+\end{column}
+
+\begin{column}{6cm}
+
+\begin{table}[]
+\centering
+\caption{My caption}
+\scalebox{0.6}{
+\begin{tabular}{lllll}
+\rowcolor[HTML]{9B9B9B} 
+Outlook  & Temp & Humidity & Windy & Play Golf \\
+\rowcolor[HTML]{34CDF9} 
+Overcast & Cool & Normal   & TRUE  & Yes       \\
+\rowcolor[HTML]{34CDF9} 
+\red{Rainy}    & Mild & High     & FALSE & \red{No}        \\
+\rowcolor[HTML]{34CDF9} 
+\red{Rainy}    & Cool & Normal   & FALSE & \red{Yes}       \\
+\rowcolor[HTML]{34CDF9} 
+Sunny    & Mild & Normal   & FALSE & Yes      
+\end{tabular}}
+\end{table}
+\vspace{3 mm}
+\centerline{\cyan{b} records, \cyan{y} No, 1 Yes}
+\vspace{1 mm}
+\end{column}
+\end{columns}
+% Below we mix an ordinary equation with TikZ nodes. Note that we have to
+% adjust the baseline of the nodes to get proper alignment with the rest of
+% the equation.
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[] {\normalsize \begin{equation*}
+        \tikz[baseline]{
+            \node[anchor=base]
+            {$ \frac{\color{red}{x}\color{black}{+}\color{cyan}{y}}{\color{red}{a}\color{black}{+}\color{cyan}{b}}$};
+        }
+\end{equation*}}
+  
+\end{itemize}
+
+\end{frame}
+
+%------------------------------------------------
+%------------------------------------------------
+\begin{frame}
+\frametitle{Problem Definition}
+\begin{itemize} \itemsep6pt \parskip0pt \parsep0pt
+  \item[$\bullet$] Compute $\frac{\color{red}{x}\color{black}{+}\color{cyan}{y}}{\color{red}{a}\color{black}{+}\color{cyan}{b}}$ without reveal \red{a}, \red{x}, \cyan{b}, \cyan{y}.
+  \item[$\bullet$] Realize Privacy Preserving Distributed ID3 algorithm.
+  
+\end{itemize}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.5\textwidth,height=0.3\textwidth]{./presentation3}
+\end{figure}
+
+
+
+\centerline{\red{$Enc(\cdot)$ -- Encryption Algorithm}}
+
+\end{frame}
+
+%------------------------------------------------
+%------------------------------------------------
+\begin{frame}
+\frametitle{Solution}
+
+
+\begin{block}{PPWAP}
+\vspace{4 mm}
+\begin{itemize} \itemsep6pt \parskip0pt \parsep0pt
+  \item[$\bullet$] \red{PPWAP}: Privacy Preserving Weight Average Protocol
+\end{itemize}
+
+\end{block}
+
+
+\begin{block}{}
+\begin{itemize} \itemsep6pt \parskip0pt \parsep0pt
+  \item[$\bullet$] In this project, we choose PPWAP by \red{Pailier Encryption}.
+\end{itemize}
+
+\end{block}
+\end{frame}
+
+%------------------------------------------------
+%------------------------------------------------
+\begin{frame}
+\frametitle{Pailier Encryption}
+
+\begin{itemize} \itemsep25pt \parskip0pt \parsep0pt
+  \item[$\bullet$] $KeyGeneration()$: Generate public key $PK$, and secret key $SK$.
+  \item[$\bullet$] $Encryption(m, PK)$: Using $PK$ to encrypt message $m$, output $Enc(m)$.
+  \item[$\bullet$] $Decryption(Enc(m), SK)$: Using SK to decrypt $Enc(m)$, output $m$.
+\end{itemize}
+
+\end{frame}
+
+%------------------------------------------------
+%------------------------------------------------
+\begin{frame}
+\frametitle{Pailier Encryption}
+
+\begin{itemize} \itemsep20pt \parskip0pt \parsep0pt
+  \item[$\bullet$] \red{Property}: Addition Homomorphism
+  \item[$\bullet$] Given two messages \red{$m1$} and \red{$m2$}, $Enc(\color{red}{m1+m2}\color{black}{)} = Enc(\color{red}{m1}\color{black}{)} \cdot Enc(\color{red}{m2}\color{black}{)}$.
+  \item[$\bullet$] The encryption of \red{$m1+m2$} can be computerd by $Enc(\color{red}{m1}\color{black}{)}$ and $Enc(\color{red}{m2}\color{black}{)}$.
+\end{itemize}
+
+\end{frame}
+
+%------------------------------------------------
+%------------------------------------------------
+\begin{frame}
+\frametitle{PPWAP based on Pailier Encryption}
+Privacy Preserving Weighted Average Protocol
+\begin{itemize} \itemsep20pt \parskip0pt \parsep0pt
+  \item[$\bullet$] Within the help of Paillier, build PPWAP scheme. 
+\end{itemize}
+\vspace{4 mm}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.5\textwidth]{./presentation4}
+\end{figure}
+
+
+
+\end{frame}
+
+%------------------------------------------------
+%------------------------------------------------
+\begin{frame}
+\frametitle{PPWAP}
+\begin{columns}
+
+\begin{column}{6cm}
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[] \hspace{16mm}{Alice} \newline
+  \item[$1.$] $KeyGeneration(): SK, PK$
+  \item[] $Encryption(a ,PK): Enc(a)$
+  \item[] $Encryption(x ,PK): Enc(x)$
+\end{itemize}
+\noindent\rule{12cm}{0.4pt}
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[$2.$] 
+\end{itemize}
+\end{column}
+\begin{column}{1cm}
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[] \red{\Huge $\Rightarrow $}
+\end{itemize}
+\vspace{1 cm}
+\end{column}
+\begin{column}{4cm}
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[] 
+  \item[] Bob
+  \item[] 
+  \item[] $Enc(a)$
+  \item[] $Enc(x)$
+\end{itemize}
+\vspace{6mm}
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[] 
+  \item[] Random integer $z$
+  \item[] $Enc(a)^z, Enc(x)^z$
+\end{itemize}
+\end{column}
+\end{columns}
+
+\end{frame}
+
+%------------------------------------------------
+%------------------------------------------------
+\begin{frame}
+\frametitle{PPWAP}
+\frametitle{PPWAP}
+\begin{columns}
+
+\begin{column}{6cm}
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[] \hspace{16mm}{Alice} \newline
+  \item[$1.$] $KeyGeneration(): SK, PK$
+  \item[] $Encryption(a ,PK): Enc(a)$
+  \item[] $Encryption(x ,PK): Enc(x)$
+\end{itemize}
+\noindent\rule{12cm}{0.4pt}
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[$2.$] 
+\end{itemize}
+\end{column}
+\begin{column}{1cm}
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[] \red{\Huge $\Rightarrow $}
+\end{itemize}
+\vspace{1 cm}
+\end{column}
+\begin{column}{4cm}
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[] 
+  \item[] Bob
+  \item[] 
+  \item[] $Enc(a)$
+  \item[] $Enc(x)$
+\end{itemize}
+\vspace{6mm}
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[] 
+  \item[] Random integer $z$
+  \item[] $Enc(a)^z, Enc(x)^z$
+\end{itemize}
+\end{column}
+\end{columns}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.9\textwidth]{./presentation5}
+\end{figure}
+
+
+
+
+\end{frame}
+
+%------------------------------------------------
+%------------------------------------------------
+\begin{frame}
+\frametitle{PPWAP}
+\begin{columns}
+
+\begin{column}{6cm}
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[] \hspace{16mm}{Alice} \newline
+  \item[$1.$] $KeyGeneration(): SK, PK$
+  \item[] $Encryption(a ,PK): Enc(a)$
+  \item[] $Encryption(x ,PK): Enc(x)$
+\end{itemize}
+\noindent\rule{12cm}{0.4pt}
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[$2.$] 
+\end{itemize}
+\end{column}
+\begin{column}{1cm}
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[] \red{\Huge $\Rightarrow $}
+\end{itemize}
+\vspace{1 cm}
+\end{column}
+\begin{column}{4cm}
+
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[] 
+  \item[] 
+  \item[] Bob
+  \item[]
+  \item[] $Enc(a)$
+  \item[] $Enc(x)$
+\end{itemize}
+\vspace{6mm}
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[] Random integer $z$
+  \item[] $Enc(a)^z, Enc(x)^z$
+  \item[] $Enc(za), Enc(zx)$
+\end{itemize}
+\end{column}
+\end{columns}
+
+\end{frame}
+
+%------------------------------------------------
+%------------------------------------------------
+\begin{frame}
+\frametitle{PPWAP}
+
+\begin{columns}
+\begin{column}{5cm}
+\hspace{16mm}{Alice}
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[] 
+  \item[] $\;$\newline
+  \item[$3.$] \hspace{4mm}{\scriptsize $Enc(za+zb)$}
+  \item[] \hspace{4mm}{\scriptsize $Enc(zx+zy)$}
+\end{itemize}
+
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[] \noindent\rule{11cm}{0.4pt}
+  \item[$4.$] {\scriptsize $Decryption(Enc(za+zb), SK): za+zb$}
+  \item[] {\scriptsize $Decryption(Enc(zx+zy), SK): zx+zy$}
+\end{itemize}
+\end{column}
+\begin{column}{1cm}
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[] \vspace{16 mm}
+  \item[] \red{\Huge $\Leftarrow $}
+  \item[] \vspace{8 mm}
+  \item[] \red{\Huge $\Rightarrow $}
+\end{itemize}
+\vspace{1 cm}
+\end{column}
+\begin{column}{6.2cm}
+\vspace{4 mm}
+\hspace{16mm}Bob
+\begin{itemize} \itemsep0pt \parskip0pt \parsep0pt
+  \item[] {\scriptsize $Encryption(b ,PK):Enc(b)\Rightarrow Enc(zb)$}
+  \item[] {\scriptsize $Encryption(y ,PK):Enc(y)\Rightarrow~Enc(zy)$}
+  \item[] {\scriptsize $Enc(za+zb) = Enc(za)$}
+  \item[] {\scriptsize $Enc(zb) Enc(zx+zy) = Enc(zx) Enc(zy)$}
+\end{itemize}
+\vspace{6mm}
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+  \item[] 
+  \item[] 
+  \item[] 
+\end{itemize}
+\end{column}
+\end{columns}
+
+\centerline{$\frac{zx+zy}{za+zb} = \frac{x+y}{a+b}$ $\quad \Rightarrow \quad$ $\frac{x+y}{a+b}$}
+\vspace{4 mm}
+\end{frame}
+
+%------------------------------------------------Enc(zb) Enc(zx+zy) = Enc(zx) Enc(zy)
+%------------------------------------------------
+\begin{frame}
+\frametitle{Algorithm}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.5\textwidth]{Algorithm}
+  \caption{Two-party Jointly Decision Tree Algorithm.}
+\end{figure}
+
+
+
+\end{frame}
+%------------------------------------------------
+%------------------------------------------------
+\begin{frame}
+\frametitle{Result}
+
+\begin{itemize} \itemsep10pt \parskip0pt \parsep0pt
+  \item[$\bullet$] Demo
+  \item[$\bullet$] Efficiency: The runtime depend on 3 factors.
+  \begin{itemize} \itemsep2pt \parskip0pt \parsep0pt
+  \item[$\ast$] Dataset size
+  \item[$\ast$] Length of Key in encryption algorithm
+  \item[$\ast$] Number of parties
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+%------------------------------------------------
+\begin{frame}
+\frametitle{Algorithm Implement}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.5\textwidth]{Welcome}
+  \caption{Welcome Graphical User Interface.}
+\end{figure}
+\end{frame}
+%------------------------------------------------
+%------------------------------------------------
+\begin{frame}
+\frametitle{Algorithm Implement}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.5\textwidth]{./SelfRun}
+  \caption{Result of single-party ID3 algorithm on tic-tac-toe2 dataset.}
+  \label{SelfRun}
+\end{figure}
+
+\end{frame}
+%------------------------------------------------
+%------------------------------------------------
+\begin{frame}
+\frametitle{Conclusion}
+
+\begin{itemize} \itemsep10pt \parskip0pt \parsep0pt
+  \item[$\bullet$] The PPWAP scheme is purposed in 2005 in PP K-means.
+  \begin{itemize} \itemsep2pt \parskip0pt \parsep0pt
+    \item[$\ast$] PPWAP can be extend to multi-party, supports Multi-party distributed ID3 algorithm.
+  \end{itemize}
+
+  \item[$\bullet$] Further research focus on improving the security level.
+  \begin{itemize} \itemsep2pt \parskip0pt \parsep0pt
+    \item[$\ast$] The scheme became safer and more complex.
+  \end{itemize}
+
+  \item[$\bullet$] Current research  focus on preventing malicious attack.
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+%------------------------------------------------
+\begin{frame}
+\frametitle{Conclusion}
+
+\begin{itemize} \itemsep5pt \parskip0pt \parsep0pt
+  \item[$\bullet$] Select two large primes, $p$ and $q$. 
+  \item[$\bullet$] Calculate the product $n=p\times q$, such that $gcd(n,\Phi(n)) = 1$, where $\Phi(n)$ is $(p-1)(q-1)$.
+  \item[$\bullet$] Choose a random number $g$, where $g$ has order multiple of $n$ or $gcd(L(g^\lambda mod \; n^2 ),n) = 1$, where $L(t)= (t-1) / n$ and $\lambda(n)=lcm(p-1, q-1)$.
+  \item[$\bullet$] The public key is composed of $(g, n)$, while the private key is composed of $(p,q,\lambda)$. 
+  \item[$\bullet$] The Encryption of a message $m < n$ is given by: 
+  \begin{itemize} \itemsep10pt \parskip0pt \parsep0pt
+    \item[$\bullet$] $c=g^m\cdot r^n mod\; n^2$
+  \end{itemize}
+  \item[$\bullet$] The Decryption of ciphertext $c$ is given by: The Decryption of ciphertext $c$ is given by: 
+  \begin{itemize} \itemsep10pt \parskip0pt \parsep0pt
+    \item[$\bullet$] $m=(L(g^{\lambda} mod\; n^2 )/L(g^{\lambda} mod\; n^2 ) )mod \; n$
+  \end{itemize}
+\end{itemize}
+
+\end{frame}
+%------------------------------------------------
+
+
+
+
+
+% %------------------------------------------------
+% \begin{frame}
+% \frametitle{Two-party jointly decision tree construction Example}
+% \begin{figure}[H]
+%   \centering
+%   \includegraphics[width=0.8\textwidth]{Example2}
+%   \caption{Decision tree construction result based on single-party dataset}
+% \end{figure}
+% \end{frame}
+
+% %------------------------------------------------
+% %------------------------------------------------
+% \begin{frame}
+% \frametitle{Two-party jointly decision tree construction Example}
+% \begin{figure}[H]
+%   \centering
+%   \includegraphics[width=0.8\textwidth]{Example3}
+%   \caption{Example for Playgolf Dataset Information Gain Calculation}
+% \end{figure}
+% \end{frame}
+
+% %------------------------------------------------
+%------------------------------------------------
+
+% \begin{frame}
+% \frametitle{Two-party jointly decision tree construction}
+
+% \red{$D$} represent the dataset of Angelina, \red{$Attribute$} is the attributes of \red{$D$}, \red{$transInfo$} is the number of objects of each class in Bob dataset, and \red{$T$} is the corresponding target label of each object in dataset \red{$D$}. \red{$\widetilde{A}$} is the index of the best spliting attribute. We also provide a more detailed explanation of the whole algorithm for your further references(see \href{http://monaen.github.io/PrivacyDecisionTree/}{\magenta{Two-party jointly build decision tree}}). 
+
+% \end{frame}
+
+% %------------------------------------------------
+% \begin{frame}
+% \frametitle{Algorithm Implement}
+% \begin{figure}[H]
+%   \centering
+%   \includegraphics[width=0.5\textwidth]{Welcome}
+%   \caption{Welcome Graphical User Interface.}
+% \end{figure}
+% \end{frame}
+% %------------------------------------------------
+% %------------------------------------------------
+% \begin{frame}
+% \frametitle{Algorithm Implement}
+% 1. load the dataset by clicking on the {\bf Load Data} button, and after you load the data, you can easily see the data you have loaded by clicking on the {\bf View Data} button (if you haven't loaded the data, you cannot see any result but a black table). \newline\newline
+% 2. After you load the data you can see the result of ID3 algorithm by clicking on the button {\bf SelfRun}, and just like its name, the {\bf SelfRun} button implements the ID3 algorithm only based on the dataset of corresponding single party. 
+% \newline\newline
+% 3. After you load the data for both sides, then you can run the two-party jointly decision tree algorithm by clicking on button {\bf CombinedRun}, or you will see a warning on the Main Pane saying ``No data Loaded ...''. 
+% \end{frame}
+% %------------------------------------------------
+% %------------------------------------------------
+% \begin{frame}
+% \frametitle{Algorithm Implement}
+% 4. After you clicking on the button {\bf CombinedRun}, you will find that both the ``Main Pane'' and ``Mutual Information Pane'' print out the result.
+% \newline\newline
+% 5. The result on ``Main Pane'' is the final decision tree constructed using two-party jointly decision tree algorithm while the information printed on ``Mutual Information Pane'' is the transmit information from the other party. That is if you click on the {\bf CombinedRun} button of Angelina side, the printed information on ``Mutual Information Pane'' is the transmit information from Bob, while if you click on the {\bf CombinedRun} button of Bob side, the ``Mutual Information Pane'' shows the transmit information from Angelina.
+% \end{frame}
+% %------------------------------------------------
+% %------------------------------------------------
+% \begin{frame}
+% \frametitle{Algorithm Implement}
+% \begin{figure}[H]
+%   \centering
+%   \includegraphics[width=0.5\textwidth]{./SelfRun}
+%   \caption{Result of single-party ID3 algorithm on tic-tac-toe2 dataset.}
+%   \label{SelfRun}
+% \end{figure}
+
+% \end{frame}
+% %------------------------------------------------
+
+
+
+
+
+
+
+\begin{frame}
+\Huge{\centerline{The End}}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
