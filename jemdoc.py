@@ -255,7 +255,7 @@ def standardconf():
   
   [lastupdated]
   Page generated |, by <a href="http://jemdoc.jaboc.net/">jemdoc</a> Used by Nan Meng 2016.<br>
-  <font size = "4", color = "blue">Visitors:
+  <font size = "3", color = "blue">Visitors:
   <!-- Start of StatCounter Code for Default Guide -->
   <script type="text/javascript">
   var sc_project=10951894; 
