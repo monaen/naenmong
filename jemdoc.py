@@ -254,10 +254,11 @@ def standardconf():
   
   
   [lastupdated]
-  <!-- Site Meter -->
-<a href="http://s30.sitemeter.com/stats.asp?site=s30nanmeng" target="_top">
-<img src="http://s30.sitemeter.com/meter.asp?site=s30nanmeng" alt="Site Meter" border="0"/></a>
-<!-- Copyright (c)2009 Site Meter -->
+  <!-- Site Meter XHTML Strict 1.0 -->
+  <script type="text/javascript" src="http://s30.sitemeter.com/js/counter.js?site=s30nanmeng">
+  </script>
+  <!-- Copyright (c)2009 Site Meter -->
+
   Page generated |, by <a href="http://jemdoc.jaboc.net/">jemdoc</a> Used by Nan Meng 2016.
 
 
