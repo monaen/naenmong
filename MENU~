@@ -1,17 +1,27 @@
-jemdoc
+Info
     Home                [index.html]
-    //download            [download.html]
-    revision history    [revision.html]
-    contact             [contact.html]
+    Curriculum Vitae    [cv.html]
 
 Research
-    Projects            [cheatsheet.html]
-    using               [using.html]
+    Publications        [publications.html]
+    Projects            [projects.html]
+    Workshop            [workshop.html]
+    Wiki                [http://yelangya3826850.github.io]
+
+Teaching
+    ENGG1203(TA)        [teaching.html#ENGG1203: Introduction to Electrical and Electronic Engineering]
+
+Code
+    Programs            [programs.html]
+    GitHub              [http://github.com/monaen]
 
 Collaborators
-    add a menu          [menu.html]
-    other stuff         [stuff.html]
+    Edmund Y.Lam        [http://www.eee.hku.hk/~elam/]
+    Xing SUN            [http://www.eee.hku.hk/~sunxing/]
 
 Friends
-    Song Qi
-    Richard Guo
+    Song Qi             [http://www.songqiuestc.com/]
+    Richard Guo         [http://richardkwo.net/]
+
+Others
+    Notes               [Notes.html]
