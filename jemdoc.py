@@ -247,7 +247,15 @@ def standardconf():
   [footerstart]
   <div id="footer">
   <div id="footer-text">
-  
+
+  <script language="JavaScript">
+    // FHS Text Counter
+    var height = '52'; 
+    var fhsh = document.createElement('script');var fhs_id_h = "3132031";
+    fhsh.src = "//s1.freehostedscripts.net/ocount.php?site="+fhs_id_h+"&name=Visits&a=1&s=1&h="+height+"";
+    document.head.appendChild(fhsh);document.write("<span id='h_"+fhs_id_h+"'></span>");
+  </script>
+
   [footerend]
   </div>
   </div>
