@@ -50,20 +50,15 @@ To be continue ...
 
 
 
-{{<script language="JavaScript">
-// FHS Text Counter
-var height = '52'; 
-var fhsh = document.createElement('script');var fhs_id_h = "3132030";
-fhsh.src = "//s1.freehostedscripts.net/ocount.php?site="+fhs_id_h+"&name=Visits&a=1&s=1&h="+height+"";
-document.head.appendChild(fhsh);document.write("<span id='h_"+fhs_id_h+"'></span>");
-</script>}}
 
 
 
 
 
-
-
+{{<!-- Site Meter -->
+<a href="http://s30.sitemeter.com/stats.asp?site=s30nanmeng" target="_top">
+<img src="http://s30.sitemeter.com/meter.asp?site=s30nanmeng" alt="Site Meter" border="0"/></a>
+<!-- Copyright (c)2009 Site Meter -->}}
 
 
 

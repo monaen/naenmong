@@ -254,15 +254,12 @@ def standardconf():
   
   [lastupdated]
   Page generated |, by <a href="http://jemdoc.jaboc.net/">jemdoc</a> Used by Nan Meng 2016.
-  <!-- Site Meter -->
-  <script type="text/javascript" src="http://s30.sitemeter.com/js/counter.js?site=s30nanmeng">
-  </script>
-  <noscript>
-    <a href="http://s30.sitemeter.com/stats.asp?site=s30nanmeng" target="_top">
-      <img src="http://s30.sitemeter.com/meter.asp?site=s30nanmeng" alt="Site Meter" border="0"/>
-    </a>
-  </noscript>
-  <!-- Copyright (c)2009 Site Meter -->
+<!-- Site Meter -->
+<a href="http://s30.sitemeter.com/stats.asp?site=s30nanmeng" target="_top">
+<img src="http://s30.sitemeter.com/meter.asp?site=s30nanmeng" alt="Site Meter" border="0"/></a>
+<!-- Copyright (c)2009 Site Meter -->
+
+
 
   [sourcelink]
   (<a href="|">source</a>)

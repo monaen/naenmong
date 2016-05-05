@@ -3,19 +3,48 @@
 (B.S. UESTC, Ph.D. The University of Hong Kong)
 
 
+
+
+
 ~~~
-{}{img_left}{FILENAME.IMG}{alt text}{WIDTHpx}{HEIGHTpx}{IMGLINKTARGET}
+{}{img_left}{images/favicon.jpg}{alt text}{150px}{200px}{index.html}
 Department of Electrical and Electronic Engineering,\n
 The University of Hong Kong\n
 [http://www.eee.hku.hk/isl/ Imaging Systems Laboratory ]
+
+{{<img align = "right" src="images/hku.jpg" width="80" />}}
+
+
 ~~~
 
 == Contact
 *Email*
-- Academic:
-- Personal:
+- Academic: {{<img src="images/meng.png" height = "18px">}}
+- Personal: {{<img src="images/mengg.png" height = "18px">}}
+
+{{<a href="http://github.com/monaen"><i class="fa fa-github fa-2x" aria-hidden="true"></i>&nbsp; <strong>GitHub</strong></a>&nbsp;&nbsp;&nbsp; <a href="https://www.linkedin.com/profile/preview?locale=zh_CN&trk=prof-0-sb-preview-primary-button"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>&nbsp; <strong>LinkedIn</strong></a>&nbsp;&nbsp;&nbsp; <a href="https://www.facebook.com/profile.php?id=100010708204820"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>&nbsp; <strong>FaceBook</strong></a>}}
+
+
+
+
 
 == Research Interests
+To be continue ...
+
+
+
+
+== What's New
+
+- {{<p class="gallerycontainer">[2016/04] Competition for <strong>Trans-disciplinary Challenge Award 2016</strong> [<a class="thumbnail" href="workshop/SocialNetworkWorkshop(27-04-2016).pdf">Competition Document<span><img src="images/workshop_img/SocialNetwork(27-04-2016).png" height="100" width="180"/><br />Social Network Competition</span></a>]</p>}}
+
+
+- \[2015/12\] Award Ceremony for *University Postgraduate Fellowship*(UPF)
+
+
+
+
+
 
 
 
