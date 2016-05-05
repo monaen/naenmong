@@ -266,12 +266,14 @@ def standardconf():
   scJsHost+
   "statcounter.com/counter/counter.js'></"+"script>");
   </script>
-  <noscript><div class="statcounter"><a title="hit counter"
-  href="http://statcounter.com/free-hit-counter/"
-  target="_blank"><img class="statcounter"
-  src="//c.statcounter.com/10951894/0/39d6098c/0/" alt="hit
-  counter"></a></div></noscript>
+  <noscript><div class="statcounter"><a title="web statistics"
+  href="http://statcounter.com/" target="_blank"><img
+  class="statcounter"
+  src="//c.statcounter.com/10951894/0/39d6098c/0/" alt="web
+  statistics"></a></div></noscript>
   <!-- End of StatCounter Code for Default Guide -->
+  <a href="http://statcounter.com/p10951894/?guest=1">Since
+  May 5, 2016</a>
 
 
   [sourcelink]
