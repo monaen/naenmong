@@ -139,9 +139,8 @@ def standardconf():
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
   
   [defaultcss]
-  <link rel="stylesheet" href="stylesheet/jemdoc.css" type="text/css" />
-  <link rel="stylesheet" href="stylesheet/font-awesome/css/font-awesome.min.css" type="text/css" />
-
+  <link rel="stylesheet" href="jemdoc.css" type="text/css" />
+  
   [windowtitle]
   # used in header for window title.
   <title>|</title>
@@ -247,35 +246,13 @@ def standardconf():
   [footerstart]
   <div id="footer">
   <div id="footer-text">
-
+  
   [footerend]
   </div>
   </div>
   
-  
   [lastupdated]
-  Page generated |, by <a href="http://jemdoc.jaboc.net/">jemdoc</a> Used by Nan Meng 2016.<br>
-  <font size = "3", color = "blue">Visitors:
-  <!-- Start of StatCounter Code for Default Guide -->
-  <script type="text/javascript">
-  var sc_project=10951894; 
-  var sc_invisible=0; 
-  var sc_security="39d6098c"; 
-  var sc_text=2; 
-  var scJsHost = (("https:" == document.location.protocol) ?
-  "https://secure." : "http://www.");
-  document.write("<sc"+"ript type='text/javascript' src='" +
-  scJsHost+
-  "statcounter.com/counter/counter.js'></"+"script>");
-  </script>
-  <noscript><div class="statcounter"><a title="shopify visitor
-  statistics" href="http://statcounter.com/shopify/"
-  target="_blank"><img class="statcounter"
-  src="//c.statcounter.com/10951894/0/39d6098c/0/"
-  alt="shopify visitor statistics"></a></div></noscript></font>
-  <!-- End of StatCounter Code for Default Guide -->
-  <br><a href="#">Since May 5, 2016</a>
-
+  Page generated |, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
 
   [sourcelink]
   (<a href="|">source</a>)

@@ -1,5 +1,48 @@
 # jemdoc: menu{MENU}{publications.html}
 = Publications
 
+== Ultrafast cell classification based on deep convolutional neural networks (Preparing)
+~~~
+{}{img_left}{images/paper_img/Computational-2017.png}{alt text}{120px}{160px}{}
+2017 IEEE transactions on Medical Imaging (preparing) \n
+*Nan Meng*, Hayden K.H. So, Senior Member, IEEE, and Edmund Y. Lam
+=== [Abstract] \n
+The diagnosis of many blood diseases can be greatly facilitated by automatic cell classification. Manual diagnosis heavily depends on the experience of experts, which always costs considerable time and effort and unavoidably introduces subjective mistakes. In this paper we present an automatic framework for the cell classification task by utilizing the deep convolutional neural networks (CNNs) which have brought breakthroughs in visual recognition recently. This paper elaborates the detailed structure of the framework, compares this framework with traditional machine learning methods and analyzes the data
+volume impacts to the classifiers......
+~~~
+
+
+== Computational single-cell classification using deep learning on bright-field and phase images
+~~~
+{}{img_left}{images/paper_img/Computational-2017.png}{alt text}{120px}{160px}{}
+15th IAPR International Conference on Machine Vision Applications (MVA) \n
+*Nan Meng*, H. K.-H. So, and E. Y. Lam
+=== [Abstract] \n
+Automated cell classification is an important machine vision problem with significant benefits to biomedicine. We propose an efficient high-accuracy framework to classify cells based on bright-field and phase images using deep learning. With carefully designed network architecture and parameters, our network extracts features from single-cell images hierarchically and performs classification jointly. It can identify different types of cells without any human intervention and biological or hand-crafted features. Our experiments show that the system achieves a mean class accuracy of 96.5% on the single-cell images captured
+by an ultrafast time-stretch imager.
+=== Slides
+- MVA2017: \[[slides/mva2017.pdf Presentation]\]
+~~~
+
+
+== Sparse Hierarchical Nonparametric Bayesian Learning for Light Field Representation and Denoising
+~~~
+{}{img_left}{images/paper_img/Sparse-2016.png}{alt text}{120px}{160px}{}
+2016 IEEE International Joint Conference on Neural Networks (IJCNN) \n
+Xing Sun, *Nan Meng*, Zhimin Xu, Edmund Y. Lam and Hayden K.H. So
+=== [Abstract] \n
+we present a sparse hierarchical nonparametric Bayesian (SHNB) model, which is used to represent the data captured by the light field cameras. Specifically, a light field can be represented as a set of sub-aperture views. In order to capture the visual variations of these viewpoints, we propose the so-called “depth flow” features. Then based on the depth flow features, we model these views statistically with a sparse representation in a fully unsupervised manner. While local dictionaries are learned based on each sub-aperture view, all the views with different perspectives share one global dictionary. To show the effectiveness of the proposed model, we apply our model to denoise the light field data. In the experiments, we demonstrate that our method outperforms several state-of-the-art light field denoising approaches.
+~~~
+
+
+== Data-driven light field depth estimation using deep convolution neural network
+~~~
+{}{img_left}{images/paper_img/Computational-2017.png}{alt text}{120px}{160px}{}
+2016 IEEE International Joint Conference on Neural Networks (IJCNN) \n
+Xing Sun, Zhimin Xu, *Nan Meng*, Edmund Y. Lam and Hayden K.H. So
+=== [Abstract] \n
+Automated cell classification is an important machine vision problem with significant benefits to biomedicine. We propose an efficient high-accuracy framework to classify cells based on bright-field and phase images using deep learning. With carefully designed network architecture and parameters, our network extracts features from single-cell images hierarchically and performs classification jointly. It can identify different types of cells without any human intervention and biological or hand-crafted features. Our experiments show that the system achieves a mean class accuracy of 96.5% on the single-cell images captured
+by an ultrafast time-stretch imager.
+~~~
 
 
